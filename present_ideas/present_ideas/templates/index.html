@@ -11,13 +11,17 @@
               <form method="POST">
                 {% csrf_token %}
                   <label for="name">Who are you?</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name-input"
-                    placeholder="Your name here!"
-                    class="form-control form-control-lg"
-                  />
+                  <div class="row">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name-input"
+                      placeholder="My name is..."
+                      class="form-control form-control-lg col-sm-10"
+                      autofocus
+                    />
+                    <button type="submit" class="btn btn-block btn-success col-sm-2">👉</button>
+                  </div>
               </form>
             </div>
           </div>
