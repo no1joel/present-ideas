@@ -2,18 +2,70 @@
 
 {% block content %}
     <div class="container-fluid">
-        <table class="table">
-            {% for row in rows %}
-                <tr>
-                    <td>{{ row.Thing|urlizetrunc:40 }}</td>
-                    <td>{{ row.Price }}</td>
-                    <td>{{ row.Notes|urlizetrunc:100 }}</td>
-                    <td>{{ row.Claimed }}</td>
-                </tr>
-            {% endfor %}
-        </table>
-        <form class="form-horizontal">
-
-        </form>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">List</h5>
+                        <table class="table">
+                            {% for row in rows %}
+                                <tr>
+                                    <td>{{ row.Thing|urlizetrunc:40 }}</td>
+                                    <td>{{ row.Price }}</td>
+                                    <td>{{ row.Notes|urlizetrunc:100 }}</td>
+                                    <td>{{ row.Claimed }}</td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <form class="form-horizontal" method="POST">
+                            <h5 class="card-title">Add New</h5>
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="thing-input">Thing</label>
+                                <input
+                                    type="text"
+                                    name="thing"
+                                    id="thing-input"
+                                    class="form-control"
+                                    placeholder="Thing name"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="price-input">Price</label>
+                                <input
+                                    type="number"
+                                    name="price"
+                                    id="price-input"
+                                    class="form-control"
+                                    min="0"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="notes-input">Notes</label>
+                                <textarea
+                                    name="notes"
+                                    id="notes-input"
+                                    cols="30"
+                                    class="form-control"
+                                    rows="10"
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-success btn-block">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock content %}

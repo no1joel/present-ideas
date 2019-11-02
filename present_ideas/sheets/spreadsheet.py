@@ -33,3 +33,10 @@ def get_rows(name: str) -> List[dict]:
     sheet = get_sheet()
     worksheet = sheet.worksheet(name)
     return worksheet.get_all_records()
+
+
+def add_row(name: str, row: List[str]):
+    sheet = get_sheet()
+    worksheet = sheet.worksheet(name)
+    index = len(worksheet.get_all_records()) + 2
+    worksheet.insert_row(row, index)

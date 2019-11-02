@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render, reverse
 
-from sheets.spreadsheet import get_rows, get_worksheets
+from sheets.spreadsheet import add_row, get_rows, get_worksheets
 
 
 def index(request):
@@ -22,7 +22,10 @@ def what_do(request, username):
     if not check_name(username):
         return redirect(reverse("index"))
 
-    context = {"who_url": reverse("who", args=(username,))}
+    context = {
+        "who_url": reverse("who", args=(username,)),
+        "me_url": reverse("present_list", args=(username, username)),
+    }
 
     return render(request, "what_do.html", context)
 
@@ -40,6 +43,12 @@ def who(request, username):
 def present_list(request, username: str, their_name: str):
     if not check_name(their_name):
         return redirect(reverse("index"))
+
+    if request.method == "POST":
+        thing = request.POST["thing"]
+        price = request.POST["price"]
+        notes = request.POST["notes"]
+        add_row(their_name, [thing, price, notes])
 
     context = {"rows": get_rows(their_name)[1:]}
     return render(request, "list.html", context)
