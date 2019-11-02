@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="jumbotron">
+            <h1>Present Ideas</h1>
+            <hr class="my-4" />
+            <div class="form-group m-0">
+              <form method="POST">
+                {% csrf_token %}
+                  <label for="name">Who are you?</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name-input"
+                    placeholder="Your name here!"
+                    class="form-control form-control-lg"
+                  />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content %}
