@@ -9,11 +9,36 @@
                         <h5 class="card-title">List</h5>
                         <table class="table">
                             {% for row in rows %}
-                                <tr>
+                                <tr
+                                    {% if show_claimed and row.Claimed %}
+                                        class="table-secondary"
+                                    {% endif %}
+                                >
                                     <td>{{ row.Thing|urlizetrunc:40 }}</td>
                                     <td>{{ row.Price }}</td>
                                     <td>{{ row.Notes|urlizetrunc:100 }}</td>
-                                    <td>{{ row.Claimed }}</td>
+                                    {% if show_claimed %}
+                                        <td>
+                                            {% if row.Claimed %}
+                                                <p>
+                                                    Claimed by 
+                                                    {% if row.Claimed|lower == username|lower %}
+                                                        you!
+                                                    {% else %}
+                                                        {{ row.Claimed }}
+                                                    {% endif %}
+                                                </p>
+                                                <a href="{% url 'unclaim' username their_name forloop.counter %}">
+                                                    Clear?
+                                                </a>
+                                            {% else %}
+                                                <a
+                                                    href="{% url 'claim' username their_name forloop.counter %}"
+                                                    class="btn btn-block btn-primary"
+                                                >Claim!</a>
+                                            {% endif %}
+                                        </td>
+                                    {% endif %}
                                 </tr>
                             {% endfor %}
                         </table>

@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render, reverse
 
-from sheets.spreadsheet import add_row, get_rows, get_worksheets
+from sheets.spreadsheet import add_row, get_rows, get_worksheets, set_cell_value
 
 
 def index(request):
@@ -50,5 +50,32 @@ def present_list(request, username: str, their_name: str):
         notes = request.POST["notes"]
         add_row(their_name, [thing, price, notes])
 
-    context = {"rows": get_rows(their_name)[1:]}
+    show_claimed = username.lower() != their_name.lower()
+
+    context = {
+        "rows": get_rows(their_name)[1:],
+        "username": username,
+        "their_name": their_name,
+        "show_claimed": show_claimed,
+    }
     return render(request, "list.html", context)
+
+
+def claim(request, username: str, their_name: str, thing_index: int):
+
+    claimed_index = 4
+    index_offset = 2
+    row_index = thing_index + index_offset
+    set_cell_value(their_name, row_index, claimed_index, username)
+
+    return redirect(reverse("present_list", args=(username, their_name)))
+
+
+def unclaim(request, username: str, their_name: str, thing_index: int):
+
+    claimed_index = 4
+    index_offset = 2
+    row_index = thing_index + index_offset
+    set_cell_value(their_name, row_index, claimed_index, "")
+
+    return redirect(reverse("present_list", args=(username, their_name)))

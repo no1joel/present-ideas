@@ -40,3 +40,9 @@ def add_row(name: str, row: List[str]):
     worksheet = sheet.worksheet(name)
     index = len(worksheet.get_all_records()) + 2
     worksheet.insert_row(row, index)
+
+
+def set_cell_value(name: str, row_index: int, cell_index: int, value: str):
+    sheet = get_sheet()
+    worksheet = sheet.worksheet(name)
+    worksheet.update_cell(row_index, cell_index, value)
