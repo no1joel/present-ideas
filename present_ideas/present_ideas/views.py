@@ -5,7 +5,7 @@ from sheets.spreadsheet import add_row, get_rows, get_worksheets, set_cell_value
 
 def index(request):
     if request.method == "POST":
-        name = request.POST.get("name")
+        name = request.POST.get("name", "").title()
         return redirect(reverse("what_do", args=(name,)))
 
     return render(request, "index.html")
@@ -34,7 +34,7 @@ def who(request, username):
     """Ask who's list they wanna look at."""
 
     if request.method == "POST":
-        their_name = request.POST.get("name")
+        their_name = request.POST.get("name", "").title()
         return redirect(reverse("present_list", args=(username, their_name)))
 
     return render(request, "who.html")
