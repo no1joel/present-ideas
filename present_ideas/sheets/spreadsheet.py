@@ -1,3 +1,5 @@
+from typing import List
+
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
@@ -25,3 +27,9 @@ def get_sheet():
 def get_worksheets():
     sheet = get_sheet()
     return sheet.worksheets()
+
+
+def get_rows(name: str) -> List[dict]:
+    sheet = get_sheet()
+    worksheet = sheet.worksheet(name)
+    return worksheet.get_all_records()
