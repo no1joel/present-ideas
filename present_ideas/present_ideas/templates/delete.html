@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"><h1>Really Delete?</h1></div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+            {% with row=thing %}
+                {% include "thing.html" %}
+            {% endwith %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a
+                    href="{{ list_url }}"
+                    class="btn btn-secondary btn-block"
+                >
+                    Go back
+                </a>
+            </div>
+            <div class="col">
+                <form method="POST">
+                    {% csrf_token %}
+                    <button
+                        type="submit"
+                        class="btn btn-danger btn-block"
+                    >
+                        Delete
+                    </button>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

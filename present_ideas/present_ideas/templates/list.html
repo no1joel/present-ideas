@@ -6,58 +6,11 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title">List</h5>
+                        <h5 class="card-title">{{ their_name }}'s List</h5>
                     </div>
                     <div class="card-body card-columns">
                             {% for row in rows %}
-                                <div
-                                    class="
-                                        card
-                                        {% if show_claimed and row.Claimed %}
-                                            bg-secondary text-white
-                                        {% endif %}
-                                    "
-                                >
-                                    <div class="card-header">
-                                        <h5 class="card-title m-0">
-                                            {{ row.Thing|urlizetrunc:40 }}
-                                        </h5>
-                                        {% if row.Price %}
-                                            <p class="card-text text-right text-muted">
-                                                {{ row.Price }}
-                                            </p>
-                                        {% endif %}
-                                    </div>
-                                    {% if row.Notes %}
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                {{ row.Notes|urlizetrunc:100|linebreaks }}
-                                            </p>
-                                        </div>
-                                    {% endif %}
-                                    {% if show_claimed %}
-                                        <div class="card-footer">
-                                            {% if row.Claimed %}
-                                                <p>
-                                                    Claimed by 
-                                                    {% if row.Claimed|lower == username|lower %}
-                                                        you!
-                                                    {% else %}
-                                                        {{ row.Claimed }}
-                                                    {% endif %}
-                                                </p>
-                                                <a href="{% url 'unclaim' username their_name forloop.counter %}">
-                                                    Clear?
-                                                </a>
-                                            {% else %}
-                                                <a
-                                                    href="{% url 'claim' username their_name forloop.counter %}"
-                                                    class="btn btn-block btn-primary"
-                                                >Claim!</a>
-                                            {% endif %}
-                                        </div>
-                                    {% endif %}
-                                </div>
+                                {% include "thing.html" %}
                             {% endfor %}
                         </table>
                     </div>

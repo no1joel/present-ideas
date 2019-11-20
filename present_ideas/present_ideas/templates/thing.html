@@ -1,0 +1,56 @@
+<div
+    class="
+        card
+        {% if show_claimed and row.Claimed %}
+            bg-secondary text-white
+        {% endif %}
+    "
+>
+    <div class="card-header">
+        <h5 class="card-title m-0">
+            {{ row.Thing|urlizetrunc:40 }}
+        </h5>
+        {% if row.Price %}
+            <p class="card-text text-right text-muted">
+                {{ row.Price }}
+            </p>
+        {% endif %}
+        <p class="card-text text-right">
+            <a
+                href="{% url 'delete' username their_name row.index %}"
+                class="btn btn-sm btn-outline-danger"
+            >
+                Delete
+            </a>
+        </p>
+    </div>
+    {% if row.Notes %}
+        <div class="card-body">
+            <p class="card-text">
+                {{ row.Notes|urlizetrunc:100|linebreaks }}
+            </p>
+        </div>
+    {% endif %}
+    {% if show_claimed %}
+        <div class="card-footer">
+            {% if row.Claimed %}
+                <p>
+                    Claimed by 
+                    {% if row.Claimed|lower == username|lower %}
+                        you!
+                    {% else %}
+                        {{ row.Claimed }}
+                    {% endif %}
+                </p>
+                <a href="{% url 'unclaim' username their_name row.index %}">
+                    Clear?
+                </a>
+            {% else %}
+                <a
+                    href="{% url 'claim' username their_name row.index %}"
+                    class="btn btn-block btn-primary"
+                >Claim!</a>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>

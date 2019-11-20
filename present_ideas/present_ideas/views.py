@@ -1,6 +1,24 @@
 from django.shortcuts import redirect, render, reverse
 
-from sheets.spreadsheet import add_row, get_rows, get_worksheets, set_cell_value
+from sheets.spreadsheet import (
+    add_row,
+    delete_row,
+    get_rows,
+    get_worksheets,
+    set_cell_value,
+)
+
+
+def get_present_ideas(their_name):
+    # TODO: Embed urls
+    _header, *rows = get_rows(their_name)
+    presents = [{**row, "index": index} for index, row in enumerate(rows)]
+    return presents
+
+
+def get_row_index(thing_index):
+    # TODO: Why is it plus 3?!
+    return thing_index + 3
 
 
 def index(request):
@@ -53,7 +71,7 @@ def present_list(request, username: str, their_name: str):
     show_claimed = username.lower() != their_name.lower()
 
     context = {
-        "rows": get_rows(their_name)[1:],
+        "rows": get_present_ideas(their_name),
         "username": username,
         "their_name": their_name,
         "show_claimed": show_claimed,
@@ -64,8 +82,7 @@ def present_list(request, username: str, their_name: str):
 def claim(request, username: str, their_name: str, thing_index: int):
 
     claimed_index = 4
-    index_offset = 2
-    row_index = thing_index + index_offset
+    row_index = get_row_index(thing_index)
     set_cell_value(their_name, row_index, claimed_index, username)
 
     return redirect(reverse("present_list", args=(username, their_name)))
@@ -74,8 +91,28 @@ def claim(request, username: str, their_name: str, thing_index: int):
 def unclaim(request, username: str, their_name: str, thing_index: int):
 
     claimed_index = 4
-    index_offset = 2
-    row_index = thing_index + index_offset
+    row_index = get_row_index(thing_index)
     set_cell_value(their_name, row_index, claimed_index, "")
 
     return redirect(reverse("present_list", args=(username, their_name)))
+
+
+def delete(request, username: str, their_name: str, thing_index: int):
+
+    if request.method == "POST":
+        row_index = get_row_index(thing_index)
+        delete_row(their_name, row_index)
+        return redirect(reverse("present_list", args=(username, their_name)))
+
+    # TODO: This offset thing make into func
+    thing = get_present_ideas(their_name)[thing_index]
+
+    context = {
+        "thing": thing,
+        "username": username,
+        "their_name": their_name,
+        "list_url": reverse("present_list", args=(username, their_name)),
+        "delete_url": reverse("delete", args=(username, their_name, thing_index)),
+    }
+
+    return render(request, "delete.html", context)

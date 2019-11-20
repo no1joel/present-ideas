@@ -49,3 +49,9 @@ def set_cell_value(name: str, row_index: int, cell_index: int, value: str):
     sheet = get_sheet()
     worksheet = sheet.worksheet(name)
     worksheet.update_cell(row_index, cell_index, value)
+
+
+def delete_row(name: str, row_index: int):
+    sheet = get_sheet()
+    worksheet = sheet.worksheet(name)
+    worksheet.delete_row(row_index)

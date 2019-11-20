@@ -30,4 +30,7 @@ urlpatterns = [
         views.unclaim,
         name="unclaim",
     ),
+    path(
+        "<username>/<their_name>/<int:thing_index>/delete", views.delete, name="delete"
+    ),
 ]
