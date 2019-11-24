@@ -3,3 +3,5 @@ client_secret.json
 *.pyc
 .mypy_cache
 .vscode
+node_modules
+*.egg-info
