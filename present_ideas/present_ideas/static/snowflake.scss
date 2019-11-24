@@ -21,7 +21,7 @@ $snowflake: 250;
   $left: random(100) * 1%;
 
   // Animation delay for the flake
-  $delay: random(20) - 1s;
+  $delay: random(5);
 
   // Floating span for the flake
   $duration: random(6) + 4s;
