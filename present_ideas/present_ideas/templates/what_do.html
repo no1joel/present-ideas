@@ -1,6 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">
+              <a href="{% url 'index' %}">Present Ideas</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              I am {{ username }}
+            </li>
+        </ol>
+    </nav>
+
     <div class="container-fluid">
       <div class="row">
         <div class="col">

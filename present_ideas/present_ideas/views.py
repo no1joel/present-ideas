@@ -43,6 +43,7 @@ def what_do(request, username):
     context = {
         "who_url": reverse("who", args=(username,)),
         "me_url": reverse("present_list", args=(username, username)),
+        "username": username,
     }
 
     return render(request, "what_do.html", context)
