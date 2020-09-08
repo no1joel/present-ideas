@@ -16,7 +16,7 @@ const addSnowflakes = (count, noDelay) => {
 };
 
 const getDaysTilXmas = () => {
-  const xmas = new Date(2019, 11, 25);
+  const xmas = new Date(2020, 11, 25);
   const now = new Date();
   const millisecondsToDays = ms => ms / (1000 * 60 * 60 * 24);
   const daysTilXmas = millisecondsToDays(xmas - now);
