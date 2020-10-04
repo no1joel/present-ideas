@@ -1,27 +1,32 @@
+"""Views, and only views."""
 from django.shortcuts import redirect, render, reverse
-
-from sheets.spreadsheet import (
-    add_row,
-    delete_row,
-    get_rows,
+from .utils import (
+    get_all_names,
     get_worksheets,
+    add_row,
+    get_present_ideas,
+    get_row_index,
     set_cell_value,
+    delete_row,
 )
 
-
-def get_present_ideas(their_name):
-    # TODO: Embed urls
-    _header, *rows = get_rows(their_name)
-    presents = [{**row, "index": index} for index, row in enumerate(rows)]
-    return presents
+from django.http import HttpRequest, HttpResponse, JsonResponse
 
 
-def get_row_index(thing_index):
-    # TODO: Why is it plus 3?!
-    return thing_index + 3
+def person_list(request: HttpRequest) -> JsonResponse:
+    """Return a list of people."""
+
+    print("getting names")
+    names = list(get_all_names())
+    print("got names")
+    data = {"names": names}
+    print("returning...")
+    return JsonResponse(data)
 
 
-def index(request):
+def index(request: HttpRequest) -> HttpResponse:
+    """Show a landing page."""
+
     if request.method == "POST":
         name = request.POST.get("name", "").title()
         return redirect(reverse("what_do", args=(name,)))
@@ -36,7 +41,9 @@ def check_name(name: str) -> bool:
     return name.lower() in worksheet_names
 
 
-def what_do(request, username):
+def what_do(request: HttpRequest, username: str) -> HttpResponse:
+    """Ask the user what they want to do."""
+
     if not check_name(username):
         return redirect(reverse("index"))
 
@@ -49,7 +56,7 @@ def what_do(request, username):
     return render(request, "what_do.html", context)
 
 
-def who(request, username):
+def who(request: HttpRequest, username: str) -> HttpResponse:
     """Ask who's list they wanna look at."""
 
     if request.method == "POST":
@@ -59,7 +66,9 @@ def who(request, username):
     return render(request, "who.html")
 
 
-def present_list(request, username: str, their_name: str):
+def present_list(request: HttpRequest, username: str, their_name: str) -> HttpResponse:
+    """Show a list of ideas for someone."""
+
     if not check_name(their_name):
         return redirect(reverse("index"))
 
@@ -80,7 +89,10 @@ def present_list(request, username: str, their_name: str):
     return render(request, "list.html", context)
 
 
-def claim(request, username: str, their_name: str, thing_index: int):
+def claim(
+    request: HttpRequest, username: str, their_name: str, thing_index: int
+) -> HttpResponse:
+    """Mark a present as claimed."""
 
     claimed_index = 4
     row_index = get_row_index(thing_index)
@@ -89,7 +101,10 @@ def claim(request, username: str, their_name: str, thing_index: int):
     return redirect(reverse("present_list", args=(username, their_name)))
 
 
-def unclaim(request, username: str, their_name: str, thing_index: int):
+def unclaim(
+    request: HttpRequest, username: str, their_name: str, thing_index: int
+) -> HttpResponse:
+    """Mark a present as unclaimed."""
 
     claimed_index = 4
     row_index = get_row_index(thing_index)
@@ -98,7 +113,10 @@ def unclaim(request, username: str, their_name: str, thing_index: int):
     return redirect(reverse("present_list", args=(username, their_name)))
 
 
-def delete(request, username: str, their_name: str, thing_index: int):
+def delete(
+    request: HttpRequest, username: str, their_name: str, thing_index: int
+) -> HttpResponse:
+    """Delete a present idea."""
 
     if request.method == "POST":
         row_index = get_row_index(thing_index)
