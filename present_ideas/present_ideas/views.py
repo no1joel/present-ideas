@@ -8,6 +8,7 @@ from .utils import (
     get_row_index,
     set_cell_value,
     delete_row,
+    check_name,
 )
 
 from django.http import HttpRequest, HttpResponse, JsonResponse
@@ -16,11 +17,33 @@ from django.http import HttpRequest, HttpResponse, JsonResponse
 def person_list(request: HttpRequest) -> JsonResponse:
     """Return a list of people."""
 
-    print("getting names")
     names = list(get_all_names())
-    print("got names")
     data = {"names": names}
-    print("returning...")
+
+    return JsonResponse(data)
+
+
+# TODO: Fix naming...
+def their_list_api(request: HttpRequest, username: str) -> JsonResponse:
+    """Return a list of presents and their status."""
+
+    present_ideas = get_present_ideas(username)
+
+    data = {"presents": present_ideas}
+
+    return JsonResponse(data)
+
+
+def my_list_api(request: HttpRequest, username: str) -> JsonResponse:
+    """Return a list of presents, excluding claimed status."""
+
+    present_ideas = get_present_ideas(username)
+
+    for present_idea in present_ideas:
+        del present_idea["Claimed"]
+
+    data = {"presents": present_ideas}
+
     return JsonResponse(data)
 
 
@@ -32,13 +55,6 @@ def index(request: HttpRequest) -> HttpResponse:
         return redirect(reverse("what_do", args=(name,)))
 
     return render(request, "index.html")
-
-
-def check_name(name: str) -> bool:
-    """Check if the provided name is a sheet."""
-
-    worksheet_names = (worksheet.title.lower() for worksheet in get_worksheets())
-    return name.lower() in worksheet_names
 
 
 def what_do(request: HttpRequest, username: str) -> HttpResponse:
