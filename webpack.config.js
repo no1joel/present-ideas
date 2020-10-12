@@ -46,7 +46,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './present_ideas/present_ideas/static/index.js',
+  entry: ['babel-polyfill', './present_ideas/present_ideas/static/index.js'],
 
   output: {
     path: path.resolve(__dirname, 'present_ideas/present_ideas/static/dist/')
@@ -105,10 +105,10 @@ module.exports = {
       minSize: 30000,
       // name: 
     }
+  },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+    }
   }
-  // resolve: {
-  //   alias: {
-  //     'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
-  //   }
-  // }
 }

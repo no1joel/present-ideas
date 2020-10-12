@@ -1,4 +1,8 @@
-import { createApp } from 'vue'
+import Vue from 'vue'
 import PeoplePicker from './components/PeoplePicker.vue'
 
-createApp(PeoplePicker).mount("#vue-app")
+new Vue({
+    el: "#vue-app",
+    template: "<PeoplePicker />",
+    components: { PeoplePicker }
+});
