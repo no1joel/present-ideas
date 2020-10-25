@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col">
           <div class="jumbotron">
-            <p>Please pick <strong>your name</strong> to get started.</p>
+            <p>Pick <strong>your name</strong> to get started 😊</p>
             <div class="form-row">
               <PeoplePicker
                 class="col-sm-10"
@@ -21,6 +21,16 @@
                 Go
               </button>
             </div>
+
+            <p>
+              <small class="text-muted">
+                I need to know who you are, first, so that when you're looking
+                at your own list you can't see who's getting you what -- no
+                surprises! I've not set up proper usernames and passwords
+                because that's a faff. If you don't see your name there,
+                seriously who are you and how did you get here?
+              </small>
+            </p>
           </div>
         </div>
       </div>
