@@ -90,11 +90,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************************************/
 /*! namespace exports */
 /*! exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.esm.js\");\n/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ \"./present_ideas/present_ideas/static/routes.js\");\n\n\n\nvue__WEBPACK_IMPORTED_MODULE_1__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_2__.default);\nconst router = new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({\n  routes: _routes__WEBPACK_IMPORTED_MODULE_0__.default\n});\nconst app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({\n  router\n}).$mount(\"#vue-app\");\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.esm.js\");\n/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ \"./present_ideas/present_ideas/static/routes.js\");\n/* harmony import */ var vue_linkify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-linkify */ \"./node_modules/vue-linkify/dist/vue-linkify.min.js\");\n/* harmony import */ var vue_linkify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_linkify__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\nvue__WEBPACK_IMPORTED_MODULE_2__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_3__.default);\nvue__WEBPACK_IMPORTED_MODULE_2__.default.directive('linkified', (vue_linkify__WEBPACK_IMPORTED_MODULE_1___default()));\nconst router = new vue_router__WEBPACK_IMPORTED_MODULE_3__.default({\n  routes: _routes__WEBPACK_IMPORTED_MODULE_0__.default\n});\nconst app = new vue__WEBPACK_IMPORTED_MODULE_2__.default({\n  router\n}).$mount(\"#vue-app\");\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/index.js?");
 
 /***/ }),
 
@@ -145,6 +145,7 @@ eval("__webpack_require__(/*! ../../modules/core.regexp.escape */ \"./node_modul
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = function (it) {\n  if (typeof it != 'function') throw TypeError(it + ' is not a function!');\n  return it;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_a-function.js?");
@@ -157,6 +158,7 @@ eval("module.exports = function (it) {\n  if (typeof it != 'function') throw Typ
   \*************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var cof = __webpack_require__(/*! ./_cof */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_cof.js\");\nmodule.exports = function (it, msg) {\n  if (typeof it != 'number' && cof(it) != 'Number') throw TypeError(msg);\n  return +it;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_a-number-value.js?");
@@ -169,6 +171,7 @@ eval("var cof = __webpack_require__(/*! ./_cof */ \"./node_modules/babel-polyfil
   \*****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 22.1.3.31 Array.prototype[@@unscopables]\nvar UNSCOPABLES = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('unscopables');\nvar ArrayProto = Array.prototype;\nif (ArrayProto[UNSCOPABLES] == undefined) __webpack_require__(/*! ./_hide */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_hide.js\")(ArrayProto, UNSCOPABLES, {});\nmodule.exports = function (key) {\n  ArrayProto[UNSCOPABLES][key] = true;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_add-to-unscopables.js?");
@@ -181,6 +184,7 @@ eval("// 22.1.3.31 Array.prototype[@@unscopables]\nvar UNSCOPABLES = __webpack_r
   \*******************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -194,6 +198,7 @@ eval("\nvar at = __webpack_require__(/*! ./_string-at */ \"./node_modules/babel-
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = function (it, Constructor, name, forbiddenField) {\n  if (!(it instanceof Constructor) || (forbiddenField !== undefined && forbiddenField in it)) {\n    throw TypeError(name + ': incorrect invocation!');\n  } return it;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_an-instance.js?");
@@ -206,6 +211,7 @@ eval("module.exports = function (it, Constructor, name, forbiddenField) {\n  if 
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nmodule.exports = function (it) {\n  if (!isObject(it)) throw TypeError(it + ' is not an object!');\n  return it;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_an-object.js?");
@@ -218,6 +224,7 @@ eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/ba
   \****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -231,6 +238,7 @@ eval("// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)\n
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -244,6 +252,7 @@ eval("// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)\n\nv
   \******************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var forOf = __webpack_require__(/*! ./_for-of */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_for-of.js\");\n\nmodule.exports = function (iter, ITERATOR) {\n  var result = [];\n  forOf(iter, false, result.push, result, ITERATOR);\n  return result;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_array-from-iterable.js?");
@@ -256,6 +265,7 @@ eval("var forOf = __webpack_require__(/*! ./_for-of */ \"./node_modules/babel-po
   \*************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// false -> Array#indexOf\n// true  -> Array#includes\nvar toIObject = __webpack_require__(/*! ./_to-iobject */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-iobject.js\");\nvar toLength = __webpack_require__(/*! ./_to-length */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-length.js\");\nvar toAbsoluteIndex = __webpack_require__(/*! ./_to-absolute-index */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-absolute-index.js\");\nmodule.exports = function (IS_INCLUDES) {\n  return function ($this, el, fromIndex) {\n    var O = toIObject($this);\n    var length = toLength(O.length);\n    var index = toAbsoluteIndex(fromIndex, length);\n    var value;\n    // Array#includes uses SameValueZero equality algorithm\n    // eslint-disable-next-line no-self-compare\n    if (IS_INCLUDES && el != el) while (length > index) {\n      value = O[index++];\n      // eslint-disable-next-line no-self-compare\n      if (value != value) return true;\n    // Array#indexOf ignores holes, Array#includes - not\n    } else for (;length > index; index++) if (IS_INCLUDES || index in O) {\n      if (O[index] === el) return IS_INCLUDES || index || 0;\n    } return !IS_INCLUDES && -1;\n  };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_array-includes.js?");
@@ -268,6 +278,7 @@ eval("// false -> Array#indexOf\n// true  -> Array#includes\nvar toIObject = __w
   \************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 0 -> Array#forEach\n// 1 -> Array#map\n// 2 -> Array#filter\n// 3 -> Array#some\n// 4 -> Array#every\n// 5 -> Array#find\n// 6 -> Array#findIndex\nvar ctx = __webpack_require__(/*! ./_ctx */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_ctx.js\");\nvar IObject = __webpack_require__(/*! ./_iobject */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_iobject.js\");\nvar toObject = __webpack_require__(/*! ./_to-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-object.js\");\nvar toLength = __webpack_require__(/*! ./_to-length */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-length.js\");\nvar asc = __webpack_require__(/*! ./_array-species-create */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_array-species-create.js\");\nmodule.exports = function (TYPE, $create) {\n  var IS_MAP = TYPE == 1;\n  var IS_FILTER = TYPE == 2;\n  var IS_SOME = TYPE == 3;\n  var IS_EVERY = TYPE == 4;\n  var IS_FIND_INDEX = TYPE == 6;\n  var NO_HOLES = TYPE == 5 || IS_FIND_INDEX;\n  var create = $create || asc;\n  return function ($this, callbackfn, that) {\n    var O = toObject($this);\n    var self = IObject(O);\n    var f = ctx(callbackfn, that, 3);\n    var length = toLength(self.length);\n    var index = 0;\n    var result = IS_MAP ? create($this, length) : IS_FILTER ? create($this, 0) : undefined;\n    var val, res;\n    for (;length > index; index++) if (NO_HOLES || index in self) {\n      val = self[index];\n      res = f(val, index, O);\n      if (TYPE) {\n        if (IS_MAP) result[index] = res;   // map\n        else if (res) switch (TYPE) {\n          case 3: return true;             // some\n          case 5: return val;              // find\n          case 6: return index;            // findIndex\n          case 2: result.push(val);        // filter\n        } else if (IS_EVERY) return false; // every\n      }\n    }\n    return IS_FIND_INDEX ? -1 : IS_SOME || IS_EVERY ? IS_EVERY : result;\n  };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_array-methods.js?");
@@ -280,6 +291,7 @@ eval("// 0 -> Array#forEach\n// 1 -> Array#map\n// 2 -> Array#filter\n// 3 -> Ar
   \***********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var aFunction = __webpack_require__(/*! ./_a-function */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_a-function.js\");\nvar toObject = __webpack_require__(/*! ./_to-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-object.js\");\nvar IObject = __webpack_require__(/*! ./_iobject */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_iobject.js\");\nvar toLength = __webpack_require__(/*! ./_to-length */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-length.js\");\n\nmodule.exports = function (that, callbackfn, aLen, memo, isRight) {\n  aFunction(callbackfn);\n  var O = toObject(that);\n  var self = IObject(O);\n  var length = toLength(O.length);\n  var index = isRight ? length - 1 : 0;\n  var i = isRight ? -1 : 1;\n  if (aLen < 2) for (;;) {\n    if (index in self) {\n      memo = self[index];\n      index += i;\n      break;\n    }\n    index += i;\n    if (isRight ? index < 0 : length <= index) {\n      throw TypeError('Reduce of empty array with no initial value');\n    }\n  }\n  for (;isRight ? index >= 0 : length > index; index += i) if (index in self) {\n    memo = callbackfn(memo, self[index], index, O);\n  }\n  return memo;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_array-reduce.js?");
@@ -292,6 +304,7 @@ eval("var aFunction = __webpack_require__(/*! ./_a-function */ \"./node_modules/
   \************************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nvar isArray = __webpack_require__(/*! ./_is-array */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-array.js\");\nvar SPECIES = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('species');\n\nmodule.exports = function (original) {\n  var C;\n  if (isArray(original)) {\n    C = original.constructor;\n    // cross-realm fallback\n    if (typeof C == 'function' && (C === Array || isArray(C.prototype))) C = undefined;\n    if (isObject(C)) {\n      C = C[SPECIES];\n      if (C === null) C = undefined;\n    }\n  } return C === undefined ? Array : C;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_array-species-constructor.js?");
@@ -304,6 +317,7 @@ eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/ba
   \*******************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 9.4.2.3 ArraySpeciesCreate(originalArray, length)\nvar speciesConstructor = __webpack_require__(/*! ./_array-species-constructor */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_array-species-constructor.js\");\n\nmodule.exports = function (original, length) {\n  return new (speciesConstructor(original))(length);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_array-species-create.js?");
@@ -316,6 +330,7 @@ eval("// 9.4.2.3 ArraySpeciesCreate(originalArray, length)\nvar speciesConstruct
   \***************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 16:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -329,6 +344,7 @@ eval("\nvar aFunction = __webpack_require__(/*! ./_a-function */ \"./node_module
   \******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 14:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// getting tag from 19.1.3.6 Object.prototype.toString()\nvar cof = __webpack_require__(/*! ./_cof */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_cof.js\");\nvar TAG = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('toStringTag');\n// ES3 wrong here\nvar ARG = cof(function () { return arguments; }()) == 'Arguments';\n\n// fallback for IE11 Script Access Denied error\nvar tryGet = function (it, key) {\n  try {\n    return it[key];\n  } catch (e) { /* empty */ }\n};\n\nmodule.exports = function (it) {\n  var O, T, B;\n  return it === undefined ? 'Undefined' : it === null ? 'Null'\n    // @@toStringTag case\n    : typeof (T = tryGet(O = Object(it), TAG)) == 'string' ? T\n    // builtinTag case\n    : ARG ? cof(O)\n    // ES3 arguments fallback\n    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_classof.js?");
@@ -341,6 +357,7 @@ eval("// getting tag from 19.1.3.6 Object.prototype.toString()\nvar cof = __webp
   \**************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 eval("var toString = {}.toString;\n\nmodule.exports = function (it) {\n  return toString.call(it).slice(8, -1);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_cof.js?");
@@ -353,6 +370,7 @@ eval("var toString = {}.toString;\n\nmodule.exports = function (it) {\n  return 
   \****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 27:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -366,6 +384,7 @@ eval("\nvar dP = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-
   \*****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// https://github.com/DavidBruant/Map-Set.prototype.toJSON\nvar classof = __webpack_require__(/*! ./_classof */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_classof.js\");\nvar from = __webpack_require__(/*! ./_array-from-iterable */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_array-from-iterable.js\");\nmodule.exports = function (NAME) {\n  return function toJSON() {\n    if (classof(this) != NAME) throw TypeError(NAME + \"#toJSON isn't generic\");\n    return from(this);\n  };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_collection-to-json.js?");
@@ -378,6 +397,7 @@ eval("// https://github.com/DavidBruant/Map-Set.prototype.toJSON\nvar classof = 
   \**************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 49:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -391,6 +411,7 @@ eval("\nvar redefineAll = __webpack_require__(/*! ./_redefine-all */ \"./node_mo
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -404,6 +425,7 @@ eval("\nvar global = __webpack_require__(/*! ./_global */ \"./node_modules/babel
   \***************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:11-25 */
 /***/ ((module) => {
 
 eval("var core = module.exports = { version: '2.6.11' };\nif (typeof __e == 'number') __e = core; // eslint-disable-line no-undef\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_core.js?");
@@ -416,6 +438,7 @@ eval("var core = module.exports = { version: '2.6.11' };\nif (typeof __e == 'num
   \**************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -429,6 +452,7 @@ eval("\nvar $defineProperty = __webpack_require__(/*! ./_object-dp */ \"./node_m
   \**************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// optional / simple context binding\nvar aFunction = __webpack_require__(/*! ./_a-function */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_a-function.js\");\nmodule.exports = function (fn, that, length) {\n  aFunction(fn);\n  if (that === undefined) return fn;\n  switch (length) {\n    case 1: return function (a) {\n      return fn.call(that, a);\n    };\n    case 2: return function (a, b) {\n      return fn.call(that, a, b);\n    };\n    case 3: return function (a, b, c) {\n      return fn.call(that, a, b, c);\n    };\n  }\n  return function (/* ...args */) {\n    return fn.apply(that, arguments);\n  };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_ctx.js?");
@@ -441,6 +465,7 @@ eval("// optional / simple context binding\nvar aFunction = __webpack_require__(
   \*****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -454,6 +479,7 @@ eval("\n// 20.3.4.36 / 15.9.5.43 Date.prototype.toISOString()\nvar fails = __web
   \****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -467,6 +493,7 @@ eval("\nvar anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/
   \******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module) => {
 
 eval("// 7.2.1 RequireObjectCoercible(argument)\nmodule.exports = function (it) {\n  if (it == undefined) throw TypeError(\"Can't call method on  \" + it);\n  return it;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_defined.js?");
@@ -479,6 +506,7 @@ eval("// 7.2.1 RequireObjectCoercible(argument)\nmodule.exports = function (it) 
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// Thank's IE8 for his funny defineProperty\nmodule.exports = !__webpack_require__(/*! ./_fails */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_fails.js\")(function () {\n  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;\n});\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_descriptors.js?");
@@ -491,6 +519,7 @@ eval("// Thank's IE8 for his funny defineProperty\nmodule.exports = !__webpack_r
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nvar document = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\").document;\n// typeof document.createElement is 'object' in old IE\nvar is = isObject(document) && isObject(document.createElement);\nmodule.exports = function (it) {\n  return is ? document.createElement(it) : {};\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_dom-create.js?");
@@ -503,6 +532,7 @@ eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/ba
   \************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module) => {
 
 eval("// IE 8- don't enum bug keys\nmodule.exports = (\n  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'\n).split(',');\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_enum-bug-keys.js?");
@@ -515,6 +545,7 @@ eval("// IE 8- don't enum bug keys\nmodule.exports = (\n  'constructor,hasOwnPro
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// all enumerable object keys, includes symbols\nvar getKeys = __webpack_require__(/*! ./_object-keys */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-keys.js\");\nvar gOPS = __webpack_require__(/*! ./_object-gops */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-gops.js\");\nvar pIE = __webpack_require__(/*! ./_object-pie */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-pie.js\");\nmodule.exports = function (it) {\n  var result = getKeys(it);\n  var getSymbols = gOPS.f;\n  if (getSymbols) {\n    var symbols = getSymbols(it);\n    var isEnum = pIE.f;\n    var i = 0;\n    var key;\n    while (symbols.length > i) if (isEnum.call(it, key = symbols[i++])) result.push(key);\n  } return result;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_enum-keys.js?");
@@ -527,6 +558,7 @@ eval("// all enumerable object keys, includes symbols\nvar getKeys = __webpack_r
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\");\nvar core = __webpack_require__(/*! ./_core */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_core.js\");\nvar hide = __webpack_require__(/*! ./_hide */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_hide.js\");\nvar redefine = __webpack_require__(/*! ./_redefine */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_redefine.js\");\nvar ctx = __webpack_require__(/*! ./_ctx */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_ctx.js\");\nvar PROTOTYPE = 'prototype';\n\nvar $export = function (type, name, source) {\n  var IS_FORCED = type & $export.F;\n  var IS_GLOBAL = type & $export.G;\n  var IS_STATIC = type & $export.S;\n  var IS_PROTO = type & $export.P;\n  var IS_BIND = type & $export.B;\n  var target = IS_GLOBAL ? global : IS_STATIC ? global[name] || (global[name] = {}) : (global[name] || {})[PROTOTYPE];\n  var exports = IS_GLOBAL ? core : core[name] || (core[name] = {});\n  var expProto = exports[PROTOTYPE] || (exports[PROTOTYPE] = {});\n  var key, own, out, exp;\n  if (IS_GLOBAL) source = name;\n  for (key in source) {\n    // contains in native\n    own = !IS_FORCED && target && target[key] !== undefined;\n    // export native or passed\n    out = (own ? target : source)[key];\n    // bind timers to global for call from export context\n    exp = IS_BIND && own ? ctx(out, global) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;\n    // extend global\n    if (target) redefine(target, key, out, type & $export.U);\n    // export\n    if (exports[key] != out) hide(exports, key, exp);\n    if (IS_PROTO && expProto[key] != out) expProto[key] = out;\n  }\n};\nglobal.core = core;\n// type bitmap\n$export.F = 1;   // forced\n$export.G = 2;   // global\n$export.S = 4;   // static\n$export.P = 8;   // proto\n$export.B = 16;  // bind\n$export.W = 32;  // wrap\n$export.U = 64;  // safe\n$export.R = 128; // real proto method for `library`\nmodule.exports = $export;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_export.js?");
@@ -539,6 +571,7 @@ eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-p
   \**************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var MATCH = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('match');\nmodule.exports = function (KEY) {\n  var re = /./;\n  try {\n    '/./'[KEY](re);\n  } catch (e) {\n    try {\n      re[MATCH] = false;\n      return !'/./'[KEY](re);\n    } catch (f) { /* empty */ }\n  } return true;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_fails-is-regexp.js?");
@@ -551,6 +584,7 @@ eval("var MATCH = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyf
   \****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = function (exec) {\n  try {\n    return !!exec();\n  } catch (e) {\n    return true;\n  }\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_fails.js?");
@@ -563,6 +597,7 @@ eval("module.exports = function (exec) {\n  try {\n    return !!exec();\n  } cat
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 34:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -576,6 +611,7 @@ eval("\n__webpack_require__(/*! ./es6.regexp.exec */ \"./node_modules/babel-poly
   \****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -589,6 +625,7 @@ eval("\n// 21.2.5.3 get RegExp.prototype.flags\nvar anObject = __webpack_require
   \*****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 39:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -602,6 +639,7 @@ eval("\n// https://tc39.github.io/proposal-flatMap/#sec-FlattenIntoArray\nvar is
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 9:14-28 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var ctx = __webpack_require__(/*! ./_ctx */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_ctx.js\");\nvar call = __webpack_require__(/*! ./_iter-call */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_iter-call.js\");\nvar isArrayIter = __webpack_require__(/*! ./_is-array-iter */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-array-iter.js\");\nvar anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_an-object.js\");\nvar toLength = __webpack_require__(/*! ./_to-length */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-length.js\");\nvar getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/core.get-iterator-method.js\");\nvar BREAK = {};\nvar RETURN = {};\nvar exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {\n  var iterFn = ITERATOR ? function () { return iterable; } : getIterFn(iterable);\n  var f = ctx(fn, that, entries ? 2 : 1);\n  var index = 0;\n  var length, step, iterator, result;\n  if (typeof iterFn != 'function') throw TypeError(iterable + ' is not iterable!');\n  // fast case for arrays with default iterator\n  if (isArrayIter(iterFn)) for (length = toLength(iterable.length); length > index; index++) {\n    result = entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);\n    if (result === BREAK || result === RETURN) return result;\n  } else for (iterator = iterFn.call(iterable); !(step = iterator.next()).done;) {\n    result = call(iterator, f, step.value, entries);\n    if (result === BREAK || result === RETURN) return result;\n  }\n};\nexports.BREAK = BREAK;\nexports.RETURN = RETURN;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_for-of.js?");
@@ -614,6 +652,7 @@ eval("var ctx = __webpack_require__(/*! ./_ctx */ \"./node_modules/babel-polyfil
   \*****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__(/*! ./_shared */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_shared.js\")('native-function-to-string', Function.toString);\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_function-to-string.js?");
@@ -626,6 +665,7 @@ eval("module.exports = __webpack_require__(/*! ./_shared */ \"./node_modules/bab
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 2:13-27 */
 /***/ ((module) => {
 
 eval("// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028\nvar global = module.exports = typeof window != 'undefined' && window.Math == Math\n  ? window : typeof self != 'undefined' && self.Math == Math ? self\n  // eslint-disable-next-line no-new-func\n  : Function('return this')();\nif (typeof __g == 'number') __g = global; // eslint-disable-line no-undef\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js?");
@@ -638,6 +678,7 @@ eval("// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028\nv
   \**************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module) => {
 
 eval("var hasOwnProperty = {}.hasOwnProperty;\nmodule.exports = function (it, key) {\n  return hasOwnProperty.call(it, key);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_has.js?");
@@ -650,6 +691,7 @@ eval("var hasOwnProperty = {}.hasOwnProperty;\nmodule.exports = function (it, ke
   \***************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var dP = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-dp.js\");\nvar createDesc = __webpack_require__(/*! ./_property-desc */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_property-desc.js\");\nmodule.exports = __webpack_require__(/*! ./_descriptors */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_descriptors.js\") ? function (object, key, value) {\n  return dP.f(object, key, createDesc(1, value));\n} : function (object, key, value) {\n  object[key] = value;\n  return object;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_hide.js?");
@@ -662,6 +704,7 @@ eval("var dP = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-po
   \***************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var document = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\").document;\nmodule.exports = document && document.documentElement;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_html.js?");
@@ -674,6 +717,7 @@ eval("var document = __webpack_require__(/*! ./_global */ \"./node_modules/babel
   \*************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = !__webpack_require__(/*! ./_descriptors */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_descriptors.js\") && !__webpack_require__(/*! ./_fails */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_fails.js\")(function () {\n  return Object.defineProperty(__webpack_require__(/*! ./_dom-create */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_dom-create.js\")('div'), 'a', { get: function () { return 7; } }).a != 7;\n});\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_ie8-dom-define.js?");
@@ -686,6 +730,7 @@ eval("module.exports = !__webpack_require__(/*! ./_descriptors */ \"./node_modul
   \******************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nvar setPrototypeOf = __webpack_require__(/*! ./_set-proto */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_set-proto.js\").set;\nmodule.exports = function (that, target, C) {\n  var S = target.constructor;\n  var P;\n  if (S !== C && typeof S == 'function' && (P = S.prototype) !== C.prototype && isObject(P) && setPrototypeOf) {\n    setPrototypeOf(that, P);\n  } return that;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_inherit-if-required.js?");
@@ -698,6 +743,7 @@ eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/ba
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module) => {
 
 eval("// fast apply, http://jsperf.lnkit.com/fast-apply/5\nmodule.exports = function (fn, args, that) {\n  var un = that === undefined;\n  switch (args.length) {\n    case 0: return un ? fn()\n                      : fn.call(that);\n    case 1: return un ? fn(args[0])\n                      : fn.call(that, args[0]);\n    case 2: return un ? fn(args[0], args[1])\n                      : fn.call(that, args[0], args[1]);\n    case 3: return un ? fn(args[0], args[1], args[2])\n                      : fn.call(that, args[0], args[1], args[2]);\n    case 4: return un ? fn(args[0], args[1], args[2], args[3])\n                      : fn.call(that, args[0], args[1], args[2], args[3]);\n  } return fn.apply(that, args);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_invoke.js?");
@@ -710,6 +756,7 @@ eval("// fast apply, http://jsperf.lnkit.com/fast-apply/5\nmodule.exports = func
   \******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// fallback for non-array-like ES3 and non-enumerable old V8 strings\nvar cof = __webpack_require__(/*! ./_cof */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_cof.js\");\n// eslint-disable-next-line no-prototype-builtins\nmodule.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {\n  return cof(it) == 'String' ? it.split('') : Object(it);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_iobject.js?");
@@ -722,6 +769,7 @@ eval("// fallback for non-array-like ES3 and non-enumerable old V8 strings\nvar 
   \************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// check on default Array iterator\nvar Iterators = __webpack_require__(/*! ./_iterators */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_iterators.js\");\nvar ITERATOR = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('iterator');\nvar ArrayProto = Array.prototype;\n\nmodule.exports = function (it) {\n  return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_is-array-iter.js?");
@@ -734,6 +782,7 @@ eval("// check on default Array iterator\nvar Iterators = __webpack_require__(/*
   \*******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 7.2.2 IsArray(argument)\nvar cof = __webpack_require__(/*! ./_cof */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_cof.js\");\nmodule.exports = Array.isArray || function isArray(arg) {\n  return cof(arg) == 'Array';\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_is-array.js?");
@@ -746,6 +795,7 @@ eval("// 7.2.2 IsArray(argument)\nvar cof = __webpack_require__(/*! ./_cof */ \"
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 20.1.2.3 Number.isInteger(number)\nvar isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nvar floor = Math.floor;\nmodule.exports = function isInteger(it) {\n  return !isObject(it) && isFinite(it) && floor(it) === it;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_is-integer.js?");
@@ -758,6 +808,7 @@ eval("// 20.1.2.3 Number.isInteger(number)\nvar isObject = __webpack_require__(/
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = function (it) {\n  return typeof it === 'object' ? it !== null : typeof it === 'function';\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js?");
@@ -770,6 +821,7 @@ eval("module.exports = function (it) {\n  return typeof it === 'object' ? it !==
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 7.2.8 IsRegExp(argument)\nvar isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nvar cof = __webpack_require__(/*! ./_cof */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_cof.js\");\nvar MATCH = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('match');\nmodule.exports = function (it) {\n  var isRegExp;\n  return isObject(it) && ((isRegExp = it[MATCH]) !== undefined ? !!isRegExp : cof(it) == 'RegExp');\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_is-regexp.js?");
@@ -782,6 +834,7 @@ eval("// 7.2.8 IsRegExp(argument)\nvar isObject = __webpack_require__(/*! ./_is-
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// call something on iterator step with safe closing on error\nvar anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_an-object.js\");\nmodule.exports = function (iterator, fn, value, entries) {\n  try {\n    return entries ? fn(anObject(value)[0], value[1]) : fn(value);\n  // 7.4.6 IteratorClose(iterator, completion)\n  } catch (e) {\n    var ret = iterator['return'];\n    if (ret !== undefined) anObject(ret.call(iterator));\n    throw e;\n  }\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_iter-call.js?");
@@ -794,6 +847,7 @@ eval("// call something on iterator step with safe closing on error\nvar anObjec
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 10:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -807,6 +861,7 @@ eval("\nvar create = __webpack_require__(/*! ./_object-create */ \"./node_module
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 18:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -820,6 +875,7 @@ eval("\nvar LIBRARY = __webpack_require__(/*! ./_library */ \"./node_modules/bab
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 11:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var ITERATOR = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('iterator');\nvar SAFE_CLOSING = false;\n\ntry {\n  var riter = [7][ITERATOR]();\n  riter['return'] = function () { SAFE_CLOSING = true; };\n  // eslint-disable-next-line no-throw-literal\n  Array.from(riter, function () { throw 2; });\n} catch (e) { /* empty */ }\n\nmodule.exports = function (exec, skipClosing) {\n  if (!skipClosing && !SAFE_CLOSING) return false;\n  var safe = false;\n  try {\n    var arr = [7];\n    var iter = arr[ITERATOR]();\n    iter.next = function () { return { done: safe = true }; };\n    arr[ITERATOR] = function () { return iter; };\n    exec(arr);\n  } catch (e) { /* empty */ }\n  return safe;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_iter-detect.js?");
@@ -832,6 +888,7 @@ eval("var ITERATOR = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-po
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = function (done, value) {\n  return { value: value, done: !!done };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_iter-step.js?");
@@ -844,6 +901,7 @@ eval("module.exports = function (done, value) {\n  return { value: value, done: 
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = {};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_iterators.js?");
@@ -856,6 +914,7 @@ eval("module.exports = {};\n\n\n//# sourceURL=webpack://my-webpack-project/./nod
   \******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = false;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_library.js?");
@@ -868,6 +927,7 @@ eval("module.exports = false;\n\n\n//# sourceURL=webpack://my-webpack-project/./
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 eval("// 20.2.2.14 Math.expm1(x)\nvar $expm1 = Math.expm1;\nmodule.exports = (!$expm1\n  // Old FF bug\n  || $expm1(10) > 22025.465794806719 || $expm1(10) < 22025.4657948067165168\n  // Tor Browser bug\n  || $expm1(-2e-17) != -2e-17\n) ? function expm1(x) {\n  return (x = +x) == 0 ? x : x > -1e-6 && x < 1e-6 ? x + x * x / 2 : Math.exp(x) - 1;\n} : $expm1;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_math-expm1.js?");
@@ -880,6 +940,7 @@ eval("// 20.2.2.14 Math.expm1(x)\nvar $expm1 = Math.expm1;\nmodule.exports = (!$
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 20.2.2.16 Math.fround(x)\nvar sign = __webpack_require__(/*! ./_math-sign */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_math-sign.js\");\nvar pow = Math.pow;\nvar EPSILON = pow(2, -52);\nvar EPSILON32 = pow(2, -23);\nvar MAX32 = pow(2, 127) * (2 - EPSILON32);\nvar MIN32 = pow(2, -126);\n\nvar roundTiesToEven = function (n) {\n  return n + 1 / EPSILON - 1 / EPSILON;\n};\n\nmodule.exports = Math.fround || function fround(x) {\n  var $abs = Math.abs(x);\n  var $sign = sign(x);\n  var a, result;\n  if ($abs < MIN32) return $sign * roundTiesToEven($abs / MIN32 / EPSILON32) * MIN32 * EPSILON32;\n  a = (1 + EPSILON32 / EPSILON) * $abs;\n  result = a - (a - $abs);\n  // eslint-disable-next-line no-self-compare\n  if (result > MAX32 || result != result) return $sign * Infinity;\n  return $sign * result;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_math-fround.js?");
@@ -892,6 +953,7 @@ eval("// 20.2.2.16 Math.fround(x)\nvar sign = __webpack_require__(/*! ./_math-si
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module) => {
 
 eval("// 20.2.2.20 Math.log1p(x)\nmodule.exports = Math.log1p || function log1p(x) {\n  return (x = +x) > -1e-8 && x < 1e-8 ? x - x * x / 2 : Math.log(1 + x);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_math-log1p.js?");
@@ -904,6 +966,7 @@ eval("// 20.2.2.20 Math.log1p(x)\nmodule.exports = Math.log1p || function log1p(
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module) => {
 
 eval("// https://rwaldron.github.io/proposal-math-extensions/\nmodule.exports = Math.scale || function scale(x, inLow, inHigh, outLow, outHigh) {\n  if (\n    arguments.length === 0\n      // eslint-disable-next-line no-self-compare\n      || x != x\n      // eslint-disable-next-line no-self-compare\n      || inLow != inLow\n      // eslint-disable-next-line no-self-compare\n      || inHigh != inHigh\n      // eslint-disable-next-line no-self-compare\n      || outLow != outLow\n      // eslint-disable-next-line no-self-compare\n      || outHigh != outHigh\n  ) return NaN;\n  if (x === Infinity || x === -Infinity) return x;\n  return (x - inLow) * (outHigh - outLow) / (inHigh - inLow) + outLow;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_math-scale.js?");
@@ -916,6 +979,7 @@ eval("// https://rwaldron.github.io/proposal-math-extensions/\nmodule.exports = 
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module) => {
 
 eval("// 20.2.2.28 Math.sign(x)\nmodule.exports = Math.sign || function sign(x) {\n  // eslint-disable-next-line no-self-compare\n  return (x = +x) == 0 || x != x ? x : x < 0 ? -1 : 1;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_math-sign.js?");
@@ -928,6 +992,7 @@ eval("// 20.2.2.28 Math.sign(x)\nmodule.exports = Math.sign || function sign(x) 
   \***************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 47:11-25 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var META = __webpack_require__(/*! ./_uid */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_uid.js\")('meta');\nvar isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nvar has = __webpack_require__(/*! ./_has */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_has.js\");\nvar setDesc = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-dp.js\").f;\nvar id = 0;\nvar isExtensible = Object.isExtensible || function () {\n  return true;\n};\nvar FREEZE = !__webpack_require__(/*! ./_fails */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_fails.js\")(function () {\n  return isExtensible(Object.preventExtensions({}));\n});\nvar setMeta = function (it) {\n  setDesc(it, META, { value: {\n    i: 'O' + ++id, // object ID\n    w: {}          // weak collections IDs\n  } });\n};\nvar fastKey = function (it, create) {\n  // return primitive with prefix\n  if (!isObject(it)) return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;\n  if (!has(it, META)) {\n    // can't set metadata to uncaught frozen object\n    if (!isExtensible(it)) return 'F';\n    // not necessary to add metadata\n    if (!create) return 'E';\n    // add missing metadata\n    setMeta(it);\n  // return object ID\n  } return it[META].i;\n};\nvar getWeak = function (it, create) {\n  if (!has(it, META)) {\n    // can't set metadata to uncaught frozen object\n    if (!isExtensible(it)) return true;\n    // not necessary to add metadata\n    if (!create) return false;\n    // add missing metadata\n    setMeta(it);\n  // return hash weak collections IDs\n  } return it[META].w;\n};\n// add metadata on freeze-family methods calling\nvar onFreeze = function (it) {\n  if (FREEZE && meta.NEED && isExtensible(it) && !has(it, META)) setMeta(it);\n  return it;\n};\nvar meta = module.exports = {\n  KEY: META,\n  NEED: false,\n  fastKey: fastKey,\n  getWeak: getWeak,\n  onFreeze: onFreeze\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_meta.js?");
@@ -940,6 +1005,7 @@ eval("var META = __webpack_require__(/*! ./_uid */ \"./node_modules/babel-polyfi
   \*******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 42:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var Map = __webpack_require__(/*! ./es6.map */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/es6.map.js\");\nvar $export = __webpack_require__(/*! ./_export */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_export.js\");\nvar shared = __webpack_require__(/*! ./_shared */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_shared.js\")('metadata');\nvar store = shared.store || (shared.store = new (__webpack_require__(/*! ./es6.weak-map */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/es6.weak-map.js\"))());\n\nvar getOrCreateMetadataMap = function (target, targetKey, create) {\n  var targetMetadata = store.get(target);\n  if (!targetMetadata) {\n    if (!create) return undefined;\n    store.set(target, targetMetadata = new Map());\n  }\n  var keyMetadata = targetMetadata.get(targetKey);\n  if (!keyMetadata) {\n    if (!create) return undefined;\n    targetMetadata.set(targetKey, keyMetadata = new Map());\n  } return keyMetadata;\n};\nvar ordinaryHasOwnMetadata = function (MetadataKey, O, P) {\n  var metadataMap = getOrCreateMetadataMap(O, P, false);\n  return metadataMap === undefined ? false : metadataMap.has(MetadataKey);\n};\nvar ordinaryGetOwnMetadata = function (MetadataKey, O, P) {\n  var metadataMap = getOrCreateMetadataMap(O, P, false);\n  return metadataMap === undefined ? undefined : metadataMap.get(MetadataKey);\n};\nvar ordinaryDefineOwnMetadata = function (MetadataKey, MetadataValue, O, P) {\n  getOrCreateMetadataMap(O, P, true).set(MetadataKey, MetadataValue);\n};\nvar ordinaryOwnMetadataKeys = function (target, targetKey) {\n  var metadataMap = getOrCreateMetadataMap(target, targetKey, false);\n  var keys = [];\n  if (metadataMap) metadataMap.forEach(function (_, key) { keys.push(key); });\n  return keys;\n};\nvar toMetaKey = function (it) {\n  return it === undefined || typeof it == 'symbol' ? it : String(it);\n};\nvar exp = function (O) {\n  $export($export.S, 'Reflect', O);\n};\n\nmodule.exports = {\n  store: store,\n  map: getOrCreateMetadataMap,\n  has: ordinaryHasOwnMetadata,\n  get: ordinaryGetOwnMetadata,\n  set: ordinaryDefineOwnMetadata,\n  keys: ordinaryOwnMetadataKeys,\n  key: toMetaKey,\n  exp: exp\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_metadata.js?");
@@ -952,6 +1018,7 @@ eval("var Map = __webpack_require__(/*! ./es6.map */ \"./node_modules/babel-poly
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 8:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\");\nvar macrotask = __webpack_require__(/*! ./_task */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_task.js\").set;\nvar Observer = global.MutationObserver || global.WebKitMutationObserver;\nvar process = global.process;\nvar Promise = global.Promise;\nvar isNode = __webpack_require__(/*! ./_cof */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_cof.js\")(process) == 'process';\n\nmodule.exports = function () {\n  var head, last, notify;\n\n  var flush = function () {\n    var parent, fn;\n    if (isNode && (parent = process.domain)) parent.exit();\n    while (head) {\n      fn = head.fn;\n      head = head.next;\n      try {\n        fn();\n      } catch (e) {\n        if (head) notify();\n        else last = undefined;\n        throw e;\n      }\n    } last = undefined;\n    if (parent) parent.enter();\n  };\n\n  // Node.js\n  if (isNode) {\n    notify = function () {\n      process.nextTick(flush);\n    };\n  // browsers with MutationObserver, except iOS Safari - https://github.com/zloirock/core-js/issues/339\n  } else if (Observer && !(global.navigator && global.navigator.standalone)) {\n    var toggle = true;\n    var node = document.createTextNode('');\n    new Observer(flush).observe(node, { characterData: true }); // eslint-disable-line no-new\n    notify = function () {\n      node.data = toggle = !toggle;\n    };\n  // environments with maybe non-completely correct, but existent Promise\n  } else if (Promise && Promise.resolve) {\n    // Promise.resolve without an argument throws an error in LG WebOS 2\n    var promise = Promise.resolve(undefined);\n    notify = function () {\n      promise.then(flush);\n    };\n  // for other environments - macrotask based on:\n  // - setImmediate\n  // - MessageChannel\n  // - window.postMessag\n  // - onreadystatechange\n  // - setTimeout\n  } else {\n    notify = function () {\n      // strange IE + webpack dev server bug - use .call(global)\n      macrotask.call(global, flush);\n    };\n  }\n\n  return function (fn) {\n    var task = { fn: fn, next: undefined };\n    if (last) last.next = task;\n    if (!head) {\n      head = task;\n      notify();\n    } last = task;\n  };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_microtask.js?");
@@ -979,6 +1046,7 @@ eval("\n// 25.4.1.5 NewPromiseCapability(C)\nvar aFunction = __webpack_require__
   \************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -992,6 +1060,7 @@ eval("\n// 19.1.2.1 Object.assign(target, source, ...)\nvar DESCRIPTORS = __webp
   \************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 31:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])\nvar anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_an-object.js\");\nvar dPs = __webpack_require__(/*! ./_object-dps */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-dps.js\");\nvar enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_enum-bug-keys.js\");\nvar IE_PROTO = __webpack_require__(/*! ./_shared-key */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_shared-key.js\")('IE_PROTO');\nvar Empty = function () { /* empty */ };\nvar PROTOTYPE = 'prototype';\n\n// Create object with fake `null` prototype: use iframe Object with cleared prototype\nvar createDict = function () {\n  // Thrash, waste and sodomy: IE GC bug\n  var iframe = __webpack_require__(/*! ./_dom-create */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_dom-create.js\")('iframe');\n  var i = enumBugKeys.length;\n  var lt = '<';\n  var gt = '>';\n  var iframeDocument;\n  iframe.style.display = 'none';\n  __webpack_require__(/*! ./_html */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_html.js\").appendChild(iframe);\n  iframe.src = 'javascript:'; // eslint-disable-line no-script-url\n  // createDict = iframe.contentWindow.Object;\n  // html.removeChild(iframe);\n  iframeDocument = iframe.contentWindow.document;\n  iframeDocument.open();\n  iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);\n  iframeDocument.close();\n  createDict = iframeDocument.F;\n  while (i--) delete createDict[PROTOTYPE][enumBugKeys[i]];\n  return createDict();\n};\n\nmodule.exports = Object.create || function create(O, Properties) {\n  var result;\n  if (O !== null) {\n    Empty[PROTOTYPE] = anObject(O);\n    result = new Empty();\n    Empty[PROTOTYPE] = null;\n    // add \"__proto__\" for Object.getPrototypeOf polyfill\n    result[IE_PROTO] = O;\n  } else result = createDict();\n  return Properties === undefined ? result : dPs(result, Properties);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_object-create.js?");
@@ -1018,6 +1087,7 @@ eval("var anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/ba
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var dP = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-dp.js\");\nvar anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_an-object.js\");\nvar getKeys = __webpack_require__(/*! ./_object-keys */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-keys.js\");\n\nmodule.exports = __webpack_require__(/*! ./_descriptors */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_descriptors.js\") ? Object.defineProperties : function defineProperties(O, Properties) {\n  anObject(O);\n  var keys = getKeys(Properties);\n  var length = keys.length;\n  var i = 0;\n  var P;\n  while (length > i) dP.f(O, P = keys[i++], Properties[P]);\n  return O;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_object-dps.js?");
@@ -1030,6 +1100,7 @@ eval("var dP = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-po
   \****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1099,6 +1170,7 @@ eval("exports.f = Object.getOwnPropertySymbols;\n\n\n//# sourceURL=webpack://my-
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)\nvar has = __webpack_require__(/*! ./_has */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_has.js\");\nvar toObject = __webpack_require__(/*! ./_to-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-object.js\");\nvar IE_PROTO = __webpack_require__(/*! ./_shared-key */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_shared-key.js\")('IE_PROTO');\nvar ObjectProto = Object.prototype;\n\nmodule.exports = Object.getPrototypeOf || function (O) {\n  O = toObject(O);\n  if (has(O, IE_PROTO)) return O[IE_PROTO];\n  if (typeof O.constructor == 'function' && O instanceof O.constructor) {\n    return O.constructor.prototype;\n  } return O instanceof Object ? ObjectProto : null;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_object-gpo.js?");
@@ -1111,6 +1183,7 @@ eval("// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)\nvar has = __webpack_requi
   \*******************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var has = __webpack_require__(/*! ./_has */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_has.js\");\nvar toIObject = __webpack_require__(/*! ./_to-iobject */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-iobject.js\");\nvar arrayIndexOf = __webpack_require__(/*! ./_array-includes */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_array-includes.js\")(false);\nvar IE_PROTO = __webpack_require__(/*! ./_shared-key */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_shared-key.js\")('IE_PROTO');\n\nmodule.exports = function (object, names) {\n  var O = toIObject(object);\n  var i = 0;\n  var result = [];\n  var key;\n  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);\n  // Don't enum bug & hidden keys\n  while (names.length > i) if (has(O, key = names[i++])) {\n    ~arrayIndexOf(result, key) || result.push(key);\n  }\n  return result;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_object-keys-internal.js?");
@@ -1123,6 +1196,7 @@ eval("var has = __webpack_require__(/*! ./_has */ \"./node_modules/babel-polyfil
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 19.1.2.14 / 15.2.3.14 Object.keys(O)\nvar $keys = __webpack_require__(/*! ./_object-keys-internal */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-keys-internal.js\");\nvar enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_enum-bug-keys.js\");\n\nmodule.exports = Object.keys || function keys(O) {\n  return $keys(O, enumBugKeys);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_object-keys.js?");
@@ -1149,6 +1223,7 @@ eval("exports.f = {}.propertyIsEnumerable;\n\n\n//# sourceURL=webpack://my-webpa
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// most Object methods by ES6 should accept primitives\nvar $export = __webpack_require__(/*! ./_export */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_export.js\");\nvar core = __webpack_require__(/*! ./_core */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_core.js\");\nvar fails = __webpack_require__(/*! ./_fails */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_fails.js\");\nmodule.exports = function (KEY, exec) {\n  var fn = (core.Object || {})[KEY] || Object[KEY];\n  var exp = {};\n  exp[KEY] = exec(fn);\n  $export($export.S + $export.F * fails(function () { fn(1); }), 'Object', exp);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_object-sap.js?");
@@ -1161,6 +1236,7 @@ eval("// most Object methods by ES6 should accept primitives\nvar $export = __we
   \**************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_descriptors.js\");\nvar getKeys = __webpack_require__(/*! ./_object-keys */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-keys.js\");\nvar toIObject = __webpack_require__(/*! ./_to-iobject */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-iobject.js\");\nvar isEnum = __webpack_require__(/*! ./_object-pie */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-pie.js\").f;\nmodule.exports = function (isEntries) {\n  return function (it) {\n    var O = toIObject(it);\n    var keys = getKeys(O);\n    var length = keys.length;\n    var i = 0;\n    var result = [];\n    var key;\n    while (length > i) {\n      key = keys[i++];\n      if (!DESCRIPTORS || isEnum.call(O, key)) {\n        result.push(isEntries ? [key, O[key]] : O[key]);\n      }\n    }\n    return result;\n  };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_object-to-array.js?");
@@ -1173,6 +1249,7 @@ eval("var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ \"./node_modul
   \*******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// all object keys, includes non-enumerable and symbols\nvar gOPN = __webpack_require__(/*! ./_object-gopn */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-gopn.js\");\nvar gOPS = __webpack_require__(/*! ./_object-gops */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-gops.js\");\nvar anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_an-object.js\");\nvar Reflect = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\").Reflect;\nmodule.exports = Reflect && Reflect.ownKeys || function ownKeys(it) {\n  var keys = gOPN.f(anObject(it));\n  var getSymbols = gOPS.f;\n  return getSymbols ? keys.concat(getSymbols(it)) : keys;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_own-keys.js?");
@@ -1185,6 +1262,7 @@ eval("// all object keys, includes non-enumerable and symbols\nvar gOPN = __webp
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var $parseFloat = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\").parseFloat;\nvar $trim = __webpack_require__(/*! ./_string-trim */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_string-trim.js\").trim;\n\nmodule.exports = 1 / $parseFloat(__webpack_require__(/*! ./_string-ws */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_string-ws.js\") + '-0') !== -Infinity ? function parseFloat(str) {\n  var string = $trim(String(str), 3);\n  var result = $parseFloat(string);\n  return result === 0 && string.charAt(0) == '-' ? -0 : result;\n} : $parseFloat;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_parse-float.js?");
@@ -1197,6 +1275,7 @@ eval("var $parseFloat = __webpack_require__(/*! ./_global */ \"./node_modules/ba
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var $parseInt = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\").parseInt;\nvar $trim = __webpack_require__(/*! ./_string-trim */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_string-trim.js\").trim;\nvar ws = __webpack_require__(/*! ./_string-ws */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_string-ws.js\");\nvar hex = /^[-+]?0[xX]/;\n\nmodule.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix) {\n  var string = $trim(String(str), 3);\n  return $parseInt(string, (radix >>> 0) || (hex.test(string) ? 16 : 10));\n} : $parseInt;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_parse-int.js?");
@@ -1209,6 +1288,7 @@ eval("var $parseInt = __webpack_require__(/*! ./_global */ \"./node_modules/babe
   \******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = function (exec) {\n  try {\n    return { e: false, v: exec() };\n  } catch (e) {\n    return { e: true, v: e };\n  }\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_perform.js?");
@@ -1221,6 +1301,7 @@ eval("module.exports = function (exec) {\n  try {\n    return { e: false, v: exe
   \**************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_an-object.js\");\nvar isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nvar newPromiseCapability = __webpack_require__(/*! ./_new-promise-capability */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_new-promise-capability.js\");\n\nmodule.exports = function (C, x) {\n  anObject(C);\n  if (isObject(x) && x.constructor === C) return x;\n  var promiseCapability = newPromiseCapability.f(C);\n  var resolve = promiseCapability.resolve;\n  resolve(x);\n  return promiseCapability.promise;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_promise-resolve.js?");
@@ -1233,6 +1314,7 @@ eval("var anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/ba
   \************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = function (bitmap, value) {\n  return {\n    enumerable: !(bitmap & 1),\n    configurable: !(bitmap & 2),\n    writable: !(bitmap & 4),\n    value: value\n  };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_property-desc.js?");
@@ -1245,6 +1327,7 @@ eval("module.exports = function (bitmap, value) {\n  return {\n    enumerable: !
   \***********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var redefine = __webpack_require__(/*! ./_redefine */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_redefine.js\");\nmodule.exports = function (target, src, safe) {\n  for (var key in src) redefine(target, key, src[key], safe);\n  return target;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_redefine-all.js?");
@@ -1257,6 +1340,7 @@ eval("var redefine = __webpack_require__(/*! ./_redefine */ \"./node_modules/bab
   \*******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 13:1-15 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\");\nvar hide = __webpack_require__(/*! ./_hide */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_hide.js\");\nvar has = __webpack_require__(/*! ./_has */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_has.js\");\nvar SRC = __webpack_require__(/*! ./_uid */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_uid.js\")('src');\nvar $toString = __webpack_require__(/*! ./_function-to-string */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_function-to-string.js\");\nvar TO_STRING = 'toString';\nvar TPL = ('' + $toString).split(TO_STRING);\n\n__webpack_require__(/*! ./_core */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_core.js\").inspectSource = function (it) {\n  return $toString.call(it);\n};\n\n(module.exports = function (O, key, val, safe) {\n  var isFunction = typeof val == 'function';\n  if (isFunction) has(val, 'name') || hide(val, 'name', key);\n  if (O[key] === val) return;\n  if (isFunction) has(val, SRC) || hide(val, SRC, O[key] ? '' + O[key] : TPL.join(String(key)));\n  if (O === global) {\n    O[key] = val;\n  } else if (!safe) {\n    delete O[key];\n    hide(O, key, val);\n  } else if (O[key]) {\n    O[key] = val;\n  } else {\n    hide(O, key, val);\n  }\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n})(Function.prototype, TO_STRING, function toString() {\n  return typeof this == 'function' && this[SRC] || $toString.call(this);\n});\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_redefine.js?");
@@ -1269,6 +1353,7 @@ eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-p
   \*******************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 8:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1282,6 +1367,7 @@ eval("\n\nvar classof = __webpack_require__(/*! ./_classof */ \"./node_modules/b
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 58:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1295,6 +1381,7 @@ eval("\n\nvar regexpFlags = __webpack_require__(/*! ./_flags */ \"./node_modules
   \*******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = function (regExp, replace) {\n  var replacer = replace === Object(replace) ? function (part) {\n    return replace[part];\n  } : replace;\n  return function (it) {\n    return String(it).replace(regExp, replacer);\n  };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_replacer.js?");
@@ -1307,6 +1394,7 @@ eval("module.exports = function (regExp, replace) {\n  var replacer = replace ==
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module) => {
 
 eval("// 7.2.9 SameValue(x, y)\nmodule.exports = Object.is || function is(x, y) {\n  // eslint-disable-next-line no-self-compare\n  return x === y ? x !== 0 || 1 / x === 1 / y : x != x && y != y;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_same-value.js?");
@@ -1319,6 +1407,7 @@ eval("// 7.2.9 SameValue(x, y)\nmodule.exports = Object.is || function is(x, y) 
   \******************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 8:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1332,6 +1421,7 @@ eval("\n// https://tc39.github.io/proposal-setmap-offrom/\nvar $export = __webpa
   \****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1345,6 +1435,7 @@ eval("\n// https://tc39.github.io/proposal-setmap-offrom/\nvar $export = __webpa
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// Works with __proto__ only. Old v8 can't work with null proto objects.\n/* eslint-disable no-proto */\nvar isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nvar anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_an-object.js\");\nvar check = function (O, proto) {\n  anObject(O);\n  if (!isObject(proto) && proto !== null) throw TypeError(proto + \": can't set as prototype!\");\n};\nmodule.exports = {\n  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line\n    function (test, buggy, set) {\n      try {\n        set = __webpack_require__(/*! ./_ctx */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_ctx.js\")(Function.call, __webpack_require__(/*! ./_object-gopd */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-gopd.js\").f(Object.prototype, '__proto__').set, 2);\n        set(test, []);\n        buggy = !(test instanceof Array);\n      } catch (e) { buggy = true; }\n      return function setPrototypeOf(O, proto) {\n        check(O, proto);\n        if (buggy) O.__proto__ = proto;\n        else set(O, proto);\n        return O;\n      };\n    }({}, false) : undefined),\n  check: check\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_set-proto.js?");
@@ -1357,6 +1448,7 @@ eval("// Works with __proto__ only. Old v8 can't work with null proto objects.\n
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1370,6 +1462,7 @@ eval("\nvar global = __webpack_require__(/*! ./_global */ \"./node_modules/babel
   \****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var def = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-dp.js\").f;\nvar has = __webpack_require__(/*! ./_has */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_has.js\");\nvar TAG = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('toStringTag');\n\nmodule.exports = function (it, tag, stat) {\n  if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_set-to-string-tag.js?");
@@ -1382,6 +1475,7 @@ eval("var def = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-p
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var shared = __webpack_require__(/*! ./_shared */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_shared.js\")('keys');\nvar uid = __webpack_require__(/*! ./_uid */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_uid.js\");\nmodule.exports = function (key) {\n  return shared[key] || (shared[key] = uid(key));\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_shared-key.js?");
@@ -1394,6 +1488,7 @@ eval("var shared = __webpack_require__(/*! ./_shared */ \"./node_modules/babel-p
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:1-15 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var core = __webpack_require__(/*! ./_core */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_core.js\");\nvar global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\");\nvar SHARED = '__core-js_shared__';\nvar store = global[SHARED] || (global[SHARED] = {});\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: core.version,\n  mode: __webpack_require__(/*! ./_library */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_library.js\") ? 'pure' : 'global',\n  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'\n});\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_shared.js?");
@@ -1406,6 +1501,7 @@ eval("var core = __webpack_require__(/*! ./_core */ \"./node_modules/babel-polyf
   \******************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 7.3.20 SpeciesConstructor(O, defaultConstructor)\nvar anObject = __webpack_require__(/*! ./_an-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_an-object.js\");\nvar aFunction = __webpack_require__(/*! ./_a-function */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_a-function.js\");\nvar SPECIES = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('species');\nmodule.exports = function (O, D) {\n  var C = anObject(O).constructor;\n  var S;\n  return C === undefined || (S = anObject(C)[SPECIES]) == undefined ? D : aFunction(S);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_species-constructor.js?");
@@ -1418,6 +1514,7 @@ eval("// 7.3.20 SpeciesConstructor(O, defaultConstructor)\nvar anObject = __webp
   \************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1431,6 +1528,7 @@ eval("\nvar fails = __webpack_require__(/*! ./_fails */ \"./node_modules/babel-p
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var toInteger = __webpack_require__(/*! ./_to-integer */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-integer.js\");\nvar defined = __webpack_require__(/*! ./_defined */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_defined.js\");\n// true  -> String#at\n// false -> String#codePointAt\nmodule.exports = function (TO_STRING) {\n  return function (that, pos) {\n    var s = String(defined(that));\n    var i = toInteger(pos);\n    var l = s.length;\n    var a, b;\n    if (i < 0 || i >= l) return TO_STRING ? '' : undefined;\n    a = s.charCodeAt(i);\n    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff\n      ? TO_STRING ? s.charAt(i) : a\n      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;\n  };\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_string-at.js?");
@@ -1443,6 +1541,7 @@ eval("var toInteger = __webpack_require__(/*! ./_to-integer */ \"./node_modules/
   \*************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// helper for String#{startsWith, endsWith, includes}\nvar isRegExp = __webpack_require__(/*! ./_is-regexp */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-regexp.js\");\nvar defined = __webpack_require__(/*! ./_defined */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_defined.js\");\n\nmodule.exports = function (that, searchString, NAME) {\n  if (isRegExp(searchString)) throw TypeError('String#' + NAME + \" doesn't accept regex!\");\n  return String(defined(that));\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_string-context.js?");
@@ -1455,6 +1554,7 @@ eval("// helper for String#{startsWith, endsWith, includes}\nvar isRegExp = __we
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var $export = __webpack_require__(/*! ./_export */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_export.js\");\nvar fails = __webpack_require__(/*! ./_fails */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_fails.js\");\nvar defined = __webpack_require__(/*! ./_defined */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_defined.js\");\nvar quot = /\"/g;\n// B.2.3.2.1 CreateHTML(string, tag, attribute, value)\nvar createHTML = function (string, tag, attribute, value) {\n  var S = String(defined(string));\n  var p1 = '<' + tag;\n  if (attribute !== '') p1 += ' ' + attribute + '=\"' + String(value).replace(quot, '&quot;') + '\"';\n  return p1 + '>' + S + '</' + tag + '>';\n};\nmodule.exports = function (NAME, exec) {\n  var O = {};\n  O[NAME] = exec(createHTML);\n  $export($export.P + $export.F * fails(function () {\n    var test = ''[NAME]('\"');\n    return test !== test.toLowerCase() || test.split('\"').length > 3;\n  }), 'String', O);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_string-html.js?");
@@ -1467,6 +1567,7 @@ eval("var $export = __webpack_require__(/*! ./_export */ \"./node_modules/babel-
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// https://github.com/tc39/proposal-string-pad-start-end\nvar toLength = __webpack_require__(/*! ./_to-length */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-length.js\");\nvar repeat = __webpack_require__(/*! ./_string-repeat */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_string-repeat.js\");\nvar defined = __webpack_require__(/*! ./_defined */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_defined.js\");\n\nmodule.exports = function (that, maxLength, fillString, left) {\n  var S = String(defined(that));\n  var stringLength = S.length;\n  var fillStr = fillString === undefined ? ' ' : String(fillString);\n  var intMaxLength = toLength(maxLength);\n  if (intMaxLength <= stringLength || fillStr == '') return S;\n  var fillLen = intMaxLength - stringLength;\n  var stringFiller = repeat.call(fillStr, Math.ceil(fillLen / fillStr.length));\n  if (stringFiller.length > fillLen) stringFiller = stringFiller.slice(0, fillLen);\n  return left ? stringFiller + S : S + stringFiller;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_string-pad.js?");
@@ -1479,6 +1580,7 @@ eval("// https://github.com/tc39/proposal-string-pad-start-end\nvar toLength = _
   \************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1492,6 +1594,7 @@ eval("\nvar toInteger = __webpack_require__(/*! ./_to-integer */ \"./node_module
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 30:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var $export = __webpack_require__(/*! ./_export */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_export.js\");\nvar defined = __webpack_require__(/*! ./_defined */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_defined.js\");\nvar fails = __webpack_require__(/*! ./_fails */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_fails.js\");\nvar spaces = __webpack_require__(/*! ./_string-ws */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_string-ws.js\");\nvar space = '[' + spaces + ']';\nvar non = '\\u200b\\u0085';\nvar ltrim = RegExp('^' + space + space + '*');\nvar rtrim = RegExp(space + space + '*$');\n\nvar exporter = function (KEY, exec, ALIAS) {\n  var exp = {};\n  var FORCE = fails(function () {\n    return !!spaces[KEY]() || non[KEY]() != non;\n  });\n  var fn = exp[KEY] = FORCE ? exec(trim) : spaces[KEY];\n  if (ALIAS) exp[ALIAS] = fn;\n  $export($export.P + $export.F * FORCE, 'String', exp);\n};\n\n// 1 -> String#trimLeft\n// 2 -> String#trimRight\n// 3 -> String#trim\nvar trim = exporter.trim = function (string, TYPE) {\n  string = String(defined(string));\n  if (TYPE & 1) string = string.replace(ltrim, '');\n  if (TYPE & 2) string = string.replace(rtrim, '');\n  return string;\n};\n\nmodule.exports = exporter;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_string-trim.js?");
@@ -1504,6 +1607,7 @@ eval("var $export = __webpack_require__(/*! ./_export */ \"./node_modules/babel-
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = '\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003' +\n  '\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF';\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_string-ws.js?");
@@ -1516,6 +1620,7 @@ eval("module.exports = '\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000
   \***************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 81:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var ctx = __webpack_require__(/*! ./_ctx */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_ctx.js\");\nvar invoke = __webpack_require__(/*! ./_invoke */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_invoke.js\");\nvar html = __webpack_require__(/*! ./_html */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_html.js\");\nvar cel = __webpack_require__(/*! ./_dom-create */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_dom-create.js\");\nvar global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\");\nvar process = global.process;\nvar setTask = global.setImmediate;\nvar clearTask = global.clearImmediate;\nvar MessageChannel = global.MessageChannel;\nvar Dispatch = global.Dispatch;\nvar counter = 0;\nvar queue = {};\nvar ONREADYSTATECHANGE = 'onreadystatechange';\nvar defer, channel, port;\nvar run = function () {\n  var id = +this;\n  // eslint-disable-next-line no-prototype-builtins\n  if (queue.hasOwnProperty(id)) {\n    var fn = queue[id];\n    delete queue[id];\n    fn();\n  }\n};\nvar listener = function (event) {\n  run.call(event.data);\n};\n// Node.js 0.9+ & IE10+ has setImmediate, otherwise:\nif (!setTask || !clearTask) {\n  setTask = function setImmediate(fn) {\n    var args = [];\n    var i = 1;\n    while (arguments.length > i) args.push(arguments[i++]);\n    queue[++counter] = function () {\n      // eslint-disable-next-line no-new-func\n      invoke(typeof fn == 'function' ? fn : Function(fn), args);\n    };\n    defer(counter);\n    return counter;\n  };\n  clearTask = function clearImmediate(id) {\n    delete queue[id];\n  };\n  // Node.js 0.8-\n  if (__webpack_require__(/*! ./_cof */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_cof.js\")(process) == 'process') {\n    defer = function (id) {\n      process.nextTick(ctx(run, id, 1));\n    };\n  // Sphere (JS game engine) Dispatch API\n  } else if (Dispatch && Dispatch.now) {\n    defer = function (id) {\n      Dispatch.now(ctx(run, id, 1));\n    };\n  // Browsers with MessageChannel, includes WebWorkers\n  } else if (MessageChannel) {\n    channel = new MessageChannel();\n    port = channel.port2;\n    channel.port1.onmessage = listener;\n    defer = ctx(port.postMessage, port, 1);\n  // Browsers with postMessage, skip WebWorkers\n  // IE8 has postMessage, but it's sync & typeof its postMessage is 'object'\n  } else if (global.addEventListener && typeof postMessage == 'function' && !global.importScripts) {\n    defer = function (id) {\n      global.postMessage(id + '', '*');\n    };\n    global.addEventListener('message', listener, false);\n  // IE8-\n  } else if (ONREADYSTATECHANGE in cel('script')) {\n    defer = function (id) {\n      html.appendChild(cel('script'))[ONREADYSTATECHANGE] = function () {\n        html.removeChild(this);\n        run.call(id);\n      };\n    };\n  // Rest old browsers\n  } else {\n    defer = function (id) {\n      setTimeout(ctx(run, id, 1), 0);\n    };\n  }\n}\nmodule.exports = {\n  set: setTask,\n  clear: clearTask\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_task.js?");
@@ -1528,6 +1633,7 @@ eval("var ctx = __webpack_require__(/*! ./_ctx */ \"./node_modules/babel-polyfil
   \****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var toInteger = __webpack_require__(/*! ./_to-integer */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-integer.js\");\nvar max = Math.max;\nvar min = Math.min;\nmodule.exports = function (index, length) {\n  index = toInteger(index);\n  return index < 0 ? max(index + length, 0) : min(index, length);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_to-absolute-index.js?");
@@ -1540,6 +1646,7 @@ eval("var toInteger = __webpack_require__(/*! ./_to-integer */ \"./node_modules/
   \*******************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// https://tc39.github.io/ecma262/#sec-toindex\nvar toInteger = __webpack_require__(/*! ./_to-integer */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-integer.js\");\nvar toLength = __webpack_require__(/*! ./_to-length */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-length.js\");\nmodule.exports = function (it) {\n  if (it === undefined) return 0;\n  var number = toInteger(it);\n  var length = toLength(number);\n  if (number !== length) throw RangeError('Wrong length!');\n  return length;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_to-index.js?");
@@ -1552,6 +1659,7 @@ eval("// https://tc39.github.io/ecma262/#sec-toindex\nvar toInteger = __webpack_
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module) => {
 
 eval("// 7.1.4 ToInteger\nvar ceil = Math.ceil;\nvar floor = Math.floor;\nmodule.exports = function (it) {\n  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_to-integer.js?");
@@ -1564,6 +1672,7 @@ eval("// 7.1.4 ToInteger\nvar ceil = Math.ceil;\nvar floor = Math.floor;\nmodule
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// to indexed object, toObject with fallback for non-array-like ES3 strings\nvar IObject = __webpack_require__(/*! ./_iobject */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_iobject.js\");\nvar defined = __webpack_require__(/*! ./_defined */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_defined.js\");\nmodule.exports = function (it) {\n  return IObject(defined(it));\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_to-iobject.js?");
@@ -1576,6 +1685,7 @@ eval("// to indexed object, toObject with fallback for non-array-like ES3 string
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 7.1.15 ToLength\nvar toInteger = __webpack_require__(/*! ./_to-integer */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_to-integer.js\");\nvar min = Math.min;\nmodule.exports = function (it) {\n  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_to-length.js?");
@@ -1588,6 +1698,7 @@ eval("// 7.1.15 ToLength\nvar toInteger = __webpack_require__(/*! ./_to-integer 
   \********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 7.1.13 ToObject(argument)\nvar defined = __webpack_require__(/*! ./_defined */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_defined.js\");\nmodule.exports = function (it) {\n  return Object(defined(it));\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_to-object.js?");
@@ -1600,6 +1711,7 @@ eval("// 7.1.13 ToObject(argument)\nvar defined = __webpack_require__(/*! ./_def
   \***********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("// 7.1.1 ToPrimitive(input [, PreferredType])\nvar isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\n// instead of the ES6 spec version, we didn't implement @@toPrimitive case\n// and the second argument - flag - preferred type is a string\nmodule.exports = function (it, S) {\n  if (!isObject(it)) return it;\n  var fn, val;\n  if (S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;\n  if (typeof (fn = it.valueOf) == 'function' && !isObject(val = fn.call(it))) return val;\n  if (!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;\n  throw TypeError(\"Can't convert object to primitive value\");\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_to-primitive.js?");
@@ -1612,6 +1724,8 @@ eval("// 7.1.1 ToPrimitive(input [, PreferredType])\nvar isObject = __webpack_re
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 325:2-16 */
+/*! CommonJS bailout: module.exports is used directly at 480:7-21 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1625,6 +1739,8 @@ eval("\nif (__webpack_require__(/*! ./_descriptors */ \"./node_modules/babel-pol
   \***********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, __webpack_exports__ */
+/*! CommonJS bailout: exports is used directly at 275:0-7 */
+/*! CommonJS bailout: exports is used directly at 276:0-7 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1638,6 +1754,7 @@ eval("\nvar global = __webpack_require__(/*! ./_global */ \"./node_modules/babel
   \****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\");\nvar hide = __webpack_require__(/*! ./_hide */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_hide.js\");\nvar uid = __webpack_require__(/*! ./_uid */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_uid.js\");\nvar TYPED = uid('typed_array');\nvar VIEW = uid('view');\nvar ABV = !!(global.ArrayBuffer && global.DataView);\nvar CONSTR = ABV;\nvar i = 0;\nvar l = 9;\nvar Typed;\n\nvar TypedArrayConstructors = (\n  'Int8Array,Uint8Array,Uint8ClampedArray,Int16Array,Uint16Array,Int32Array,Uint32Array,Float32Array,Float64Array'\n).split(',');\n\nwhile (i < l) {\n  if (Typed = global[TypedArrayConstructors[i++]]) {\n    hide(Typed.prototype, TYPED, true);\n    hide(Typed.prototype, VIEW, true);\n  } else CONSTR = false;\n}\n\nmodule.exports = {\n  ABV: ABV,\n  CONSTR: CONSTR,\n  TYPED: TYPED,\n  VIEW: VIEW\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_typed.js?");
@@ -1650,6 +1767,7 @@ eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-p
   \**************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 eval("var id = 0;\nvar px = Math.random();\nmodule.exports = function (key) {\n  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_uid.js?");
@@ -1662,6 +1780,7 @@ eval("var id = 0;\nvar px = Math.random();\nmodule.exports = function (key) {\n 
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\");\nvar navigator = global.navigator;\n\nmodule.exports = navigator && navigator.userAgent || '';\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_user-agent.js?");
@@ -1674,6 +1793,7 @@ eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-p
   \******************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_is-object.js\");\nmodule.exports = function (it, TYPE) {\n  if (!isObject(it) || it._t !== TYPE) throw TypeError('Incompatible receiver, ' + TYPE + ' required!');\n  return it;\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_validate-collection.js?");
@@ -1686,6 +1806,7 @@ eval("var isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/ba
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var global = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\");\nvar core = __webpack_require__(/*! ./_core */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_core.js\");\nvar LIBRARY = __webpack_require__(/*! ./_library */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_library.js\");\nvar wksExt = __webpack_require__(/*! ./_wks-ext */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks-ext.js\");\nvar defineProperty = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_object-dp.js\").f;\nmodule.exports = function (name) {\n  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});\n  if (name.charAt(0) != '_' && !(name in $Symbol)) defineProperty($Symbol, name, { value: wksExt.f(name) });\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_wks-define.js?");
@@ -1713,6 +1834,7 @@ eval("exports.f = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyf
   \**************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_require__, module */
+/*! CommonJS bailout: module.exports is used directly at 6:15-29 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var store = __webpack_require__(/*! ./_shared */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_shared.js\")('wks');\nvar uid = __webpack_require__(/*! ./_uid */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_uid.js\");\nvar Symbol = __webpack_require__(/*! ./_global */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_global.js\").Symbol;\nvar USE_SYMBOL = typeof Symbol == 'function';\n\nvar $exports = module.exports = function (name) {\n  return store[name] || (store[name] =\n    USE_SYMBOL && Symbol[name] || (USE_SYMBOL ? Symbol : uid)('Symbol.' + name));\n};\n\n$exports.store = store;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js?");
@@ -1725,6 +1847,7 @@ eval("var store = __webpack_require__(/*! ./_shared */ \"./node_modules/babel-po
   \**********************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var classof = __webpack_require__(/*! ./_classof */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_classof.js\");\nvar ITERATOR = __webpack_require__(/*! ./_wks */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_wks.js\")('iterator');\nvar Iterators = __webpack_require__(/*! ./_iterators */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_iterators.js\");\nmodule.exports = __webpack_require__(/*! ./_core */ \"./node_modules/babel-polyfill/node_modules/core-js/modules/_core.js\").getIteratorMethod = function (it) {\n  if (it != undefined) return it[ITERATOR]\n    || it['@@iterator']\n    || Iterators[classof(it)];\n};\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/core-js/modules/core.get-iterator-method.js?");
@@ -1876,6 +1999,7 @@ eval("// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)\nvar $export = __webpack_require
   \****************************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 11:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2116,6 +2240,7 @@ eval("var dP = __webpack_require__(/*! ./_object-dp */ \"./node_modules/babel-po
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2993,6 +3118,7 @@ eval("\n__webpack_require__(/*! ./es6.regexp.flags */ \"./node_modules/babel-pol
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3435,6 +3561,7 @@ eval("__webpack_require__(/*! ./_typed-array */ \"./node_modules/babel-polyfill/
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 40:15-29 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -4198,9 +4325,362 @@ eval("__webpack_require__(/*! ./modules/es6.symbol */ \"./node_modules/babel-pol
   \*********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, top-level-this-exports, __webpack_require__.g, __webpack_require__.* */
+/*! CommonJS bailout: this is used directly at 735:36-40 */
+/*! CommonJS bailout: module.exports is used directly at 28:6-20 */
+/*! CommonJS bailout: module.exports is used directly at 37:51-65 */
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 eval("/**\n * Copyright (c) 2014, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * https://raw.github.com/facebook/regenerator/master/LICENSE file. An\n * additional grant of patent rights can be found in the PATENTS file in\n * the same directory.\n */\n\n!(function(global) {\n  \"use strict\";\n\n  var Op = Object.prototype;\n  var hasOwn = Op.hasOwnProperty;\n  var undefined; // More compressible than void 0.\n  var $Symbol = typeof Symbol === \"function\" ? Symbol : {};\n  var iteratorSymbol = $Symbol.iterator || \"@@iterator\";\n  var asyncIteratorSymbol = $Symbol.asyncIterator || \"@@asyncIterator\";\n  var toStringTagSymbol = $Symbol.toStringTag || \"@@toStringTag\";\n\n  var inModule = \"object\" === \"object\";\n  var runtime = global.regeneratorRuntime;\n  if (runtime) {\n    if (inModule) {\n      // If regeneratorRuntime is defined globally and we're in a module,\n      // make the exports object identical to regeneratorRuntime.\n      module.exports = runtime;\n    }\n    // Don't bother evaluating the rest of this file if the runtime was\n    // already defined globally.\n    return;\n  }\n\n  // Define the runtime globally (as expected by generated code) as either\n  // module.exports (if we're in a module) or a new, empty object.\n  runtime = global.regeneratorRuntime = inModule ? module.exports : {};\n\n  function wrap(innerFn, outerFn, self, tryLocsList) {\n    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.\n    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;\n    var generator = Object.create(protoGenerator.prototype);\n    var context = new Context(tryLocsList || []);\n\n    // The ._invoke method unifies the implementations of the .next,\n    // .throw, and .return methods.\n    generator._invoke = makeInvokeMethod(innerFn, self, context);\n\n    return generator;\n  }\n  runtime.wrap = wrap;\n\n  // Try/catch helper to minimize deoptimizations. Returns a completion\n  // record like context.tryEntries[i].completion. This interface could\n  // have been (and was previously) designed to take a closure to be\n  // invoked without arguments, but in all the cases we care about we\n  // already have an existing method we want to call, so there's no need\n  // to create a new function object. We can even get away with assuming\n  // the method takes exactly one argument, since that happens to be true\n  // in every case, so we don't have to touch the arguments object. The\n  // only additional allocation required is the completion record, which\n  // has a stable shape and so hopefully should be cheap to allocate.\n  function tryCatch(fn, obj, arg) {\n    try {\n      return { type: \"normal\", arg: fn.call(obj, arg) };\n    } catch (err) {\n      return { type: \"throw\", arg: err };\n    }\n  }\n\n  var GenStateSuspendedStart = \"suspendedStart\";\n  var GenStateSuspendedYield = \"suspendedYield\";\n  var GenStateExecuting = \"executing\";\n  var GenStateCompleted = \"completed\";\n\n  // Returning this object from the innerFn has the same effect as\n  // breaking out of the dispatch switch statement.\n  var ContinueSentinel = {};\n\n  // Dummy constructor functions that we use as the .constructor and\n  // .constructor.prototype properties for functions that return Generator\n  // objects. For full spec compliance, you may wish to configure your\n  // minifier not to mangle the names of these two functions.\n  function Generator() {}\n  function GeneratorFunction() {}\n  function GeneratorFunctionPrototype() {}\n\n  // This is a polyfill for %IteratorPrototype% for environments that\n  // don't natively support it.\n  var IteratorPrototype = {};\n  IteratorPrototype[iteratorSymbol] = function () {\n    return this;\n  };\n\n  var getProto = Object.getPrototypeOf;\n  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));\n  if (NativeIteratorPrototype &&\n      NativeIteratorPrototype !== Op &&\n      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {\n    // This environment has a native %IteratorPrototype%; use it instead\n    // of the polyfill.\n    IteratorPrototype = NativeIteratorPrototype;\n  }\n\n  var Gp = GeneratorFunctionPrototype.prototype =\n    Generator.prototype = Object.create(IteratorPrototype);\n  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;\n  GeneratorFunctionPrototype.constructor = GeneratorFunction;\n  GeneratorFunctionPrototype[toStringTagSymbol] =\n    GeneratorFunction.displayName = \"GeneratorFunction\";\n\n  // Helper for defining the .next, .throw, and .return methods of the\n  // Iterator interface in terms of a single ._invoke method.\n  function defineIteratorMethods(prototype) {\n    [\"next\", \"throw\", \"return\"].forEach(function(method) {\n      prototype[method] = function(arg) {\n        return this._invoke(method, arg);\n      };\n    });\n  }\n\n  runtime.isGeneratorFunction = function(genFun) {\n    var ctor = typeof genFun === \"function\" && genFun.constructor;\n    return ctor\n      ? ctor === GeneratorFunction ||\n        // For the native GeneratorFunction constructor, the best we can\n        // do is to check its .name property.\n        (ctor.displayName || ctor.name) === \"GeneratorFunction\"\n      : false;\n  };\n\n  runtime.mark = function(genFun) {\n    if (Object.setPrototypeOf) {\n      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);\n    } else {\n      genFun.__proto__ = GeneratorFunctionPrototype;\n      if (!(toStringTagSymbol in genFun)) {\n        genFun[toStringTagSymbol] = \"GeneratorFunction\";\n      }\n    }\n    genFun.prototype = Object.create(Gp);\n    return genFun;\n  };\n\n  // Within the body of any async function, `await x` is transformed to\n  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test\n  // `hasOwn.call(value, \"__await\")` to determine if the yielded value is\n  // meant to be awaited.\n  runtime.awrap = function(arg) {\n    return { __await: arg };\n  };\n\n  function AsyncIterator(generator) {\n    function invoke(method, arg, resolve, reject) {\n      var record = tryCatch(generator[method], generator, arg);\n      if (record.type === \"throw\") {\n        reject(record.arg);\n      } else {\n        var result = record.arg;\n        var value = result.value;\n        if (value &&\n            typeof value === \"object\" &&\n            hasOwn.call(value, \"__await\")) {\n          return Promise.resolve(value.__await).then(function(value) {\n            invoke(\"next\", value, resolve, reject);\n          }, function(err) {\n            invoke(\"throw\", err, resolve, reject);\n          });\n        }\n\n        return Promise.resolve(value).then(function(unwrapped) {\n          // When a yielded Promise is resolved, its final value becomes\n          // the .value of the Promise<{value,done}> result for the\n          // current iteration. If the Promise is rejected, however, the\n          // result for this iteration will be rejected with the same\n          // reason. Note that rejections of yielded Promises are not\n          // thrown back into the generator function, as is the case\n          // when an awaited Promise is rejected. This difference in\n          // behavior between yield and await is important, because it\n          // allows the consumer to decide what to do with the yielded\n          // rejection (swallow it and continue, manually .throw it back\n          // into the generator, abandon iteration, whatever). With\n          // await, by contrast, there is no opportunity to examine the\n          // rejection reason outside the generator function, so the\n          // only option is to throw it from the await expression, and\n          // let the generator function handle the exception.\n          result.value = unwrapped;\n          resolve(result);\n        }, reject);\n      }\n    }\n\n    if (typeof global.process === \"object\" && global.process.domain) {\n      invoke = global.process.domain.bind(invoke);\n    }\n\n    var previousPromise;\n\n    function enqueue(method, arg) {\n      function callInvokeWithMethodAndArg() {\n        return new Promise(function(resolve, reject) {\n          invoke(method, arg, resolve, reject);\n        });\n      }\n\n      return previousPromise =\n        // If enqueue has been called before, then we want to wait until\n        // all previous Promises have been resolved before calling invoke,\n        // so that results are always delivered in the correct order. If\n        // enqueue has not been called before, then it is important to\n        // call invoke immediately, without waiting on a callback to fire,\n        // so that the async generator function has the opportunity to do\n        // any necessary setup in a predictable way. This predictability\n        // is why the Promise constructor synchronously invokes its\n        // executor callback, and why async functions synchronously\n        // execute code before the first await. Since we implement simple\n        // async functions in terms of async generators, it is especially\n        // important to get this right, even though it requires care.\n        previousPromise ? previousPromise.then(\n          callInvokeWithMethodAndArg,\n          // Avoid propagating failures to Promises returned by later\n          // invocations of the iterator.\n          callInvokeWithMethodAndArg\n        ) : callInvokeWithMethodAndArg();\n    }\n\n    // Define the unified helper method that is used to implement .next,\n    // .throw, and .return (see defineIteratorMethods).\n    this._invoke = enqueue;\n  }\n\n  defineIteratorMethods(AsyncIterator.prototype);\n  AsyncIterator.prototype[asyncIteratorSymbol] = function () {\n    return this;\n  };\n  runtime.AsyncIterator = AsyncIterator;\n\n  // Note that simple async functions are implemented on top of\n  // AsyncIterator objects; they just return a Promise for the value of\n  // the final result produced by the iterator.\n  runtime.async = function(innerFn, outerFn, self, tryLocsList) {\n    var iter = new AsyncIterator(\n      wrap(innerFn, outerFn, self, tryLocsList)\n    );\n\n    return runtime.isGeneratorFunction(outerFn)\n      ? iter // If outerFn is a generator, return the full iterator.\n      : iter.next().then(function(result) {\n          return result.done ? result.value : iter.next();\n        });\n  };\n\n  function makeInvokeMethod(innerFn, self, context) {\n    var state = GenStateSuspendedStart;\n\n    return function invoke(method, arg) {\n      if (state === GenStateExecuting) {\n        throw new Error(\"Generator is already running\");\n      }\n\n      if (state === GenStateCompleted) {\n        if (method === \"throw\") {\n          throw arg;\n        }\n\n        // Be forgiving, per 25.3.3.3.3 of the spec:\n        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume\n        return doneResult();\n      }\n\n      context.method = method;\n      context.arg = arg;\n\n      while (true) {\n        var delegate = context.delegate;\n        if (delegate) {\n          var delegateResult = maybeInvokeDelegate(delegate, context);\n          if (delegateResult) {\n            if (delegateResult === ContinueSentinel) continue;\n            return delegateResult;\n          }\n        }\n\n        if (context.method === \"next\") {\n          // Setting context._sent for legacy support of Babel's\n          // function.sent implementation.\n          context.sent = context._sent = context.arg;\n\n        } else if (context.method === \"throw\") {\n          if (state === GenStateSuspendedStart) {\n            state = GenStateCompleted;\n            throw context.arg;\n          }\n\n          context.dispatchException(context.arg);\n\n        } else if (context.method === \"return\") {\n          context.abrupt(\"return\", context.arg);\n        }\n\n        state = GenStateExecuting;\n\n        var record = tryCatch(innerFn, self, context);\n        if (record.type === \"normal\") {\n          // If an exception is thrown from innerFn, we leave state ===\n          // GenStateExecuting and loop back for another invocation.\n          state = context.done\n            ? GenStateCompleted\n            : GenStateSuspendedYield;\n\n          if (record.arg === ContinueSentinel) {\n            continue;\n          }\n\n          return {\n            value: record.arg,\n            done: context.done\n          };\n\n        } else if (record.type === \"throw\") {\n          state = GenStateCompleted;\n          // Dispatch the exception by looping back around to the\n          // context.dispatchException(context.arg) call above.\n          context.method = \"throw\";\n          context.arg = record.arg;\n        }\n      }\n    };\n  }\n\n  // Call delegate.iterator[context.method](context.arg) and handle the\n  // result, either by returning a { value, done } result from the\n  // delegate iterator, or by modifying context.method and context.arg,\n  // setting context.delegate to null, and returning the ContinueSentinel.\n  function maybeInvokeDelegate(delegate, context) {\n    var method = delegate.iterator[context.method];\n    if (method === undefined) {\n      // A .throw or .return when the delegate iterator has no .throw\n      // method always terminates the yield* loop.\n      context.delegate = null;\n\n      if (context.method === \"throw\") {\n        if (delegate.iterator.return) {\n          // If the delegate iterator has a return method, give it a\n          // chance to clean up.\n          context.method = \"return\";\n          context.arg = undefined;\n          maybeInvokeDelegate(delegate, context);\n\n          if (context.method === \"throw\") {\n            // If maybeInvokeDelegate(context) changed context.method from\n            // \"return\" to \"throw\", let that override the TypeError below.\n            return ContinueSentinel;\n          }\n        }\n\n        context.method = \"throw\";\n        context.arg = new TypeError(\n          \"The iterator does not provide a 'throw' method\");\n      }\n\n      return ContinueSentinel;\n    }\n\n    var record = tryCatch(method, delegate.iterator, context.arg);\n\n    if (record.type === \"throw\") {\n      context.method = \"throw\";\n      context.arg = record.arg;\n      context.delegate = null;\n      return ContinueSentinel;\n    }\n\n    var info = record.arg;\n\n    if (! info) {\n      context.method = \"throw\";\n      context.arg = new TypeError(\"iterator result is not an object\");\n      context.delegate = null;\n      return ContinueSentinel;\n    }\n\n    if (info.done) {\n      // Assign the result of the finished delegate to the temporary\n      // variable specified by delegate.resultName (see delegateYield).\n      context[delegate.resultName] = info.value;\n\n      // Resume execution at the desired location (see delegateYield).\n      context.next = delegate.nextLoc;\n\n      // If context.method was \"throw\" but the delegate handled the\n      // exception, let the outer generator proceed normally. If\n      // context.method was \"next\", forget context.arg since it has been\n      // \"consumed\" by the delegate iterator. If context.method was\n      // \"return\", allow the original .return call to continue in the\n      // outer generator.\n      if (context.method !== \"return\") {\n        context.method = \"next\";\n        context.arg = undefined;\n      }\n\n    } else {\n      // Re-yield the result returned by the delegate method.\n      return info;\n    }\n\n    // The delegate iterator is finished, so forget it and continue with\n    // the outer generator.\n    context.delegate = null;\n    return ContinueSentinel;\n  }\n\n  // Define Generator.prototype.{next,throw,return} in terms of the\n  // unified ._invoke helper method.\n  defineIteratorMethods(Gp);\n\n  Gp[toStringTagSymbol] = \"Generator\";\n\n  // A Generator should always return itself as the iterator object when the\n  // @@iterator function is called on it. Some browsers' implementations of the\n  // iterator prototype chain incorrectly implement this, causing the Generator\n  // object to not be returned from this call. This ensures that doesn't happen.\n  // See https://github.com/facebook/regenerator/issues/274 for more details.\n  Gp[iteratorSymbol] = function() {\n    return this;\n  };\n\n  Gp.toString = function() {\n    return \"[object Generator]\";\n  };\n\n  function pushTryEntry(locs) {\n    var entry = { tryLoc: locs[0] };\n\n    if (1 in locs) {\n      entry.catchLoc = locs[1];\n    }\n\n    if (2 in locs) {\n      entry.finallyLoc = locs[2];\n      entry.afterLoc = locs[3];\n    }\n\n    this.tryEntries.push(entry);\n  }\n\n  function resetTryEntry(entry) {\n    var record = entry.completion || {};\n    record.type = \"normal\";\n    delete record.arg;\n    entry.completion = record;\n  }\n\n  function Context(tryLocsList) {\n    // The root entry object (effectively a try statement without a catch\n    // or a finally block) gives us a place to store values thrown from\n    // locations where there is no enclosing try statement.\n    this.tryEntries = [{ tryLoc: \"root\" }];\n    tryLocsList.forEach(pushTryEntry, this);\n    this.reset(true);\n  }\n\n  runtime.keys = function(object) {\n    var keys = [];\n    for (var key in object) {\n      keys.push(key);\n    }\n    keys.reverse();\n\n    // Rather than returning an object with a next method, we keep\n    // things simple and return the next function itself.\n    return function next() {\n      while (keys.length) {\n        var key = keys.pop();\n        if (key in object) {\n          next.value = key;\n          next.done = false;\n          return next;\n        }\n      }\n\n      // To avoid creating an additional object, we just hang the .value\n      // and .done properties off the next function object itself. This\n      // also ensures that the minifier will not anonymize the function.\n      next.done = true;\n      return next;\n    };\n  };\n\n  function values(iterable) {\n    if (iterable) {\n      var iteratorMethod = iterable[iteratorSymbol];\n      if (iteratorMethod) {\n        return iteratorMethod.call(iterable);\n      }\n\n      if (typeof iterable.next === \"function\") {\n        return iterable;\n      }\n\n      if (!isNaN(iterable.length)) {\n        var i = -1, next = function next() {\n          while (++i < iterable.length) {\n            if (hasOwn.call(iterable, i)) {\n              next.value = iterable[i];\n              next.done = false;\n              return next;\n            }\n          }\n\n          next.value = undefined;\n          next.done = true;\n\n          return next;\n        };\n\n        return next.next = next;\n      }\n    }\n\n    // Return an iterator with no values.\n    return { next: doneResult };\n  }\n  runtime.values = values;\n\n  function doneResult() {\n    return { value: undefined, done: true };\n  }\n\n  Context.prototype = {\n    constructor: Context,\n\n    reset: function(skipTempReset) {\n      this.prev = 0;\n      this.next = 0;\n      // Resetting context._sent for legacy support of Babel's\n      // function.sent implementation.\n      this.sent = this._sent = undefined;\n      this.done = false;\n      this.delegate = null;\n\n      this.method = \"next\";\n      this.arg = undefined;\n\n      this.tryEntries.forEach(resetTryEntry);\n\n      if (!skipTempReset) {\n        for (var name in this) {\n          // Not sure about the optimal order of these conditions:\n          if (name.charAt(0) === \"t\" &&\n              hasOwn.call(this, name) &&\n              !isNaN(+name.slice(1))) {\n            this[name] = undefined;\n          }\n        }\n      }\n    },\n\n    stop: function() {\n      this.done = true;\n\n      var rootEntry = this.tryEntries[0];\n      var rootRecord = rootEntry.completion;\n      if (rootRecord.type === \"throw\") {\n        throw rootRecord.arg;\n      }\n\n      return this.rval;\n    },\n\n    dispatchException: function(exception) {\n      if (this.done) {\n        throw exception;\n      }\n\n      var context = this;\n      function handle(loc, caught) {\n        record.type = \"throw\";\n        record.arg = exception;\n        context.next = loc;\n\n        if (caught) {\n          // If the dispatched exception was caught by a catch block,\n          // then let that catch block handle the exception normally.\n          context.method = \"next\";\n          context.arg = undefined;\n        }\n\n        return !! caught;\n      }\n\n      for (var i = this.tryEntries.length - 1; i >= 0; --i) {\n        var entry = this.tryEntries[i];\n        var record = entry.completion;\n\n        if (entry.tryLoc === \"root\") {\n          // Exception thrown outside of any try block that could handle\n          // it, so set the completion value of the entire function to\n          // throw the exception.\n          return handle(\"end\");\n        }\n\n        if (entry.tryLoc <= this.prev) {\n          var hasCatch = hasOwn.call(entry, \"catchLoc\");\n          var hasFinally = hasOwn.call(entry, \"finallyLoc\");\n\n          if (hasCatch && hasFinally) {\n            if (this.prev < entry.catchLoc) {\n              return handle(entry.catchLoc, true);\n            } else if (this.prev < entry.finallyLoc) {\n              return handle(entry.finallyLoc);\n            }\n\n          } else if (hasCatch) {\n            if (this.prev < entry.catchLoc) {\n              return handle(entry.catchLoc, true);\n            }\n\n          } else if (hasFinally) {\n            if (this.prev < entry.finallyLoc) {\n              return handle(entry.finallyLoc);\n            }\n\n          } else {\n            throw new Error(\"try statement without catch or finally\");\n          }\n        }\n      }\n    },\n\n    abrupt: function(type, arg) {\n      for (var i = this.tryEntries.length - 1; i >= 0; --i) {\n        var entry = this.tryEntries[i];\n        if (entry.tryLoc <= this.prev &&\n            hasOwn.call(entry, \"finallyLoc\") &&\n            this.prev < entry.finallyLoc) {\n          var finallyEntry = entry;\n          break;\n        }\n      }\n\n      if (finallyEntry &&\n          (type === \"break\" ||\n           type === \"continue\") &&\n          finallyEntry.tryLoc <= arg &&\n          arg <= finallyEntry.finallyLoc) {\n        // Ignore the finally entry if control is not jumping to a\n        // location outside the try/catch block.\n        finallyEntry = null;\n      }\n\n      var record = finallyEntry ? finallyEntry.completion : {};\n      record.type = type;\n      record.arg = arg;\n\n      if (finallyEntry) {\n        this.method = \"next\";\n        this.next = finallyEntry.finallyLoc;\n        return ContinueSentinel;\n      }\n\n      return this.complete(record);\n    },\n\n    complete: function(record, afterLoc) {\n      if (record.type === \"throw\") {\n        throw record.arg;\n      }\n\n      if (record.type === \"break\" ||\n          record.type === \"continue\") {\n        this.next = record.arg;\n      } else if (record.type === \"return\") {\n        this.rval = this.arg = record.arg;\n        this.method = \"return\";\n        this.next = \"end\";\n      } else if (record.type === \"normal\" && afterLoc) {\n        this.next = afterLoc;\n      }\n\n      return ContinueSentinel;\n    },\n\n    finish: function(finallyLoc) {\n      for (var i = this.tryEntries.length - 1; i >= 0; --i) {\n        var entry = this.tryEntries[i];\n        if (entry.finallyLoc === finallyLoc) {\n          this.complete(entry.completion, entry.afterLoc);\n          resetTryEntry(entry);\n          return ContinueSentinel;\n        }\n      }\n    },\n\n    \"catch\": function(tryLoc) {\n      for (var i = this.tryEntries.length - 1; i >= 0; --i) {\n        var entry = this.tryEntries[i];\n        if (entry.tryLoc === tryLoc) {\n          var record = entry.completion;\n          if (record.type === \"throw\") {\n            var thrown = record.arg;\n            resetTryEntry(entry);\n          }\n          return thrown;\n        }\n      }\n\n      // The context.catch method must only be called with a location\n      // argument that corresponds to a known catch block.\n      throw new Error(\"illegal catch attempt\");\n    },\n\n    delegateYield: function(iterable, resultName, nextLoc) {\n      this.delegate = {\n        iterator: values(iterable),\n        resultName: resultName,\n        nextLoc: nextLoc\n      };\n\n      if (this.method === \"next\") {\n        // Deliberately forget the last sent value so that we don't\n        // accidentally pass it on to the delegate.\n        this.arg = undefined;\n      }\n\n      return ContinueSentinel;\n    }\n  };\n})(\n  // Among the various tricks for obtaining a reference to the global\n  // object, this seems to be the most reliable technique that does not\n  // use indirect eval (which violates Content Security Policy).\n  typeof __webpack_require__.g === \"object\" ? __webpack_require__.g :\n  typeof window === \"object\" ? window :\n  typeof self === \"object\" ? self : this\n);\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/babel-polyfill/node_modules/regenerator-runtime/runtime.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/html.js":
+/*!****************************************!*\
+  !*** ./node_modules/linkifyjs/html.js ***!
+  \****************************************/
+/*! dynamic exports */
+/*! exports [maybe provided (runtime-defined)] [no usage info] */
+/*! runtime requirements: module, __webpack_require__ */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__(/*! ./lib/linkify-html */ \"./node_modules/linkifyjs/lib/linkify-html.js\").default;\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/html.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify-html.js":
+/*!****************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify-html.js ***!
+  \****************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.default = linkifyHtml;\n\nvar _simpleHtmlTokenizer = __webpack_require__(/*! ./simple-html-tokenizer */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer.js\");\n\nvar _simpleHtmlTokenizer2 = _interopRequireDefault(_simpleHtmlTokenizer);\n\nvar _linkify = __webpack_require__(/*! ./linkify */ \"./node_modules/linkifyjs/lib/linkify.js\");\n\nvar linkify = _interopRequireWildcard(_linkify);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar options = linkify.options;\nvar Options = options.Options;\n\n\nvar StartTag = 'StartTag';\nvar EndTag = 'EndTag';\nvar Chars = 'Chars';\nvar Comment = 'Comment';\n\n/**\n\t`tokens` and `token` in this section refer to tokens generated by the HTML\n\tparser.\n*/\nfunction linkifyHtml(str) {\n\tvar opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};\n\n\tvar tokens = _simpleHtmlTokenizer2.default.tokenize(str);\n\tvar linkifiedTokens = [];\n\tvar linkified = [];\n\tvar i;\n\n\topts = new Options(opts);\n\n\t// Linkify the tokens given by the parser\n\tfor (i = 0; i < tokens.length; i++) {\n\t\tvar token = tokens[i];\n\n\t\tif (token.type === StartTag) {\n\t\t\tlinkifiedTokens.push(token);\n\n\t\t\t// Ignore all the contents of ignored tags\n\t\t\tvar tagName = token.tagName.toUpperCase();\n\t\t\tvar isIgnored = tagName === 'A' || options.contains(opts.ignoreTags, tagName);\n\t\t\tif (!isIgnored) {\n\t\t\t\tcontinue;\n\t\t\t}\n\n\t\t\tvar preskipLen = linkifiedTokens.length;\n\t\t\tskipTagTokens(tagName, tokens, ++i, linkifiedTokens);\n\t\t\ti += linkifiedTokens.length - preskipLen - 1;\n\t\t\tcontinue;\n\t\t} else if (token.type !== Chars) {\n\t\t\t// Skip this token, it's not important\n\t\t\tlinkifiedTokens.push(token);\n\t\t\tcontinue;\n\t\t}\n\n\t\t// Valid text token, linkify it!\n\t\tvar linkifedChars = linkifyChars(token.chars, opts);\n\t\tlinkifiedTokens.push.apply(linkifiedTokens, linkifedChars);\n\t}\n\n\t// Convert the tokens back into a string\n\tfor (i = 0; i < linkifiedTokens.length; i++) {\n\t\tvar _token = linkifiedTokens[i];\n\t\tswitch (_token.type) {\n\t\t\tcase StartTag:\n\t\t\t\t{\n\t\t\t\t\tvar link = '<' + _token.tagName;\n\t\t\t\t\tif (_token.attributes.length > 0) {\n\t\t\t\t\t\tvar attrs = attrsToStrings(_token.attributes);\n\t\t\t\t\t\tlink += ' ' + attrs.join(' ');\n\t\t\t\t\t}\n\t\t\t\t\tlink += '>';\n\t\t\t\t\tlinkified.push(link);\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\tcase EndTag:\n\t\t\t\tlinkified.push('</' + _token.tagName + '>');\n\t\t\t\tbreak;\n\t\t\tcase Chars:\n\t\t\t\tlinkified.push(escapeText(_token.chars));\n\t\t\t\tbreak;\n\t\t\tcase Comment:\n\t\t\t\tlinkified.push('<!--' + escapeText(_token.chars) + '-->');\n\t\t\t\tbreak;\n\t\t}\n\t}\n\n\treturn linkified.join('');\n}\n\n/**\n\t`tokens` and `token` in this section referes to tokens returned by\n\t`linkify.tokenize`. `linkified` will contain HTML Parser-style tokens\n*/\nfunction linkifyChars(str, opts) {\n\tvar tokens = linkify.tokenize(str);\n\tvar result = [];\n\n\tfor (var i = 0; i < tokens.length; i++) {\n\t\tvar token = tokens[i];\n\n\t\tif (token.type === 'nl' && opts.nl2br) {\n\t\t\tresult.push({\n\t\t\t\ttype: StartTag,\n\t\t\t\ttagName: 'br',\n\t\t\t\tattributes: [],\n\t\t\t\tselfClosing: true\n\t\t\t});\n\t\t\tcontinue;\n\t\t} else if (!token.isLink || !opts.check(token)) {\n\t\t\tresult.push({ type: Chars, chars: token.toString() });\n\t\t\tcontinue;\n\t\t}\n\n\t\tvar _opts$resolve = opts.resolve(token),\n\t\t    formatted = _opts$resolve.formatted,\n\t\t    formattedHref = _opts$resolve.formattedHref,\n\t\t    tagName = _opts$resolve.tagName,\n\t\t    className = _opts$resolve.className,\n\t\t    target = _opts$resolve.target,\n\t\t    attributes = _opts$resolve.attributes;\n\n\t\t// Build up attributes\n\n\n\t\tvar attributeArray = [['href', formattedHref]];\n\n\t\tif (className) {\n\t\t\tattributeArray.push(['class', className]);\n\t\t}\n\n\t\tif (target) {\n\t\t\tattributeArray.push(['target', target]);\n\t\t}\n\n\t\tfor (var attr in attributes) {\n\t\t\tattributeArray.push([attr, attributes[attr]]);\n\t\t}\n\n\t\t// Add the required tokens\n\t\tresult.push({\n\t\t\ttype: StartTag,\n\t\t\ttagName: tagName,\n\t\t\tattributes: attributeArray,\n\t\t\tselfClosing: false\n\t\t});\n\t\tresult.push({ type: Chars, chars: formatted });\n\t\tresult.push({ type: EndTag, tagName: tagName });\n\t}\n\n\treturn result;\n}\n\n/**\n\tReturns a list of tokens skipped until the closing tag of tagName.\n\n\t* `tagName` is the closing tag which will prompt us to stop skipping\n\t* `tokens` is the array of tokens generated by HTML5Tokenizer which\n\t* `i` is the index immediately after the opening tag to skip\n\t* `skippedTokens` is an array which skipped tokens are being pushed into\n\n\tCaveats\n\n\t* Assumes that i is the first token after the given opening tagName\n\t* The closing tag will be skipped, but nothing after it\n\t* Will track whether there is a nested tag of the same type\n*/\nfunction skipTagTokens(tagName, tokens, i, skippedTokens) {\n\n\t// number of tokens of this type on the [fictional] stack\n\tvar stackCount = 1;\n\n\twhile (i < tokens.length && stackCount > 0) {\n\t\tvar token = tokens[i];\n\n\t\tif (token.type === StartTag && token.tagName.toUpperCase() === tagName) {\n\t\t\t// Nested tag of the same type, \"add to stack\"\n\t\t\tstackCount++;\n\t\t} else if (token.type === EndTag && token.tagName.toUpperCase() === tagName) {\n\t\t\t// Closing tag\n\t\t\tstackCount--;\n\t\t}\n\n\t\tskippedTokens.push(token);\n\t\ti++;\n\t}\n\n\t// Note that if stackCount > 0 here, the HTML is probably invalid\n\treturn skippedTokens;\n}\n\nfunction escapeText(text) {\n\t// Not required, HTML tokenizer ensures this occurs properly\n\treturn text;\n}\n\nfunction escapeAttr(attr) {\n\treturn attr.replace(/\"/g, '&quot;');\n}\n\nfunction attrsToStrings(attrs) {\n\tvar attrStrs = [];\n\tfor (var i = 0; i < attrs.length; i++) {\n\t\tvar _attrs$i = attrs[i],\n\t\t    name = _attrs$i[0],\n\t\t    value = _attrs$i[1];\n\n\t\tattrStrs.push(name + '=\"' + escapeAttr(value) + '\"');\n\t}\n\treturn attrStrs;\n}\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify-html.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify.js":
+/*!***********************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify.js ***!
+  \***********************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export find [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export inherits [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export options [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export parser [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export scanner [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export test [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export tokenize [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.tokenize = exports.test = exports.scanner = exports.parser = exports.options = exports.inherits = exports.find = undefined;\n\nvar _class = __webpack_require__(/*! ./linkify/utils/class */ \"./node_modules/linkifyjs/lib/linkify/utils/class.js\");\n\nvar _options = __webpack_require__(/*! ./linkify/utils/options */ \"./node_modules/linkifyjs/lib/linkify/utils/options.js\");\n\nvar options = _interopRequireWildcard(_options);\n\nvar _scanner = __webpack_require__(/*! ./linkify/core/scanner */ \"./node_modules/linkifyjs/lib/linkify/core/scanner.js\");\n\nvar scanner = _interopRequireWildcard(_scanner);\n\nvar _parser = __webpack_require__(/*! ./linkify/core/parser */ \"./node_modules/linkifyjs/lib/linkify/core/parser.js\");\n\nvar parser = _interopRequireWildcard(_parser);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nif (!Array.isArray) {\n\tArray.isArray = function (arg) {\n\t\treturn Object.prototype.toString.call(arg) === '[object Array]';\n\t};\n}\n\n/**\n\tConverts a string into tokens that represent linkable and non-linkable bits\n\t@method tokenize\n\t@param {String} str\n\t@return {Array} tokens\n*/\nvar tokenize = function tokenize(str) {\n\treturn parser.run(scanner.run(str));\n};\n\n/**\n\tReturns a list of linkable items in the given string.\n*/\nvar find = function find(str) {\n\tvar type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;\n\n\tvar tokens = tokenize(str);\n\tvar filtered = [];\n\n\tfor (var i = 0; i < tokens.length; i++) {\n\t\tvar token = tokens[i];\n\t\tif (token.isLink && (!type || token.type === type)) {\n\t\t\tfiltered.push(token.toObject());\n\t\t}\n\t}\n\n\treturn filtered;\n};\n\n/**\n\tIs the given string valid linkable text of some sort\n\tNote that this does not trim the text for you.\n\n\tOptionally pass in a second `type` param, which is the type of link to test\n\tfor.\n\n\tFor example,\n\n\t\ttest(str, 'email');\n\n\tWill return `true` if str is a valid email.\n*/\nvar test = function test(str) {\n\tvar type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;\n\n\tvar tokens = tokenize(str);\n\treturn tokens.length === 1 && tokens[0].isLink && (!type || tokens[0].type === type);\n};\n\n// Scanner and parser provide states and tokens for the lexicographic stage\n// (will be used to add additional link types)\nexports.find = find;\nexports.inherits = _class.inherits;\nexports.options = options;\nexports.parser = parser;\nexports.scanner = scanner;\nexports.test = test;\nexports.tokenize = tokenize;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify/core/parser.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify/core/parser.js ***!
+  \***********************************************************/
+/*! flagged exports */
+/*! export State [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export TOKENS [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export run [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export start [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.start = exports.run = exports.TOKENS = exports.State = undefined;\n\nvar _state = __webpack_require__(/*! ./state */ \"./node_modules/linkifyjs/lib/linkify/core/state.js\");\n\nvar _multi = __webpack_require__(/*! ./tokens/multi */ \"./node_modules/linkifyjs/lib/linkify/core/tokens/multi.js\");\n\nvar MULTI_TOKENS = _interopRequireWildcard(_multi);\n\nvar _text = __webpack_require__(/*! ./tokens/text */ \"./node_modules/linkifyjs/lib/linkify/core/tokens/text.js\");\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\n/**\n\tNot exactly parser, more like the second-stage scanner (although we can\n\ttheoretically hotswap the code here with a real parser in the future... but\n\tfor a little URL-finding utility abstract syntax trees may be a little\n\toverkill).\n\n\tURL format: http://en.wikipedia.org/wiki/URI_scheme\n\tEmail format: http://en.wikipedia.org/wiki/Email_address (links to RFC in\n\treference)\n\n\t@module linkify\n\t@submodule parser\n\t@main parser\n*/\n\nvar makeState = function makeState(tokenClass) {\n\treturn new _state.TokenState(tokenClass);\n};\n\n// The universal starting state.\nvar S_START = makeState();\n\n// Intermediate states for URLs. Note that domains that begin with a protocol\n// are treated slighly differently from those that don't.\nvar S_PROTOCOL = makeState(); // e.g., 'http:'\nvar S_MAILTO = makeState(); // 'mailto:'\nvar S_PROTOCOL_SLASH = makeState(); // e.g., '/', 'http:/''\nvar S_PROTOCOL_SLASH_SLASH = makeState(); // e.g., '//', 'http://'\nvar S_DOMAIN = makeState(); // parsed string ends with a potential domain name (A)\nvar S_DOMAIN_DOT = makeState(); // (A) domain followed by DOT\nvar S_TLD = makeState(_multi.URL); // (A) Simplest possible URL with no query string\nvar S_TLD_COLON = makeState(); // (A) URL followed by colon (potential port number here)\nvar S_TLD_PORT = makeState(_multi.URL); // TLD followed by a port number\nvar S_URL = makeState(_multi.URL); // Long URL with optional port and maybe query string\nvar S_URL_NON_ACCEPTING = makeState(); // URL followed by some symbols (will not be part of the final URL)\nvar S_URL_OPENBRACE = makeState(); // URL followed by {\nvar S_URL_OPENBRACKET = makeState(); // URL followed by [\nvar S_URL_OPENANGLEBRACKET = makeState(); // URL followed by <\nvar S_URL_OPENPAREN = makeState(); // URL followed by (\nvar S_URL_OPENBRACE_Q = makeState(_multi.URL); // URL followed by { and some symbols that the URL can end it\nvar S_URL_OPENBRACKET_Q = makeState(_multi.URL); // URL followed by [ and some symbols that the URL can end it\nvar S_URL_OPENANGLEBRACKET_Q = makeState(_multi.URL); // URL followed by < and some symbols that the URL can end it\nvar S_URL_OPENPAREN_Q = makeState(_multi.URL); // URL followed by ( and some symbols that the URL can end it\nvar S_URL_OPENBRACE_SYMS = makeState(); // S_URL_OPENBRACE_Q followed by some symbols it cannot end it\nvar S_URL_OPENBRACKET_SYMS = makeState(); // S_URL_OPENBRACKET_Q followed by some symbols it cannot end it\nvar S_URL_OPENANGLEBRACKET_SYMS = makeState(); // S_URL_OPENANGLEBRACKET_Q followed by some symbols it cannot end it\nvar S_URL_OPENPAREN_SYMS = makeState(); // S_URL_OPENPAREN_Q followed by some symbols it cannot end it\nvar S_EMAIL_DOMAIN = makeState(); // parsed string starts with local email info + @ with a potential domain name (C)\nvar S_EMAIL_DOMAIN_DOT = makeState(); // (C) domain followed by DOT\nvar S_EMAIL = makeState(_multi.EMAIL); // (C) Possible email address (could have more tlds)\nvar S_EMAIL_COLON = makeState(); // (C) URL followed by colon (potential port number here)\nvar S_EMAIL_PORT = makeState(_multi.EMAIL); // (C) Email address with a port\nvar S_MAILTO_EMAIL = makeState(_multi.MAILTOEMAIL); // Email that begins with the mailto prefix (D)\nvar S_MAILTO_EMAIL_NON_ACCEPTING = makeState(); // (D) Followed by some non-query string chars\nvar S_LOCALPART = makeState(); // Local part of the email address\nvar S_LOCALPART_AT = makeState(); // Local part of the email address plus @\nvar S_LOCALPART_DOT = makeState(); // Local part of the email address plus '.' (localpart cannot end in .)\nvar S_NL = makeState(_multi.NL); // single new line\n\n// Make path from start to protocol (with '//')\nS_START.on(_text.NL, S_NL).on(_text.PROTOCOL, S_PROTOCOL).on(_text.MAILTO, S_MAILTO).on(_text.SLASH, S_PROTOCOL_SLASH);\n\nS_PROTOCOL.on(_text.SLASH, S_PROTOCOL_SLASH);\nS_PROTOCOL_SLASH.on(_text.SLASH, S_PROTOCOL_SLASH_SLASH);\n\n// The very first potential domain name\nS_START.on(_text.TLD, S_DOMAIN).on(_text.DOMAIN, S_DOMAIN).on(_text.LOCALHOST, S_TLD).on(_text.NUM, S_DOMAIN);\n\n// Force URL for protocol followed by anything sane\nS_PROTOCOL_SLASH_SLASH.on(_text.TLD, S_URL).on(_text.DOMAIN, S_URL).on(_text.NUM, S_URL).on(_text.LOCALHOST, S_URL);\n\n// Account for dots and hyphens\n// hyphens are usually parts of domain names\nS_DOMAIN.on(_text.DOT, S_DOMAIN_DOT);\nS_EMAIL_DOMAIN.on(_text.DOT, S_EMAIL_DOMAIN_DOT);\n\n// Hyphen can jump back to a domain name\n\n// After the first domain and a dot, we can find either a URL or another domain\nS_DOMAIN_DOT.on(_text.TLD, S_TLD).on(_text.DOMAIN, S_DOMAIN).on(_text.NUM, S_DOMAIN).on(_text.LOCALHOST, S_DOMAIN);\n\nS_EMAIL_DOMAIN_DOT.on(_text.TLD, S_EMAIL).on(_text.DOMAIN, S_EMAIL_DOMAIN).on(_text.NUM, S_EMAIL_DOMAIN).on(_text.LOCALHOST, S_EMAIL_DOMAIN);\n\n// S_TLD accepts! But the URL could be longer, try to find a match greedily\n// The `run` function should be able to \"rollback\" to the accepting state\nS_TLD.on(_text.DOT, S_DOMAIN_DOT);\nS_EMAIL.on(_text.DOT, S_EMAIL_DOMAIN_DOT);\n\n// Become real URLs after `SLASH` or `COLON NUM SLASH`\n// Here PSS and non-PSS converge\nS_TLD.on(_text.COLON, S_TLD_COLON).on(_text.SLASH, S_URL);\nS_TLD_COLON.on(_text.NUM, S_TLD_PORT);\nS_TLD_PORT.on(_text.SLASH, S_URL);\nS_EMAIL.on(_text.COLON, S_EMAIL_COLON);\nS_EMAIL_COLON.on(_text.NUM, S_EMAIL_PORT);\n\n// Types of characters the URL can definitely end in\nvar qsAccepting = [_text.DOMAIN, _text.AT, _text.LOCALHOST, _text.NUM, _text.PLUS, _text.POUND, _text.PROTOCOL, _text.SLASH, _text.TLD, _text.UNDERSCORE, _text.SYM, _text.AMPERSAND];\n\n// Types of tokens that can follow a URL and be part of the query string\n// but cannot be the very last characters\n// Characters that cannot appear in the URL at all should be excluded\nvar qsNonAccepting = [_text.COLON, _text.DOT, _text.QUERY, _text.PUNCTUATION, _text.CLOSEBRACE, _text.CLOSEBRACKET, _text.CLOSEANGLEBRACKET, _text.CLOSEPAREN, _text.OPENBRACE, _text.OPENBRACKET, _text.OPENANGLEBRACKET, _text.OPENPAREN];\n\n// These states are responsible primarily for determining whether or not to\n// include the final round bracket.\n\n// URL, followed by an opening bracket\nS_URL.on(_text.OPENBRACE, S_URL_OPENBRACE).on(_text.OPENBRACKET, S_URL_OPENBRACKET).on(_text.OPENANGLEBRACKET, S_URL_OPENANGLEBRACKET).on(_text.OPENPAREN, S_URL_OPENPAREN);\n\n// URL with extra symbols at the end, followed by an opening bracket\nS_URL_NON_ACCEPTING.on(_text.OPENBRACE, S_URL_OPENBRACE).on(_text.OPENBRACKET, S_URL_OPENBRACKET).on(_text.OPENANGLEBRACKET, S_URL_OPENANGLEBRACKET).on(_text.OPENPAREN, S_URL_OPENPAREN);\n\n// Closing bracket component. This character WILL be included in the URL\nS_URL_OPENBRACE.on(_text.CLOSEBRACE, S_URL);\nS_URL_OPENBRACKET.on(_text.CLOSEBRACKET, S_URL);\nS_URL_OPENANGLEBRACKET.on(_text.CLOSEANGLEBRACKET, S_URL);\nS_URL_OPENPAREN.on(_text.CLOSEPAREN, S_URL);\nS_URL_OPENBRACE_Q.on(_text.CLOSEBRACE, S_URL);\nS_URL_OPENBRACKET_Q.on(_text.CLOSEBRACKET, S_URL);\nS_URL_OPENANGLEBRACKET_Q.on(_text.CLOSEANGLEBRACKET, S_URL);\nS_URL_OPENPAREN_Q.on(_text.CLOSEPAREN, S_URL);\nS_URL_OPENBRACE_SYMS.on(_text.CLOSEBRACE, S_URL);\nS_URL_OPENBRACKET_SYMS.on(_text.CLOSEBRACKET, S_URL);\nS_URL_OPENANGLEBRACKET_SYMS.on(_text.CLOSEANGLEBRACKET, S_URL);\nS_URL_OPENPAREN_SYMS.on(_text.CLOSEPAREN, S_URL);\n\n// URL that beings with an opening bracket, followed by a symbols.\n// Note that the final state can still be `S_URL_OPENBRACE_Q` (if the URL only\n// has a single opening bracket for some reason).\nS_URL_OPENBRACE.on(qsAccepting, S_URL_OPENBRACE_Q);\nS_URL_OPENBRACKET.on(qsAccepting, S_URL_OPENBRACKET_Q);\nS_URL_OPENANGLEBRACKET.on(qsAccepting, S_URL_OPENANGLEBRACKET_Q);\nS_URL_OPENPAREN.on(qsAccepting, S_URL_OPENPAREN_Q);\nS_URL_OPENBRACE.on(qsNonAccepting, S_URL_OPENBRACE_SYMS);\nS_URL_OPENBRACKET.on(qsNonAccepting, S_URL_OPENBRACKET_SYMS);\nS_URL_OPENANGLEBRACKET.on(qsNonAccepting, S_URL_OPENANGLEBRACKET_SYMS);\nS_URL_OPENPAREN.on(qsNonAccepting, S_URL_OPENPAREN_SYMS);\n\n// URL that begins with an opening bracket, followed by some symbols\nS_URL_OPENBRACE_Q.on(qsAccepting, S_URL_OPENBRACE_Q);\nS_URL_OPENBRACKET_Q.on(qsAccepting, S_URL_OPENBRACKET_Q);\nS_URL_OPENANGLEBRACKET_Q.on(qsAccepting, S_URL_OPENANGLEBRACKET_Q);\nS_URL_OPENPAREN_Q.on(qsAccepting, S_URL_OPENPAREN_Q);\nS_URL_OPENBRACE_Q.on(qsNonAccepting, S_URL_OPENBRACE_Q);\nS_URL_OPENBRACKET_Q.on(qsNonAccepting, S_URL_OPENBRACKET_Q);\nS_URL_OPENANGLEBRACKET_Q.on(qsNonAccepting, S_URL_OPENANGLEBRACKET_Q);\nS_URL_OPENPAREN_Q.on(qsNonAccepting, S_URL_OPENPAREN_Q);\n\nS_URL_OPENBRACE_SYMS.on(qsAccepting, S_URL_OPENBRACE_Q);\nS_URL_OPENBRACKET_SYMS.on(qsAccepting, S_URL_OPENBRACKET_Q);\nS_URL_OPENANGLEBRACKET_SYMS.on(qsAccepting, S_URL_OPENANGLEBRACKET_Q);\nS_URL_OPENPAREN_SYMS.on(qsAccepting, S_URL_OPENPAREN_Q);\nS_URL_OPENBRACE_SYMS.on(qsNonAccepting, S_URL_OPENBRACE_SYMS);\nS_URL_OPENBRACKET_SYMS.on(qsNonAccepting, S_URL_OPENBRACKET_SYMS);\nS_URL_OPENANGLEBRACKET_SYMS.on(qsNonAccepting, S_URL_OPENANGLEBRACKET_SYMS);\nS_URL_OPENPAREN_SYMS.on(qsNonAccepting, S_URL_OPENPAREN_SYMS);\n\n// Account for the query string\nS_URL.on(qsAccepting, S_URL);\nS_URL_NON_ACCEPTING.on(qsAccepting, S_URL);\n\nS_URL.on(qsNonAccepting, S_URL_NON_ACCEPTING);\nS_URL_NON_ACCEPTING.on(qsNonAccepting, S_URL_NON_ACCEPTING);\n\n// Email address-specific state definitions\n// Note: We are not allowing '/' in email addresses since this would interfere\n// with real URLs\n\n// For addresses with the mailto prefix\n// 'mailto:' followed by anything sane is a valid email\nS_MAILTO.on(_text.TLD, S_MAILTO_EMAIL).on(_text.DOMAIN, S_MAILTO_EMAIL).on(_text.NUM, S_MAILTO_EMAIL).on(_text.LOCALHOST, S_MAILTO_EMAIL);\n\n// Greedily get more potential valid email values\nS_MAILTO_EMAIL.on(qsAccepting, S_MAILTO_EMAIL).on(qsNonAccepting, S_MAILTO_EMAIL_NON_ACCEPTING);\nS_MAILTO_EMAIL_NON_ACCEPTING.on(qsAccepting, S_MAILTO_EMAIL).on(qsNonAccepting, S_MAILTO_EMAIL_NON_ACCEPTING);\n\n// For addresses without the mailto prefix\n// Tokens allowed in the localpart of the email\nvar localpartAccepting = [_text.DOMAIN, _text.NUM, _text.PLUS, _text.POUND, _text.QUERY, _text.UNDERSCORE, _text.SYM, _text.AMPERSAND, _text.TLD];\n\n// Some of the tokens in `localpartAccepting` are already accounted for here and\n// will not be overwritten (don't worry)\nS_DOMAIN.on(localpartAccepting, S_LOCALPART).on(_text.AT, S_LOCALPART_AT);\nS_TLD.on(localpartAccepting, S_LOCALPART).on(_text.AT, S_LOCALPART_AT);\nS_DOMAIN_DOT.on(localpartAccepting, S_LOCALPART);\n\n// Okay we're on a localpart. Now what?\n// TODO: IP addresses and what if the email starts with numbers?\nS_LOCALPART.on(localpartAccepting, S_LOCALPART).on(_text.AT, S_LOCALPART_AT) // close to an email address now\n.on(_text.DOT, S_LOCALPART_DOT);\nS_LOCALPART_DOT.on(localpartAccepting, S_LOCALPART);\nS_LOCALPART_AT.on(_text.TLD, S_EMAIL_DOMAIN).on(_text.DOMAIN, S_EMAIL_DOMAIN).on(_text.LOCALHOST, S_EMAIL);\n// States following `@` defined above\n\nvar run = function run(tokens) {\n\tvar len = tokens.length;\n\tvar cursor = 0;\n\tvar multis = [];\n\tvar textTokens = [];\n\n\twhile (cursor < len) {\n\t\tvar state = S_START;\n\t\tvar secondState = null;\n\t\tvar nextState = null;\n\t\tvar multiLength = 0;\n\t\tvar latestAccepting = null;\n\t\tvar sinceAccepts = -1;\n\n\t\twhile (cursor < len && !(secondState = state.next(tokens[cursor]))) {\n\t\t\t// Starting tokens with nowhere to jump to.\n\t\t\t// Consider these to be just plain text\n\t\t\ttextTokens.push(tokens[cursor++]);\n\t\t}\n\n\t\twhile (cursor < len && (nextState = secondState || state.next(tokens[cursor]))) {\n\n\t\t\t// Get the next state\n\t\t\tsecondState = null;\n\t\t\tstate = nextState;\n\n\t\t\t// Keep track of the latest accepting state\n\t\t\tif (state.accepts()) {\n\t\t\t\tsinceAccepts = 0;\n\t\t\t\tlatestAccepting = state;\n\t\t\t} else if (sinceAccepts >= 0) {\n\t\t\t\tsinceAccepts++;\n\t\t\t}\n\n\t\t\tcursor++;\n\t\t\tmultiLength++;\n\t\t}\n\n\t\tif (sinceAccepts < 0) {\n\n\t\t\t// No accepting state was found, part of a regular text token\n\t\t\t// Add all the tokens we looked at to the text tokens array\n\t\t\tfor (var i = cursor - multiLength; i < cursor; i++) {\n\t\t\t\ttextTokens.push(tokens[i]);\n\t\t\t}\n\t\t} else {\n\n\t\t\t// Accepting state!\n\n\t\t\t// First close off the textTokens (if available)\n\t\t\tif (textTokens.length > 0) {\n\t\t\t\tmultis.push(new _multi.TEXT(textTokens));\n\t\t\t\ttextTokens = [];\n\t\t\t}\n\n\t\t\t// Roll back to the latest accepting state\n\t\t\tcursor -= sinceAccepts;\n\t\t\tmultiLength -= sinceAccepts;\n\n\t\t\t// Create a new multitoken\n\t\t\tvar MULTI = latestAccepting.emit();\n\t\t\tmultis.push(new MULTI(tokens.slice(cursor - multiLength, cursor)));\n\t\t}\n\t}\n\n\t// Finally close off the textTokens (if available)\n\tif (textTokens.length > 0) {\n\t\tmultis.push(new _multi.TEXT(textTokens));\n\t}\n\n\treturn multis;\n};\n\nexports.State = _state.TokenState;\nexports.TOKENS = MULTI_TOKENS;\nexports.run = run;\nexports.start = S_START;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify/core/parser.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify/core/scanner.js":
+/*!************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify/core/scanner.js ***!
+  \************************************************************/
+/*! flagged exports */
+/*! export State [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export TOKENS [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export run [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export start [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.start = exports.run = exports.TOKENS = exports.State = undefined;\n\nvar _state = __webpack_require__(/*! ./state */ \"./node_modules/linkifyjs/lib/linkify/core/state.js\");\n\nvar _text = __webpack_require__(/*! ./tokens/text */ \"./node_modules/linkifyjs/lib/linkify/core/tokens/text.js\");\n\nvar TOKENS = _interopRequireWildcard(_text);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nvar tlds = 'aaa|aarp|abarth|abb|abbott|abbvie|abc|able|abogado|abudhabi|ac|academy|accenture|accountant|accountants|aco|active|actor|ad|adac|ads|adult|ae|aeg|aero|aetna|af|afamilycompany|afl|africa|ag|agakhan|agency|ai|aig|aigo|airbus|airforce|airtel|akdn|al|alfaromeo|alibaba|alipay|allfinanz|allstate|ally|alsace|alstom|am|americanexpress|americanfamily|amex|amfam|amica|amsterdam|analytics|android|anquan|anz|ao|aol|apartments|app|apple|aq|aquarelle|ar|arab|aramco|archi|army|arpa|art|arte|as|asda|asia|associates|at|athleta|attorney|au|auction|audi|audible|audio|auspost|author|auto|autos|avianca|aw|aws|ax|axa|az|azure|ba|baby|baidu|banamex|bananarepublic|band|bank|bar|barcelona|barclaycard|barclays|barefoot|bargains|baseball|basketball|bauhaus|bayern|bb|bbc|bbt|bbva|bcg|bcn|bd|be|beats|beauty|beer|bentley|berlin|best|bestbuy|bet|bf|bg|bh|bharti|bi|bible|bid|bike|bing|bingo|bio|biz|bj|black|blackfriday|blanco|blockbuster|blog|bloomberg|blue|bm|bms|bmw|bn|bnl|bnpparibas|bo|boats|boehringer|bofa|bom|bond|boo|book|booking|boots|bosch|bostik|boston|bot|boutique|box|br|bradesco|bridgestone|broadway|broker|brother|brussels|bs|bt|budapest|bugatti|build|builders|business|buy|buzz|bv|bw|by|bz|bzh|ca|cab|cafe|cal|call|calvinklein|cam|camera|camp|cancerresearch|canon|capetown|capital|capitalone|car|caravan|cards|care|career|careers|cars|cartier|casa|case|caseih|cash|casino|cat|catering|catholic|cba|cbn|cbre|cbs|cc|cd|ceb|center|ceo|cern|cf|cfa|cfd|cg|ch|chanel|channel|chase|chat|cheap|chintai|chloe|christmas|chrome|chrysler|church|ci|cipriani|circle|cisco|citadel|citi|citic|city|cityeats|ck|cl|claims|cleaning|click|clinic|clinique|clothing|cloud|club|clubmed|cm|cn|co|coach|codes|coffee|college|cologne|com|comcast|commbank|community|company|compare|computer|comsec|condos|construction|consulting|contact|contractors|cooking|cookingchannel|cool|coop|corsica|country|coupon|coupons|courses|cr|credit|creditcard|creditunion|cricket|crown|crs|cruise|cruises|csc|cu|cuisinella|cv|cw|cx|cy|cymru|cyou|cz|dabur|dad|dance|data|date|dating|datsun|day|dclk|dds|de|deal|dealer|deals|degree|delivery|dell|deloitte|delta|democrat|dental|dentist|desi|design|dev|dhl|diamonds|diet|digital|direct|directory|discount|discover|dish|diy|dj|dk|dm|dnp|do|docs|doctor|dodge|dog|doha|domains|dot|download|drive|dtv|dubai|duck|dunlop|duns|dupont|durban|dvag|dvr|dz|earth|eat|ec|eco|edeka|edu|education|ee|eg|email|emerck|energy|engineer|engineering|enterprises|epost|epson|equipment|er|ericsson|erni|es|esq|estate|esurance|et|etisalat|eu|eurovision|eus|events|everbank|exchange|expert|exposed|express|extraspace|fage|fail|fairwinds|faith|family|fan|fans|farm|farmers|fashion|fast|fedex|feedback|ferrari|ferrero|fi|fiat|fidelity|fido|film|final|finance|financial|fire|firestone|firmdale|fish|fishing|fit|fitness|fj|fk|flickr|flights|flir|florist|flowers|fly|fm|fo|foo|food|foodnetwork|football|ford|forex|forsale|forum|foundation|fox|fr|free|fresenius|frl|frogans|frontdoor|frontier|ftr|fujitsu|fujixerox|fun|fund|furniture|futbol|fyi|ga|gal|gallery|gallo|gallup|game|games|gap|garden|gb|gbiz|gd|gdn|ge|gea|gent|genting|george|gf|gg|ggee|gh|gi|gift|gifts|gives|giving|gl|glade|glass|gle|global|globo|gm|gmail|gmbh|gmo|gmx|gn|godaddy|gold|goldpoint|golf|goo|goodhands|goodyear|goog|google|gop|got|gov|gp|gq|gr|grainger|graphics|gratis|green|gripe|grocery|group|gs|gt|gu|guardian|gucci|guge|guide|guitars|guru|gw|gy|hair|hamburg|hangout|haus|hbo|hdfc|hdfcbank|health|healthcare|help|helsinki|here|hermes|hgtv|hiphop|hisamitsu|hitachi|hiv|hk|hkt|hm|hn|hockey|holdings|holiday|homedepot|homegoods|homes|homesense|honda|honeywell|horse|hospital|host|hosting|hot|hoteles|hotels|hotmail|house|how|hr|hsbc|ht|htc|hu|hughes|hyatt|hyundai|ibm|icbc|ice|icu|id|ie|ieee|ifm|ikano|il|im|imamat|imdb|immo|immobilien|in|industries|infiniti|info|ing|ink|institute|insurance|insure|int|intel|international|intuit|investments|io|ipiranga|iq|ir|irish|is|iselect|ismaili|ist|istanbul|it|itau|itv|iveco|iwc|jaguar|java|jcb|jcp|je|jeep|jetzt|jewelry|jio|jlc|jll|jm|jmp|jnj|jo|jobs|joburg|jot|joy|jp|jpmorgan|jprs|juegos|juniper|kaufen|kddi|ke|kerryhotels|kerrylogistics|kerryproperties|kfh|kg|kh|ki|kia|kim|kinder|kindle|kitchen|kiwi|km|kn|koeln|komatsu|kosher|kp|kpmg|kpn|kr|krd|kred|kuokgroup|kw|ky|kyoto|kz|la|lacaixa|ladbrokes|lamborghini|lamer|lancaster|lancia|lancome|land|landrover|lanxess|lasalle|lat|latino|latrobe|law|lawyer|lb|lc|lds|lease|leclerc|lefrak|legal|lego|lexus|lgbt|li|liaison|lidl|life|lifeinsurance|lifestyle|lighting|like|lilly|limited|limo|lincoln|linde|link|lipsy|live|living|lixil|lk|loan|loans|locker|locus|loft|lol|london|lotte|lotto|love|lpl|lplfinancial|lr|ls|lt|ltd|ltda|lu|lundbeck|lupin|luxe|luxury|lv|ly|ma|macys|madrid|maif|maison|makeup|man|management|mango|map|market|marketing|markets|marriott|marshalls|maserati|mattel|mba|mc|mckinsey|md|me|med|media|meet|melbourne|meme|memorial|men|menu|meo|merckmsd|metlife|mg|mh|miami|microsoft|mil|mini|mint|mit|mitsubishi|mk|ml|mlb|mls|mm|mma|mn|mo|mobi|mobile|mobily|moda|moe|moi|mom|monash|money|monster|mopar|mormon|mortgage|moscow|moto|motorcycles|mov|movie|movistar|mp|mq|mr|ms|msd|mt|mtn|mtr|mu|museum|mutual|mv|mw|mx|my|mz|na|nab|nadex|nagoya|name|nationwide|natura|navy|nba|nc|ne|nec|net|netbank|netflix|network|neustar|new|newholland|news|next|nextdirect|nexus|nf|nfl|ng|ngo|nhk|ni|nico|nike|nikon|ninja|nissan|nissay|nl|no|nokia|northwesternmutual|norton|now|nowruz|nowtv|np|nr|nra|nrw|ntt|nu|nyc|nz|obi|observer|off|office|okinawa|olayan|olayangroup|oldnavy|ollo|om|omega|one|ong|onl|online|onyourside|ooo|open|oracle|orange|org|organic|origins|osaka|otsuka|ott|ovh|pa|page|panasonic|panerai|paris|pars|partners|parts|party|passagens|pay|pccw|pe|pet|pf|pfizer|pg|ph|pharmacy|phd|philips|phone|photo|photography|photos|physio|piaget|pics|pictet|pictures|pid|pin|ping|pink|pioneer|pizza|pk|pl|place|play|playstation|plumbing|plus|pm|pn|pnc|pohl|poker|politie|porn|post|pr|pramerica|praxi|press|prime|pro|prod|productions|prof|progressive|promo|properties|property|protection|pru|prudential|ps|pt|pub|pw|pwc|py|qa|qpon|quebec|quest|qvc|racing|radio|raid|re|read|realestate|realtor|realty|recipes|red|redstone|redumbrella|rehab|reise|reisen|reit|reliance|ren|rent|rentals|repair|report|republican|rest|restaurant|review|reviews|rexroth|rich|richardli|ricoh|rightathome|ril|rio|rip|rmit|ro|rocher|rocks|rodeo|rogers|room|rs|rsvp|ru|rugby|ruhr|run|rw|rwe|ryukyu|sa|saarland|safe|safety|sakura|sale|salon|samsclub|samsung|sandvik|sandvikcoromant|sanofi|sap|sapo|sarl|sas|save|saxo|sb|sbi|sbs|sc|sca|scb|schaeffler|schmidt|scholarships|school|schule|schwarz|science|scjohnson|scor|scot|sd|se|search|seat|secure|security|seek|select|sener|services|ses|seven|sew|sex|sexy|sfr|sg|sh|shangrila|sharp|shaw|shell|shia|shiksha|shoes|shop|shopping|shouji|show|showtime|shriram|si|silk|sina|singles|site|sj|sk|ski|skin|sky|skype|sl|sling|sm|smart|smile|sn|sncf|so|soccer|social|softbank|software|sohu|solar|solutions|song|sony|soy|space|spiegel|spot|spreadbetting|sr|srl|srt|st|stada|staples|star|starhub|statebank|statefarm|statoil|stc|stcgroup|stockholm|storage|store|stream|studio|study|style|su|sucks|supplies|supply|support|surf|surgery|suzuki|sv|swatch|swiftcover|swiss|sx|sy|sydney|symantec|systems|sz|tab|taipei|talk|taobao|target|tatamotors|tatar|tattoo|tax|taxi|tc|tci|td|tdk|team|tech|technology|tel|telecity|telefonica|temasek|tennis|teva|tf|tg|th|thd|theater|theatre|tiaa|tickets|tienda|tiffany|tips|tires|tirol|tj|tjmaxx|tjx|tk|tkmaxx|tl|tm|tmall|tn|to|today|tokyo|tools|top|toray|toshiba|total|tours|town|toyota|toys|tr|trade|trading|training|travel|travelchannel|travelers|travelersinsurance|trust|trv|tt|tube|tui|tunes|tushu|tv|tvs|tw|tz|ua|ubank|ubs|uconnect|ug|uk|unicom|university|uno|uol|ups|us|uy|uz|va|vacations|vana|vanguard|vc|ve|vegas|ventures|verisign|versicherung|vet|vg|vi|viajes|video|vig|viking|villas|vin|vip|virgin|visa|vision|vista|vistaprint|viva|vivo|vlaanderen|vn|vodka|volkswagen|volvo|vote|voting|voto|voyage|vu|vuelos|wales|walmart|walter|wang|wanggou|warman|watch|watches|weather|weatherchannel|webcam|weber|website|wed|wedding|weibo|weir|wf|whoswho|wien|wiki|williamhill|win|windows|wine|winners|wme|wolterskluwer|woodside|work|works|world|wow|ws|wtc|wtf|xbox|xerox|xfinity|xihuan|xin|xn--11b4c3d|xn--1ck2e1b|xn--1qqw23a|xn--2scrj9c|xn--30rr7y|xn--3bst00m|xn--3ds443g|xn--3e0b707e|xn--3hcrj9c|xn--3oq18vl8pn36a|xn--3pxu8k|xn--42c2d9a|xn--45br5cyl|xn--45brj9c|xn--45q11c|xn--4gbrim|xn--54b7fta0cc|xn--55qw42g|xn--55qx5d|xn--5su34j936bgsg|xn--5tzm5g|xn--6frz82g|xn--6qq986b3xl|xn--80adxhks|xn--80ao21a|xn--80aqecdr1a|xn--80asehdb|xn--80aswg|xn--8y0a063a|xn--90a3ac|xn--90ae|xn--90ais|xn--9dbq2a|xn--9et52u|xn--9krt00a|xn--b4w605ferd|xn--bck1b9a5dre4c|xn--c1avg|xn--c2br7g|xn--cck2b3b|xn--cg4bki|xn--clchc0ea0b2g2a9gcd|xn--czr694b|xn--czrs0t|xn--czru2d|xn--d1acj3b|xn--d1alf|xn--e1a4c|xn--eckvdtc9d|xn--efvy88h|xn--estv75g|xn--fct429k|xn--fhbei|xn--fiq228c5hs|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--fjq720a|xn--flw351e|xn--fpcrj9c3d|xn--fzc2c9e2c|xn--fzys8d69uvgm|xn--g2xx48c|xn--gckr3f0f|xn--gecrj9c|xn--gk3at1e|xn--h2breg3eve|xn--h2brj9c|xn--h2brj9c8c|xn--hxt814e|xn--i1b6b1a6a2e|xn--imr513n|xn--io0a7i|xn--j1aef|xn--j1amh|xn--j6w193g|xn--jlq61u9w7b|xn--jvr189m|xn--kcrx77d1x4a|xn--kprw13d|xn--kpry57d|xn--kpu716f|xn--kput3i|xn--l1acc|xn--lgbbat1ad8j|xn--mgb9awbf|xn--mgba3a3ejt|xn--mgba3a4f16a|xn--mgba7c0bbn0a|xn--mgbaakc7dvf|xn--mgbaam7a8h|xn--mgbab2bd|xn--mgbai9azgqp6j|xn--mgbayh7gpa|xn--mgbb9fbpob|xn--mgbbh1a|xn--mgbbh1a71e|xn--mgbc0a9azcg|xn--mgbca7dzdo|xn--mgberp4a5d4ar|xn--mgbgu82a|xn--mgbi4ecexp|xn--mgbpl2fh|xn--mgbt3dhd|xn--mgbtx2b|xn--mgbx4cd0ab|xn--mix891f|xn--mk1bu44c|xn--mxtq1m|xn--ngbc5azd|xn--ngbe9e0a|xn--ngbrx|xn--node|xn--nqv7f|xn--nqv7fs00ema|xn--nyqy26a|xn--o3cw4h|xn--ogbpf8fl|xn--p1acf|xn--p1ai|xn--pbt977c|xn--pgbs0dh|xn--pssy2u|xn--q9jyb4c|xn--qcka1pmc|xn--qxam|xn--rhqv96g|xn--rovu88b|xn--rvc1e0am3e|xn--s9brj9c|xn--ses554g|xn--t60b56a|xn--tckwe|xn--tiq49xqyj|xn--unup4y|xn--vermgensberater-ctb|xn--vermgensberatung-pwb|xn--vhquv|xn--vuq861b|xn--w4r85el8fhu5dnra|xn--w4rs40l|xn--wgbh1c|xn--wgbl6a|xn--xhq521b|xn--xkc2al3hye2a|xn--xkc2dl3a5ee0h|xn--y9a3aq|xn--yfro4i67o|xn--ygbi2ammx|xn--zfr164b|xperia|xxx|xyz|yachts|yahoo|yamaxun|yandex|ye|yodobashi|yoga|yokohama|you|youtube|yt|yun|za|zappos|zara|zero|zip|zippo|zm|zone|zuerich|zw'.split('|'); // macro, see gulpfile.js\n\n/**\n\tThe scanner provides an interface that takes a string of text as input, and\n\toutputs an array of tokens instances that can be used for easy URL parsing.\n\n\t@module linkify\n\t@submodule scanner\n\t@main scanner\n*/\n\nvar NUMBERS = '0123456789'.split('');\nvar ALPHANUM = '0123456789abcdefghijklmnopqrstuvwxyz'.split('');\nvar WHITESPACE = [' ', '\\f', '\\r', '\\t', '\\v', '\\xA0', '\\u1680', '\\u180E']; // excluding line breaks\n\nvar domainStates = []; // states that jump to DOMAIN on /[a-z0-9]/\nvar makeState = function makeState(tokenClass) {\n\treturn new _state.CharacterState(tokenClass);\n};\n\n// Frequently used states\nvar S_START = makeState();\nvar S_NUM = makeState(_text.NUM);\nvar S_DOMAIN = makeState(_text.DOMAIN);\nvar S_DOMAIN_HYPHEN = makeState(); // domain followed by 1 or more hyphen characters\nvar S_WS = makeState(_text.WS);\n\n// States for special URL symbols\nS_START.on('@', makeState(_text.AT)).on('.', makeState(_text.DOT)).on('+', makeState(_text.PLUS)).on('#', makeState(_text.POUND)).on('?', makeState(_text.QUERY)).on('/', makeState(_text.SLASH)).on('_', makeState(_text.UNDERSCORE)).on(':', makeState(_text.COLON)).on('{', makeState(_text.OPENBRACE)).on('[', makeState(_text.OPENBRACKET)).on('<', makeState(_text.OPENANGLEBRACKET)).on('(', makeState(_text.OPENPAREN)).on('}', makeState(_text.CLOSEBRACE)).on(']', makeState(_text.CLOSEBRACKET)).on('>', makeState(_text.CLOSEANGLEBRACKET)).on(')', makeState(_text.CLOSEPAREN)).on('&', makeState(_text.AMPERSAND)).on([',', ';', '!', '\"', '\\''], makeState(_text.PUNCTUATION));\n\n// Whitespace jumps\n// Tokens of only non-newline whitespace are arbitrarily long\nS_START.on('\\n', makeState(_text.NL)).on(WHITESPACE, S_WS);\n\n// If any whitespace except newline, more whitespace!\nS_WS.on(WHITESPACE, S_WS);\n\n// Generates states for top-level domains\n// Note that this is most accurate when tlds are in alphabetical order\nfor (var i = 0; i < tlds.length; i++) {\n\tvar newStates = (0, _state.stateify)(tlds[i], S_START, _text.TLD, _text.DOMAIN);\n\tdomainStates.push.apply(domainStates, newStates);\n}\n\n// Collect the states generated by different protocls\nvar partialProtocolFileStates = (0, _state.stateify)('file', S_START, _text.DOMAIN, _text.DOMAIN);\nvar partialProtocolFtpStates = (0, _state.stateify)('ftp', S_START, _text.DOMAIN, _text.DOMAIN);\nvar partialProtocolHttpStates = (0, _state.stateify)('http', S_START, _text.DOMAIN, _text.DOMAIN);\nvar partialProtocolMailtoStates = (0, _state.stateify)('mailto', S_START, _text.DOMAIN, _text.DOMAIN);\n\n// Add the states to the array of DOMAINeric states\ndomainStates.push.apply(domainStates, partialProtocolFileStates);\ndomainStates.push.apply(domainStates, partialProtocolFtpStates);\ndomainStates.push.apply(domainStates, partialProtocolHttpStates);\ndomainStates.push.apply(domainStates, partialProtocolMailtoStates);\n\n// Protocol states\nvar S_PROTOCOL_FILE = partialProtocolFileStates.pop();\nvar S_PROTOCOL_FTP = partialProtocolFtpStates.pop();\nvar S_PROTOCOL_HTTP = partialProtocolHttpStates.pop();\nvar S_MAILTO = partialProtocolMailtoStates.pop();\nvar S_PROTOCOL_SECURE = makeState(_text.DOMAIN);\nvar S_FULL_PROTOCOL = makeState(_text.PROTOCOL); // Full protocol ends with COLON\nvar S_FULL_MAILTO = makeState(_text.MAILTO); // Mailto ends with COLON\n\n// Secure protocols (end with 's')\nS_PROTOCOL_FTP.on('s', S_PROTOCOL_SECURE).on(':', S_FULL_PROTOCOL);\n\nS_PROTOCOL_HTTP.on('s', S_PROTOCOL_SECURE).on(':', S_FULL_PROTOCOL);\n\ndomainStates.push(S_PROTOCOL_SECURE);\n\n// Become protocol tokens after a COLON\nS_PROTOCOL_FILE.on(':', S_FULL_PROTOCOL);\nS_PROTOCOL_SECURE.on(':', S_FULL_PROTOCOL);\nS_MAILTO.on(':', S_FULL_MAILTO);\n\n// Localhost\nvar partialLocalhostStates = (0, _state.stateify)('localhost', S_START, _text.LOCALHOST, _text.DOMAIN);\ndomainStates.push.apply(domainStates, partialLocalhostStates);\n\n// Everything else\n// DOMAINs make more DOMAINs\n// Number and character transitions\nS_START.on(NUMBERS, S_NUM);\nS_NUM.on('-', S_DOMAIN_HYPHEN).on(NUMBERS, S_NUM).on(ALPHANUM, S_DOMAIN); // number becomes DOMAIN\n\nS_DOMAIN.on('-', S_DOMAIN_HYPHEN).on(ALPHANUM, S_DOMAIN);\n\n// All the generated states should have a jump to DOMAIN\nfor (var _i = 0; _i < domainStates.length; _i++) {\n\tdomainStates[_i].on('-', S_DOMAIN_HYPHEN).on(ALPHANUM, S_DOMAIN);\n}\n\nS_DOMAIN_HYPHEN.on('-', S_DOMAIN_HYPHEN).on(NUMBERS, S_DOMAIN).on(ALPHANUM, S_DOMAIN);\n\n// Set default transition\nS_START.defaultTransition = makeState(_text.SYM);\n\n/**\n\tGiven a string, returns an array of TOKEN instances representing the\n\tcomposition of that string.\n\n\t@method run\n\t@param {String} str Input string to scan\n\t@return {Array} Array of TOKEN instances\n*/\nvar run = function run(str) {\n\n\t// The state machine only looks at lowercase strings.\n\t// This selective `toLowerCase` is used because lowercasing the entire\n\t// string causes the length and character position to vary in some in some\n\t// non-English strings. This happens only on V8-based runtimes.\n\tvar lowerStr = str.replace(/[A-Z]/g, function (c) {\n\t\treturn c.toLowerCase();\n\t});\n\tvar len = str.length;\n\tvar tokens = []; // return value\n\n\tvar cursor = 0;\n\n\t// Tokenize the string\n\twhile (cursor < len) {\n\t\tvar state = S_START;\n\t\tvar nextState = null;\n\t\tvar tokenLength = 0;\n\t\tvar latestAccepting = null;\n\t\tvar sinceAccepts = -1;\n\n\t\twhile (cursor < len && (nextState = state.next(lowerStr[cursor]))) {\n\t\t\tstate = nextState;\n\n\t\t\t// Keep track of the latest accepting state\n\t\t\tif (state.accepts()) {\n\t\t\t\tsinceAccepts = 0;\n\t\t\t\tlatestAccepting = state;\n\t\t\t} else if (sinceAccepts >= 0) {\n\t\t\t\tsinceAccepts++;\n\t\t\t}\n\n\t\t\ttokenLength++;\n\t\t\tcursor++;\n\t\t}\n\n\t\tif (sinceAccepts < 0) {\n\t\t\tcontinue;\n\t\t} // Should never happen\n\n\t\t// Roll back to the latest accepting state\n\t\tcursor -= sinceAccepts;\n\t\ttokenLength -= sinceAccepts;\n\n\t\t// Get the class for the new token\n\t\tvar TOKEN = latestAccepting.emit(); // Current token class\n\n\t\t// No more jumps, just make a new token\n\t\ttokens.push(new TOKEN(str.substr(cursor - tokenLength, tokenLength)));\n\t}\n\n\treturn tokens;\n};\n\nvar start = S_START;\nexports.State = _state.CharacterState;\nexports.TOKENS = TOKENS;\nexports.run = run;\nexports.start = start;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify/core/scanner.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify/core/state.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify/core/state.js ***!
+  \**********************************************************/
+/*! flagged exports */
+/*! export CharacterState [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export TokenState [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export stateify [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.stateify = exports.TokenState = exports.CharacterState = undefined;\n\nvar _class = __webpack_require__(/*! ../utils/class */ \"./node_modules/linkifyjs/lib/linkify/utils/class.js\");\n\nfunction createStateClass() {\n\treturn function (tClass) {\n\t\tthis.j = [];\n\t\tthis.T = tClass || null;\n\t};\n}\n\n/**\n\tA simple state machine that can emit token classes\n\n\tThe `j` property in this class refers to state jumps. It's a\n\tmultidimensional array where for each element:\n\n\t* index [0] is a symbol or class of symbols to transition to.\n\t* index [1] is a State instance which matches\n\n\tThe type of symbol will depend on the target implementation for this class.\n\tIn Linkify, we have a two-stage scanner. Each stage uses this state machine\n\tbut with a slighly different (polymorphic) implementation.\n\n\tThe `T` property refers to the token class.\n\n\tTODO: Can the `on` and `next` methods be combined?\n\n\t@class BaseState\n*/\nvar BaseState = createStateClass();\nBaseState.prototype = {\n\tdefaultTransition: false,\n\n\t/**\n \t@method constructor\n \t@param {Class} tClass Pass in the kind of token to emit if there are\n \t\tno jumps after this state and the state is accepting.\n */\n\n\t/**\n \tOn the given symbol(s), this machine should go to the given state\n \t\t@method on\n \t@param {Array|Mixed} symbol\n \t@param {BaseState} state Note that the type of this state should be the\n \t\tsame as the current instance (i.e., don't pass in a different\n \t\tsubclass)\n */\n\ton: function on(symbol, state) {\n\t\tif (symbol instanceof Array) {\n\t\t\tfor (var i = 0; i < symbol.length; i++) {\n\t\t\t\tthis.j.push([symbol[i], state]);\n\t\t\t}\n\t\t\treturn this;\n\t\t}\n\t\tthis.j.push([symbol, state]);\n\t\treturn this;\n\t},\n\n\n\t/**\n \tGiven the next item, returns next state for that item\n \t@method next\n \t@param {Mixed} item Should be an instance of the symbols handled by\n \t\tthis particular machine.\n \t@return {State} state Returns false if no jumps are available\n */\n\tnext: function next(item) {\n\t\tfor (var i = 0; i < this.j.length; i++) {\n\t\t\tvar jump = this.j[i];\n\t\t\tvar symbol = jump[0]; // Next item to check for\n\t\t\tvar state = jump[1]; // State to jump to if items match\n\n\t\t\t// compare item with symbol\n\t\t\tif (this.test(item, symbol)) {\n\t\t\t\treturn state;\n\t\t\t}\n\t\t}\n\n\t\t// Nowhere left to jump!\n\t\treturn this.defaultTransition;\n\t},\n\n\n\t/**\n \tDoes this state accept?\n \t`true` only of `this.T` exists\n \t\t@method accepts\n \t@return {Boolean}\n */\n\taccepts: function accepts() {\n\t\treturn !!this.T;\n\t},\n\n\n\t/**\n \tDetermine whether a given item \"symbolizes\" the symbol, where symbol is\n \ta class of items handled by this state machine.\n \t\tThis method should be overriden in extended classes.\n \t\t@method test\n \t@param {Mixed} item Does this item match the given symbol?\n \t@param {Mixed} symbol\n \t@return {Boolean}\n */\n\ttest: function test(item, symbol) {\n\t\treturn item === symbol;\n\t},\n\n\n\t/**\n \tEmit the token for this State (just return it in this case)\n \tIf this emits a token, this instance is an accepting state\n \t@method emit\n \t@return {Class} T\n */\n\temit: function emit() {\n\t\treturn this.T;\n\t}\n};\n\n/**\n\tState machine for string-based input\n\n\t@class CharacterState\n\t@extends BaseState\n*/\nvar CharacterState = (0, _class.inherits)(BaseState, createStateClass(), {\n\t/**\n \tDoes the given character match the given character or regular\n \texpression?\n \t\t@method test\n \t@param {String} char\n \t@param {String|RegExp} charOrRegExp\n \t@return {Boolean}\n */\n\ttest: function test(character, charOrRegExp) {\n\t\treturn character === charOrRegExp || charOrRegExp instanceof RegExp && charOrRegExp.test(character);\n\t}\n});\n\n/**\n\tState machine for input in the form of TextTokens\n\n\t@class TokenState\n\t@extends BaseState\n*/\nvar TokenState = (0, _class.inherits)(BaseState, createStateClass(), {\n\n\t/**\n  * Similar to `on`, but returns the state the results in the transition from\n  * the given item\n  * @method jump\n  * @param {Mixed} item\n  * @param {Token} [token]\n  * @return state\n  */\n\tjump: function jump(token) {\n\t\tvar tClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;\n\n\t\tvar state = this.next(new token('')); // dummy temp token\n\t\tif (state === this.defaultTransition) {\n\t\t\t// Make a new state!\n\t\t\tstate = new this.constructor(tClass);\n\t\t\tthis.on(token, state);\n\t\t} else if (tClass) {\n\t\t\tstate.T = tClass;\n\t\t}\n\t\treturn state;\n\t},\n\n\n\t/**\n \tIs the given token an instance of the given token class?\n \t\t@method test\n \t@param {TextToken} token\n \t@param {Class} tokenClass\n \t@return {Boolean}\n */\n\ttest: function test(token, tokenClass) {\n\t\treturn token instanceof tokenClass;\n\t}\n});\n\n/**\n\tGiven a non-empty target string, generates states (if required) for each\n\tconsecutive substring of characters in str starting from the beginning of\n\tthe string. The final state will have a special value, as specified in\n\toptions. All other \"in between\" substrings will have a default end state.\n\n\tThis turns the state machine into a Trie-like data structure (rather than a\n\tintelligently-designed DFA).\n\n\tNote that I haven't really tried these with any strings other than\n\tDOMAIN.\n\n\t@param {String} str\n\t@param {CharacterState} start State to jump from the first character\n\t@param {Class} endToken Token class to emit when the given string has been\n\t\tmatched and no more jumps exist.\n\t@param {Class} defaultToken \"Filler token\", or which token type to emit when\n\t\twe don't have a full match\n\t@return {Array} list of newly-created states\n*/\nfunction stateify(str, start, endToken, defaultToken) {\n\tvar i = 0,\n\t    len = str.length,\n\t    state = start,\n\t    newStates = [],\n\t    nextState = void 0;\n\n\t// Find the next state without a jump to the next character\n\twhile (i < len && (nextState = state.next(str[i]))) {\n\t\tstate = nextState;\n\t\ti++;\n\t}\n\n\tif (i >= len) {\n\t\treturn [];\n\t} // no new tokens were added\n\n\twhile (i < len - 1) {\n\t\tnextState = new CharacterState(defaultToken);\n\t\tnewStates.push(nextState);\n\t\tstate.on(str[i], nextState);\n\t\tstate = nextState;\n\t\ti++;\n\t}\n\n\tnextState = new CharacterState(endToken);\n\tnewStates.push(nextState);\n\tstate.on(str[len - 1], nextState);\n\n\treturn newStates;\n}\n\nexports.CharacterState = CharacterState;\nexports.TokenState = TokenState;\nexports.stateify = stateify;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify/core/state.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify/core/tokens/create-token-class.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify/core/tokens/create-token-class.js ***!
+  \******************************************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export createTokenClass [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__ */
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nfunction createTokenClass() {\n\treturn function (value) {\n\t\tif (value) {\n\t\t\tthis.v = value;\n\t\t}\n\t};\n}\n\nexports.createTokenClass = createTokenClass;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify/core/tokens/create-token-class.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify/core/tokens/multi.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify/core/tokens/multi.js ***!
+  \*****************************************************************/
+/*! flagged exports */
+/*! export Base [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export EMAIL [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export MAILTOEMAIL [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export NL [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export TEXT [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export URL [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.URL = exports.TEXT = exports.NL = exports.EMAIL = exports.MAILTOEMAIL = exports.Base = undefined;\n\nvar _createTokenClass = __webpack_require__(/*! ./create-token-class */ \"./node_modules/linkifyjs/lib/linkify/core/tokens/create-token-class.js\");\n\nvar _class = __webpack_require__(/*! ../../utils/class */ \"./node_modules/linkifyjs/lib/linkify/utils/class.js\");\n\nvar _text = __webpack_require__(/*! ./text */ \"./node_modules/linkifyjs/lib/linkify/core/tokens/text.js\");\n\n/******************************************************************************\n\tMulti-Tokens\n\tTokens composed of arrays of TextTokens\n******************************************************************************/\n\n// Is the given token a valid domain token?\n// Should nums be included here?\nfunction isDomainToken(token) {\n\treturn token instanceof _text.DOMAIN || token instanceof _text.TLD;\n}\n\n/**\n\tAbstract class used for manufacturing tokens of text tokens. That is rather\n\tthan the value for a token being a small string of text, it's value an array\n\tof text tokens.\n\n\tUsed for grouping together URLs, emails, hashtags, and other potential\n\tcreations.\n\n\t@class MultiToken\n\t@abstract\n*/\nvar MultiToken = (0, _createTokenClass.createTokenClass)();\n\nMultiToken.prototype = {\n\t/**\n \tString representing the type for this token\n \t@property type\n \t@default 'TOKEN'\n */\n\ttype: 'token',\n\n\t/**\n \tIs this multitoken a link?\n \t@property isLink\n \t@default false\n */\n\tisLink: false,\n\n\t/**\n \tReturn the string this token represents.\n \t@method toString\n \t@return {String}\n */\n\ttoString: function toString() {\n\t\tvar result = [];\n\t\tfor (var i = 0; i < this.v.length; i++) {\n\t\t\tresult.push(this.v[i].toString());\n\t\t}\n\t\treturn result.join('');\n\t},\n\n\n\t/**\n \tWhat should the value for this token be in the `href` HTML attribute?\n \tReturns the `.toString` value by default.\n \t\t@method toHref\n \t@return {String}\n */\n\ttoHref: function toHref() {\n\t\treturn this.toString();\n\t},\n\n\n\t/**\n \tReturns a hash of relevant values for this token, which includes keys\n \t* type - Kind of token ('url', 'email', etc.)\n \t* value - Original text\n \t* href - The value that should be added to the anchor tag's href\n \t\tattribute\n \t\t@method toObject\n \t@param {String} [protocol] `'http'` by default\n \t@return {Object}\n */\n\ttoObject: function toObject() {\n\t\tvar protocol = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'http';\n\n\t\treturn {\n\t\t\ttype: this.type,\n\t\t\tvalue: this.toString(),\n\t\t\thref: this.toHref(protocol)\n\t\t};\n\t}\n};\n\n/**\n\tRepresents an arbitrarily mailto email address with the prefix included\n\t@class MAILTO\n\t@extends MultiToken\n*/\nvar MAILTOEMAIL = (0, _class.inherits)(MultiToken, (0, _createTokenClass.createTokenClass)(), {\n\ttype: 'email',\n\tisLink: true\n});\n\n/**\n\tRepresents a list of tokens making up a valid email address\n\t@class EMAIL\n\t@extends MultiToken\n*/\nvar EMAIL = (0, _class.inherits)(MultiToken, (0, _createTokenClass.createTokenClass)(), {\n\ttype: 'email',\n\tisLink: true,\n\ttoHref: function toHref() {\n\t\treturn 'mailto:' + this.toString();\n\t}\n});\n\n/**\n\tRepresents some plain text\n\t@class TEXT\n\t@extends MultiToken\n*/\nvar TEXT = (0, _class.inherits)(MultiToken, (0, _createTokenClass.createTokenClass)(), { type: 'text' });\n\n/**\n\tMulti-linebreak token - represents a line break\n\t@class NL\n\t@extends MultiToken\n*/\nvar NL = (0, _class.inherits)(MultiToken, (0, _createTokenClass.createTokenClass)(), { type: 'nl' });\n\n/**\n\tRepresents a list of tokens making up a valid URL\n\t@class URL\n\t@extends MultiToken\n*/\nvar URL = (0, _class.inherits)(MultiToken, (0, _createTokenClass.createTokenClass)(), {\n\ttype: 'url',\n\tisLink: true,\n\n\t/**\n \tLowercases relevant parts of the domain and adds the protocol if\n \trequired. Note that this will not escape unsafe HTML characters in the\n \tURL.\n \t\t@method href\n \t@param {String} protocol\n \t@return {String}\n */\n\ttoHref: function toHref() {\n\t\tvar protocol = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'http';\n\n\t\tvar hasProtocol = false;\n\t\tvar hasSlashSlash = false;\n\t\tvar tokens = this.v;\n\t\tvar result = [];\n\t\tvar i = 0;\n\n\t\t// Make the first part of the domain lowercase\n\t\t// Lowercase protocol\n\t\twhile (tokens[i] instanceof _text.PROTOCOL) {\n\t\t\thasProtocol = true;\n\t\t\tresult.push(tokens[i].toString().toLowerCase());\n\t\t\ti++;\n\t\t}\n\n\t\t// Skip slash-slash\n\t\twhile (tokens[i] instanceof _text.SLASH) {\n\t\t\thasSlashSlash = true;\n\t\t\tresult.push(tokens[i].toString());\n\t\t\ti++;\n\t\t}\n\n\t\t// Lowercase all other characters in the domain\n\t\twhile (isDomainToken(tokens[i])) {\n\t\t\tresult.push(tokens[i].toString().toLowerCase());\n\t\t\ti++;\n\t\t}\n\n\t\t// Leave all other characters as they were written\n\t\tfor (; i < tokens.length; i++) {\n\t\t\tresult.push(tokens[i].toString());\n\t\t}\n\n\t\tresult = result.join('');\n\n\t\tif (!(hasProtocol || hasSlashSlash)) {\n\t\t\tresult = protocol + '://' + result;\n\t\t}\n\n\t\treturn result;\n\t},\n\thasProtocol: function hasProtocol() {\n\t\treturn this.v[0] instanceof _text.PROTOCOL;\n\t}\n});\n\nexports.Base = MultiToken;\nexports.MAILTOEMAIL = MAILTOEMAIL;\nexports.EMAIL = EMAIL;\nexports.NL = NL;\nexports.TEXT = TEXT;\nexports.URL = URL;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify/core/tokens/multi.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify/core/tokens/text.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify/core/tokens/text.js ***!
+  \****************************************************************/
+/*! flagged exports */
+/*! export AMPERSAND [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export AT [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export Base [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export CLOSEANGLEBRACKET [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export CLOSEBRACE [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export CLOSEBRACKET [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export CLOSEPAREN [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export COLON [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export DOMAIN [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export DOT [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export LOCALHOST [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export MAILTO [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export NL [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export NUM [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export OPENANGLEBRACKET [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export OPENBRACE [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export OPENBRACKET [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export OPENPAREN [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export PLUS [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export POUND [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export PROTOCOL [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export PUNCTUATION [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export QUERY [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export SLASH [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export SYM [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export TLD [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export UNDERSCORE [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export WS [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.AMPERSAND = exports.CLOSEPAREN = exports.CLOSEANGLEBRACKET = exports.CLOSEBRACKET = exports.CLOSEBRACE = exports.OPENPAREN = exports.OPENANGLEBRACKET = exports.OPENBRACKET = exports.OPENBRACE = exports.WS = exports.TLD = exports.SYM = exports.UNDERSCORE = exports.SLASH = exports.MAILTO = exports.PROTOCOL = exports.QUERY = exports.POUND = exports.PLUS = exports.NUM = exports.NL = exports.LOCALHOST = exports.PUNCTUATION = exports.DOT = exports.COLON = exports.AT = exports.DOMAIN = exports.Base = undefined;\n\nvar _createTokenClass = __webpack_require__(/*! ./create-token-class */ \"./node_modules/linkifyjs/lib/linkify/core/tokens/create-token-class.js\");\n\nvar _class = __webpack_require__(/*! ../../utils/class */ \"./node_modules/linkifyjs/lib/linkify/utils/class.js\");\n\n/******************************************************************************\n\tText Tokens\n\tTokens composed of strings\n******************************************************************************/\n\n/**\n\tAbstract class used for manufacturing text tokens.\n\tPass in the value this token represents\n\n\t@class TextToken\n\t@abstract\n*/\nvar TextToken = (0, _createTokenClass.createTokenClass)();\nTextToken.prototype = {\n\ttoString: function toString() {\n\t\treturn this.v + '';\n\t}\n};\n\nfunction inheritsToken(value) {\n\tvar props = value ? { v: value } : {};\n\treturn (0, _class.inherits)(TextToken, (0, _createTokenClass.createTokenClass)(), props);\n}\n\n/**\n\tA valid domain token\n\t@class DOMAIN\n\t@extends TextToken\n*/\nvar DOMAIN = inheritsToken();\n\n/**\n\t@class AT\n\t@extends TextToken\n*/\nvar AT = inheritsToken('@');\n\n/**\n\tRepresents a single colon `:` character\n\n\t@class COLON\n\t@extends TextToken\n*/\nvar COLON = inheritsToken(':');\n\n/**\n\t@class DOT\n\t@extends TextToken\n*/\nvar DOT = inheritsToken('.');\n\n/**\n\tA character class that can surround the URL, but which the URL cannot begin\n\tor end with. Does not include certain English punctuation like parentheses.\n\n\t@class PUNCTUATION\n\t@extends TextToken\n*/\nvar PUNCTUATION = inheritsToken();\n\n/**\n\tThe word localhost (by itself)\n\t@class LOCALHOST\n\t@extends TextToken\n*/\nvar LOCALHOST = inheritsToken();\n\n/**\n\tNewline token\n\t@class NL\n\t@extends TextToken\n*/\nvar NL = inheritsToken('\\n');\n\n/**\n\t@class NUM\n\t@extends TextToken\n*/\nvar NUM = inheritsToken();\n\n/**\n\t@class PLUS\n\t@extends TextToken\n*/\nvar PLUS = inheritsToken('+');\n\n/**\n\t@class POUND\n\t@extends TextToken\n*/\nvar POUND = inheritsToken('#');\n\n/**\n\tRepresents a web URL protocol. Supported types include\n\n\t* `http:`\n\t* `https:`\n\t* `ftp:`\n\t* `ftps:`\n\n\t@class PROTOCOL\n\t@extends TextToken\n*/\nvar PROTOCOL = inheritsToken();\n\n/**\n\tRepresents the start of the email URI protocol\n\n\t@class MAILTO\n\t@extends TextToken\n*/\nvar MAILTO = inheritsToken('mailto:');\n\n/**\n\t@class QUERY\n\t@extends TextToken\n*/\nvar QUERY = inheritsToken('?');\n\n/**\n\t@class SLASH\n\t@extends TextToken\n*/\nvar SLASH = inheritsToken('/');\n\n/**\n\t@class UNDERSCORE\n\t@extends TextToken\n*/\nvar UNDERSCORE = inheritsToken('_');\n\n/**\n\tOne ore more non-whitespace symbol.\n\t@class SYM\n\t@extends TextToken\n*/\nvar SYM = inheritsToken();\n\n/**\n\t@class TLD\n\t@extends TextToken\n*/\nvar TLD = inheritsToken();\n\n/**\n\tRepresents a string of consecutive whitespace characters\n\n\t@class WS\n\t@extends TextToken\n*/\nvar WS = inheritsToken();\n\n/**\n\tOpening/closing bracket classes\n*/\n\nvar OPENBRACE = inheritsToken('{');\nvar OPENBRACKET = inheritsToken('[');\nvar OPENANGLEBRACKET = inheritsToken('<');\nvar OPENPAREN = inheritsToken('(');\nvar CLOSEBRACE = inheritsToken('}');\nvar CLOSEBRACKET = inheritsToken(']');\nvar CLOSEANGLEBRACKET = inheritsToken('>');\nvar CLOSEPAREN = inheritsToken(')');\n\nvar AMPERSAND = inheritsToken('&');\n\nexports.Base = TextToken;\nexports.DOMAIN = DOMAIN;\nexports.AT = AT;\nexports.COLON = COLON;\nexports.DOT = DOT;\nexports.PUNCTUATION = PUNCTUATION;\nexports.LOCALHOST = LOCALHOST;\nexports.NL = NL;\nexports.NUM = NUM;\nexports.PLUS = PLUS;\nexports.POUND = POUND;\nexports.QUERY = QUERY;\nexports.PROTOCOL = PROTOCOL;\nexports.MAILTO = MAILTO;\nexports.SLASH = SLASH;\nexports.UNDERSCORE = UNDERSCORE;\nexports.SYM = SYM;\nexports.TLD = TLD;\nexports.WS = WS;\nexports.OPENBRACE = OPENBRACE;\nexports.OPENBRACKET = OPENBRACKET;\nexports.OPENANGLEBRACKET = OPENANGLEBRACKET;\nexports.OPENPAREN = OPENPAREN;\nexports.CLOSEBRACE = CLOSEBRACE;\nexports.CLOSEBRACKET = CLOSEBRACKET;\nexports.CLOSEANGLEBRACKET = CLOSEANGLEBRACKET;\nexports.CLOSEPAREN = CLOSEPAREN;\nexports.AMPERSAND = AMPERSAND;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify/core/tokens/text.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify/utils/class.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify/utils/class.js ***!
+  \***********************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export inherits [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__ */
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.inherits = inherits;\nfunction inherits(parent, child) {\n\tvar props = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};\n\n\tvar extended = Object.create(parent.prototype);\n\tfor (var p in props) {\n\t\textended[p] = props[p];\n\t}\n\textended.constructor = child;\n\tchild.prototype = extended;\n\treturn child;\n}\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify/utils/class.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/linkify/utils/options.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/linkify/utils/options.js ***!
+  \*************************************************************/
+/*! flagged exports */
+/*! export Options [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export contains [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export defaults [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__ */
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; };\n\nvar defaults = {\n\tdefaultProtocol: 'http',\n\tevents: null,\n\tformat: noop,\n\tformatHref: noop,\n\tnl2br: false,\n\ttagName: 'a',\n\ttarget: typeToTarget,\n\tvalidate: true,\n\tignoreTags: [],\n\tattributes: null,\n\tclassName: 'linkified' // Deprecated value - no default class will be provided in the future\n};\n\nexports.defaults = defaults;\nexports.Options = Options;\nexports.contains = contains;\n\n\nfunction Options(opts) {\n\topts = opts || {};\n\n\tthis.defaultProtocol = opts.hasOwnProperty('defaultProtocol') ? opts.defaultProtocol : defaults.defaultProtocol;\n\tthis.events = opts.hasOwnProperty('events') ? opts.events : defaults.events;\n\tthis.format = opts.hasOwnProperty('format') ? opts.format : defaults.format;\n\tthis.formatHref = opts.hasOwnProperty('formatHref') ? opts.formatHref : defaults.formatHref;\n\tthis.nl2br = opts.hasOwnProperty('nl2br') ? opts.nl2br : defaults.nl2br;\n\tthis.tagName = opts.hasOwnProperty('tagName') ? opts.tagName : defaults.tagName;\n\tthis.target = opts.hasOwnProperty('target') ? opts.target : defaults.target;\n\tthis.validate = opts.hasOwnProperty('validate') ? opts.validate : defaults.validate;\n\tthis.ignoreTags = [];\n\n\t// linkAttributes and linkClass is deprecated\n\tthis.attributes = opts.attributes || opts.linkAttributes || defaults.attributes;\n\tthis.className = opts.hasOwnProperty('className') ? opts.className : opts.linkClass || defaults.className;\n\n\t// Make all tags names upper case\n\tvar ignoredTags = opts.hasOwnProperty('ignoreTags') ? opts.ignoreTags : defaults.ignoreTags;\n\tfor (var i = 0; i < ignoredTags.length; i++) {\n\t\tthis.ignoreTags.push(ignoredTags[i].toUpperCase());\n\t}\n}\n\nOptions.prototype = {\n\t/**\n  * Given the token, return all options for how it should be displayed\n  */\n\tresolve: function resolve(token) {\n\t\tvar href = token.toHref(this.defaultProtocol);\n\t\treturn {\n\t\t\tformatted: this.get('format', token.toString(), token),\n\t\t\tformattedHref: this.get('formatHref', href, token),\n\t\t\ttagName: this.get('tagName', href, token),\n\t\t\tclassName: this.get('className', href, token),\n\t\t\ttarget: this.get('target', href, token),\n\t\t\tevents: this.getObject('events', href, token),\n\t\t\tattributes: this.getObject('attributes', href, token)\n\t\t};\n\t},\n\n\n\t/**\n  * Returns true or false based on whether a token should be displayed as a\n  * link based on the user options. By default,\n  */\n\tcheck: function check(token) {\n\t\treturn this.get('validate', token.toString(), token);\n\t},\n\n\n\t// Private methods\n\n\t/**\n  * Resolve an option's value based on the value of the option and the given\n  * params.\n  * @param {String} key Name of option to use\n  * @param operator will be passed to the target option if it's method\n  * @param {MultiToken} token The token from linkify.tokenize\n  */\n\tget: function get(key, operator, token) {\n\t\tvar optionValue = void 0,\n\t\t    option = this[key];\n\t\tif (!option) {\n\t\t\treturn option;\n\t\t}\n\n\t\tswitch (typeof option === 'undefined' ? 'undefined' : _typeof(option)) {\n\t\t\tcase 'function':\n\t\t\t\treturn option(operator, token.type);\n\t\t\tcase 'object':\n\t\t\t\toptionValue = option.hasOwnProperty(token.type) ? option[token.type] : defaults[key];\n\t\t\t\treturn typeof optionValue === 'function' ? optionValue(operator, token.type) : optionValue;\n\t\t}\n\n\t\treturn option;\n\t},\n\tgetObject: function getObject(key, operator, token) {\n\t\tvar option = this[key];\n\t\treturn typeof option === 'function' ? option(operator, token.type) : option;\n\t}\n};\n\n/**\n * Quick indexOf replacement for checking the ignoreTags option\n */\nfunction contains(arr, value) {\n\tfor (var i = 0; i < arr.length; i++) {\n\t\tif (arr[i] === value) {\n\t\t\treturn true;\n\t\t}\n\t}\n\treturn false;\n}\n\nfunction noop(val) {\n\treturn val;\n}\n\nfunction typeToTarget(href, type) {\n\treturn type === 'url' ? '_blank' : null;\n}\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/linkify/utils/options.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/simple-html-tokenizer.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/simple-html-tokenizer.js ***!
+  \*************************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\n\nvar _html5NamedCharRefs = __webpack_require__(/*! ./simple-html-tokenizer/html5-named-char-refs */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/html5-named-char-refs.js\");\n\nvar _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);\n\nvar _entityParser = __webpack_require__(/*! ./simple-html-tokenizer/entity-parser */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/entity-parser.js\");\n\nvar _entityParser2 = _interopRequireDefault(_entityParser);\n\nvar _eventedTokenizer = __webpack_require__(/*! ./simple-html-tokenizer/evented-tokenizer */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/evented-tokenizer.js\");\n\nvar _eventedTokenizer2 = _interopRequireDefault(_eventedTokenizer);\n\nvar _tokenizer = __webpack_require__(/*! ./simple-html-tokenizer/tokenizer */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/tokenizer.js\");\n\nvar _tokenizer2 = _interopRequireDefault(_tokenizer);\n\nvar _tokenize = __webpack_require__(/*! ./simple-html-tokenizer/tokenize */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/tokenize.js\");\n\nvar _tokenize2 = _interopRequireDefault(_tokenize);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar HTML5Tokenizer = {\n\tHTML5NamedCharRefs: _html5NamedCharRefs2.default,\n\tEntityParser: _entityParser2.default,\n\tEventedTokenizer: _eventedTokenizer2.default,\n\tTokenizer: _tokenizer2.default,\n\ttokenize: _tokenize2.default\n};\n\nexports.default = HTML5Tokenizer;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/simple-html-tokenizer.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/simple-html-tokenizer/entity-parser.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/simple-html-tokenizer/entity-parser.js ***!
+  \***************************************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__ */
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nfunction EntityParser(named) {\n  this.named = named;\n}\n\nvar HEXCHARCODE = /^#[xX]([A-Fa-f0-9]+)$/;\nvar CHARCODE = /^#([0-9]+)$/;\nvar NAMED = /^([A-Za-z0-9]+)$/;\n\nEntityParser.prototype.parse = function (entity) {\n  if (!entity) {\n    return;\n  }\n  var matches = entity.match(HEXCHARCODE);\n  if (matches) {\n    return \"&#x\" + matches[1] + \";\";\n  }\n  matches = entity.match(CHARCODE);\n  if (matches) {\n    return \"&#\" + matches[1] + \";\";\n  }\n  matches = entity.match(NAMED);\n  if (matches) {\n    return this.named[matches[1]] || \"&\" + matches[1] + \";\";\n  }\n};\n\nexports.default = EntityParser;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/simple-html-tokenizer/entity-parser.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/simple-html-tokenizer/evented-tokenizer.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/simple-html-tokenizer/evented-tokenizer.js ***!
+  \*******************************************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\n\nvar _utils = __webpack_require__(/*! ./utils */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/utils.js\");\n\nfunction EventedTokenizer(delegate, entityParser) {\n  this.delegate = delegate;\n  this.entityParser = entityParser;\n\n  this.state = null;\n  this.input = null;\n\n  this.index = -1;\n  this.line = -1;\n  this.column = -1;\n  this.tagLine = -1;\n  this.tagColumn = -1;\n\n  this.reset();\n}\n\nEventedTokenizer.prototype = {\n  reset: function reset() {\n    this.state = 'beforeData';\n    this.input = '';\n\n    this.index = 0;\n    this.line = 1;\n    this.column = 0;\n\n    this.tagLine = -1;\n    this.tagColumn = -1;\n\n    this.delegate.reset();\n  },\n\n  tokenize: function tokenize(input) {\n    this.reset();\n    this.tokenizePart(input);\n    this.tokenizeEOF();\n  },\n\n  tokenizePart: function tokenizePart(input) {\n    this.input += (0, _utils.preprocessInput)(input);\n\n    while (this.index < this.input.length) {\n      this.states[this.state].call(this);\n    }\n  },\n\n  tokenizeEOF: function tokenizeEOF() {\n    this.flushData();\n  },\n\n  flushData: function flushData() {\n    if (this.state === 'data') {\n      this.delegate.finishData();\n      this.state = 'beforeData';\n    }\n  },\n\n  peek: function peek() {\n    return this.input.charAt(this.index);\n  },\n\n  consume: function consume() {\n    var char = this.peek();\n\n    this.index++;\n\n    if (char === \"\\n\") {\n      this.line++;\n      this.column = 0;\n    } else {\n      this.column++;\n    }\n\n    return char;\n  },\n\n  consumeCharRef: function consumeCharRef() {\n    var endIndex = this.input.indexOf(';', this.index);\n    if (endIndex === -1) {\n      return;\n    }\n    var entity = this.input.slice(this.index, endIndex);\n    var chars = this.entityParser.parse(entity);\n    if (chars) {\n      var count = entity.length;\n      // consume the entity chars\n      while (count) {\n        this.consume();\n        count--;\n      }\n      // consume the `;`\n      this.consume();\n\n      return chars;\n    }\n  },\n\n  markTagStart: function markTagStart() {\n    // these properties to be removed in next major bump\n    this.tagLine = this.line;\n    this.tagColumn = this.column;\n\n    if (this.delegate.tagOpen) {\n      this.delegate.tagOpen();\n    }\n  },\n\n  states: {\n    beforeData: function beforeData() {\n      var char = this.peek();\n\n      if (char === \"<\") {\n        this.state = 'tagOpen';\n        this.markTagStart();\n        this.consume();\n      } else {\n        this.state = 'data';\n        this.delegate.beginData();\n      }\n    },\n\n    data: function data() {\n      var char = this.peek();\n\n      if (char === \"<\") {\n        this.delegate.finishData();\n        this.state = 'tagOpen';\n        this.markTagStart();\n        this.consume();\n      } else if (char === \"&\") {\n        this.consume();\n        this.delegate.appendToData(this.consumeCharRef() || \"&\");\n      } else {\n        this.consume();\n        this.delegate.appendToData(char);\n      }\n    },\n\n    tagOpen: function tagOpen() {\n      var char = this.consume();\n\n      if (char === \"!\") {\n        this.state = 'markupDeclaration';\n      } else if (char === \"/\") {\n        this.state = 'endTagOpen';\n      } else if ((0, _utils.isAlpha)(char)) {\n        this.state = 'tagName';\n        this.delegate.beginStartTag();\n        this.delegate.appendToTagName(char.toLowerCase());\n      }\n    },\n\n    markupDeclaration: function markupDeclaration() {\n      var char = this.consume();\n\n      if (char === \"-\" && this.input.charAt(this.index) === \"-\") {\n        this.consume();\n        this.state = 'commentStart';\n        this.delegate.beginComment();\n      }\n    },\n\n    commentStart: function commentStart() {\n      var char = this.consume();\n\n      if (char === \"-\") {\n        this.state = 'commentStartDash';\n      } else if (char === \">\") {\n        this.delegate.finishComment();\n        this.state = 'beforeData';\n      } else {\n        this.delegate.appendToCommentData(char);\n        this.state = 'comment';\n      }\n    },\n\n    commentStartDash: function commentStartDash() {\n      var char = this.consume();\n\n      if (char === \"-\") {\n        this.state = 'commentEnd';\n      } else if (char === \">\") {\n        this.delegate.finishComment();\n        this.state = 'beforeData';\n      } else {\n        this.delegate.appendToCommentData(\"-\");\n        this.state = 'comment';\n      }\n    },\n\n    comment: function comment() {\n      var char = this.consume();\n\n      if (char === \"-\") {\n        this.state = 'commentEndDash';\n      } else {\n        this.delegate.appendToCommentData(char);\n      }\n    },\n\n    commentEndDash: function commentEndDash() {\n      var char = this.consume();\n\n      if (char === \"-\") {\n        this.state = 'commentEnd';\n      } else {\n        this.delegate.appendToCommentData(\"-\" + char);\n        this.state = 'comment';\n      }\n    },\n\n    commentEnd: function commentEnd() {\n      var char = this.consume();\n\n      if (char === \">\") {\n        this.delegate.finishComment();\n        this.state = 'beforeData';\n      } else {\n        this.delegate.appendToCommentData(\"--\" + char);\n        this.state = 'comment';\n      }\n    },\n\n    tagName: function tagName() {\n      var char = this.consume();\n\n      if ((0, _utils.isSpace)(char)) {\n        this.state = 'beforeAttributeName';\n      } else if (char === \"/\") {\n        this.state = 'selfClosingStartTag';\n      } else if (char === \">\") {\n        this.delegate.finishTag();\n        this.state = 'beforeData';\n      } else {\n        this.delegate.appendToTagName(char);\n      }\n    },\n\n    beforeAttributeName: function beforeAttributeName() {\n      var char = this.peek();\n\n      if ((0, _utils.isSpace)(char)) {\n        this.consume();\n        return;\n      } else if (char === \"/\") {\n        this.state = 'selfClosingStartTag';\n        this.consume();\n      } else if (char === \">\") {\n        this.consume();\n        this.delegate.finishTag();\n        this.state = 'beforeData';\n      } else {\n        this.state = 'attributeName';\n        this.delegate.beginAttribute();\n        this.consume();\n        this.delegate.appendToAttributeName(char);\n      }\n    },\n\n    attributeName: function attributeName() {\n      var char = this.peek();\n\n      if ((0, _utils.isSpace)(char)) {\n        this.state = 'afterAttributeName';\n        this.consume();\n      } else if (char === \"/\") {\n        this.delegate.beginAttributeValue(false);\n        this.delegate.finishAttributeValue();\n        this.consume();\n        this.state = 'selfClosingStartTag';\n      } else if (char === \"=\") {\n        this.state = 'beforeAttributeValue';\n        this.consume();\n      } else if (char === \">\") {\n        this.delegate.beginAttributeValue(false);\n        this.delegate.finishAttributeValue();\n        this.consume();\n        this.delegate.finishTag();\n        this.state = 'beforeData';\n      } else {\n        this.consume();\n        this.delegate.appendToAttributeName(char);\n      }\n    },\n\n    afterAttributeName: function afterAttributeName() {\n      var char = this.peek();\n\n      if ((0, _utils.isSpace)(char)) {\n        this.consume();\n        return;\n      } else if (char === \"/\") {\n        this.delegate.beginAttributeValue(false);\n        this.delegate.finishAttributeValue();\n        this.consume();\n        this.state = 'selfClosingStartTag';\n      } else if (char === \"=\") {\n        this.consume();\n        this.state = 'beforeAttributeValue';\n      } else if (char === \">\") {\n        this.delegate.beginAttributeValue(false);\n        this.delegate.finishAttributeValue();\n        this.consume();\n        this.delegate.finishTag();\n        this.state = 'beforeData';\n      } else {\n        this.delegate.beginAttributeValue(false);\n        this.delegate.finishAttributeValue();\n        this.consume();\n        this.state = 'attributeName';\n        this.delegate.beginAttribute();\n        this.delegate.appendToAttributeName(char);\n      }\n    },\n\n    beforeAttributeValue: function beforeAttributeValue() {\n      var char = this.peek();\n\n      if ((0, _utils.isSpace)(char)) {\n        this.consume();\n      } else if (char === '\"') {\n        this.state = 'attributeValueDoubleQuoted';\n        this.delegate.beginAttributeValue(true);\n        this.consume();\n      } else if (char === \"'\") {\n        this.state = 'attributeValueSingleQuoted';\n        this.delegate.beginAttributeValue(true);\n        this.consume();\n      } else if (char === \">\") {\n        this.delegate.beginAttributeValue(false);\n        this.delegate.finishAttributeValue();\n        this.consume();\n        this.delegate.finishTag();\n        this.state = 'beforeData';\n      } else {\n        this.state = 'attributeValueUnquoted';\n        this.delegate.beginAttributeValue(false);\n        this.consume();\n        this.delegate.appendToAttributeValue(char);\n      }\n    },\n\n    attributeValueDoubleQuoted: function attributeValueDoubleQuoted() {\n      var char = this.consume();\n\n      if (char === '\"') {\n        this.delegate.finishAttributeValue();\n        this.state = 'afterAttributeValueQuoted';\n      } else if (char === \"&\") {\n        this.delegate.appendToAttributeValue(this.consumeCharRef('\"') || \"&\");\n      } else {\n        this.delegate.appendToAttributeValue(char);\n      }\n    },\n\n    attributeValueSingleQuoted: function attributeValueSingleQuoted() {\n      var char = this.consume();\n\n      if (char === \"'\") {\n        this.delegate.finishAttributeValue();\n        this.state = 'afterAttributeValueQuoted';\n      } else if (char === \"&\") {\n        this.delegate.appendToAttributeValue(this.consumeCharRef(\"'\") || \"&\");\n      } else {\n        this.delegate.appendToAttributeValue(char);\n      }\n    },\n\n    attributeValueUnquoted: function attributeValueUnquoted() {\n      var char = this.peek();\n\n      if ((0, _utils.isSpace)(char)) {\n        this.delegate.finishAttributeValue();\n        this.consume();\n        this.state = 'beforeAttributeName';\n      } else if (char === \"&\") {\n        this.consume();\n        this.delegate.appendToAttributeValue(this.consumeCharRef(\">\") || \"&\");\n      } else if (char === \">\") {\n        this.delegate.finishAttributeValue();\n        this.consume();\n        this.delegate.finishTag();\n        this.state = 'beforeData';\n      } else {\n        this.consume();\n        this.delegate.appendToAttributeValue(char);\n      }\n    },\n\n    afterAttributeValueQuoted: function afterAttributeValueQuoted() {\n      var char = this.peek();\n\n      if ((0, _utils.isSpace)(char)) {\n        this.consume();\n        this.state = 'beforeAttributeName';\n      } else if (char === \"/\") {\n        this.consume();\n        this.state = 'selfClosingStartTag';\n      } else if (char === \">\") {\n        this.consume();\n        this.delegate.finishTag();\n        this.state = 'beforeData';\n      } else {\n        this.state = 'beforeAttributeName';\n      }\n    },\n\n    selfClosingStartTag: function selfClosingStartTag() {\n      var char = this.peek();\n\n      if (char === \">\") {\n        this.consume();\n        this.delegate.markTagAsSelfClosing();\n        this.delegate.finishTag();\n        this.state = 'beforeData';\n      } else {\n        this.state = 'beforeAttributeName';\n      }\n    },\n\n    endTagOpen: function endTagOpen() {\n      var char = this.consume();\n\n      if ((0, _utils.isAlpha)(char)) {\n        this.state = 'tagName';\n        this.delegate.beginEndTag();\n        this.delegate.appendToTagName(char.toLowerCase());\n      }\n    }\n  }\n};\n\nexports.default = EventedTokenizer;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/simple-html-tokenizer/evented-tokenizer.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/simple-html-tokenizer/html5-named-char-refs.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/simple-html-tokenizer/html5-named-char-refs.js ***!
+  \***********************************************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__ */
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nvar HTML5NamedCharRefs = {\n    // We don't need the complete named character reference because linkifyHtml\n    // does not modify the escape sequences. We do need &nbsp; so that\n    // whitespace is parsed properly. Other types of whitespace should already\n    // be accounted for\n    nbsp: \"\\xA0\"\n};\nexports.default = HTML5NamedCharRefs;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/simple-html-tokenizer/html5-named-char-refs.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/simple-html-tokenizer/tokenize.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/simple-html-tokenizer/tokenize.js ***!
+  \**********************************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.default = tokenize;\n\nvar _tokenizer = __webpack_require__(/*! ./tokenizer */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/tokenizer.js\");\n\nvar _tokenizer2 = _interopRequireDefault(_tokenizer);\n\nvar _entityParser = __webpack_require__(/*! ./entity-parser */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/entity-parser.js\");\n\nvar _entityParser2 = _interopRequireDefault(_entityParser);\n\nvar _html5NamedCharRefs = __webpack_require__(/*! ./html5-named-char-refs */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/html5-named-char-refs.js\");\n\nvar _html5NamedCharRefs2 = _interopRequireDefault(_html5NamedCharRefs);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction tokenize(input, options) {\n  var tokenizer = new _tokenizer2.default(new _entityParser2.default(_html5NamedCharRefs2.default), options);\n  return tokenizer.tokenize(input);\n}\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/simple-html-tokenizer/tokenize.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/simple-html-tokenizer/tokenizer.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/simple-html-tokenizer/tokenizer.js ***!
+  \***********************************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\n\nvar _eventedTokenizer = __webpack_require__(/*! ./evented-tokenizer */ \"./node_modules/linkifyjs/lib/simple-html-tokenizer/evented-tokenizer.js\");\n\nvar _eventedTokenizer2 = _interopRequireDefault(_eventedTokenizer);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction Tokenizer(entityParser, options) {\n  this.token = null;\n  this.startLine = 1;\n  this.startColumn = 0;\n  this.options = options || {};\n  this.tokenizer = new _eventedTokenizer2.default(this, entityParser);\n}\n\nTokenizer.prototype = {\n  tokenize: function tokenize(input) {\n    this.tokens = [];\n    this.tokenizer.tokenize(input);\n    return this.tokens;\n  },\n\n  tokenizePart: function tokenizePart(input) {\n    this.tokens = [];\n    this.tokenizer.tokenizePart(input);\n    return this.tokens;\n  },\n\n  tokenizeEOF: function tokenizeEOF() {\n    this.tokens = [];\n    this.tokenizer.tokenizeEOF();\n    return this.tokens[0];\n  },\n\n  reset: function reset() {\n    this.token = null;\n    this.startLine = 1;\n    this.startColumn = 0;\n  },\n\n  addLocInfo: function addLocInfo() {\n    if (this.options.loc) {\n      this.token.loc = {\n        start: {\n          line: this.startLine,\n          column: this.startColumn\n        },\n        end: {\n          line: this.tokenizer.line,\n          column: this.tokenizer.column\n        }\n      };\n    }\n    this.startLine = this.tokenizer.line;\n    this.startColumn = this.tokenizer.column;\n  },\n\n  // Data\n\n  beginData: function beginData() {\n    this.token = {\n      type: 'Chars',\n      chars: ''\n    };\n    this.tokens.push(this.token);\n  },\n\n  appendToData: function appendToData(char) {\n    this.token.chars += char;\n  },\n\n  finishData: function finishData() {\n    this.addLocInfo();\n  },\n\n  // Comment\n\n  beginComment: function beginComment() {\n    this.token = {\n      type: 'Comment',\n      chars: ''\n    };\n    this.tokens.push(this.token);\n  },\n\n  appendToCommentData: function appendToCommentData(char) {\n    this.token.chars += char;\n  },\n\n  finishComment: function finishComment() {\n    this.addLocInfo();\n  },\n\n  // Tags - basic\n\n  beginStartTag: function beginStartTag() {\n    this.token = {\n      type: 'StartTag',\n      tagName: '',\n      attributes: [],\n      selfClosing: false\n    };\n    this.tokens.push(this.token);\n  },\n\n  beginEndTag: function beginEndTag() {\n    this.token = {\n      type: 'EndTag',\n      tagName: ''\n    };\n    this.tokens.push(this.token);\n  },\n\n  finishTag: function finishTag() {\n    this.addLocInfo();\n  },\n\n  markTagAsSelfClosing: function markTagAsSelfClosing() {\n    this.token.selfClosing = true;\n  },\n\n  // Tags - name\n\n  appendToTagName: function appendToTagName(char) {\n    this.token.tagName += char;\n  },\n\n  // Tags - attributes\n\n  beginAttribute: function beginAttribute() {\n    this._currentAttribute = [\"\", \"\", null];\n    this.token.attributes.push(this._currentAttribute);\n  },\n\n  appendToAttributeName: function appendToAttributeName(char) {\n    this._currentAttribute[0] += char;\n  },\n\n  beginAttributeValue: function beginAttributeValue(isQuoted) {\n    this._currentAttribute[2] = isQuoted;\n  },\n\n  appendToAttributeValue: function appendToAttributeValue(char) {\n    this._currentAttribute[1] = this._currentAttribute[1] || \"\";\n    this._currentAttribute[1] += char;\n  },\n\n  finishAttributeValue: function finishAttributeValue() {}\n};\n\nexports.default = Tokenizer;\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/simple-html-tokenizer/tokenizer.js?");
+
+/***/ }),
+
+/***/ "./node_modules/linkifyjs/lib/simple-html-tokenizer/utils.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/linkifyjs/lib/simple-html-tokenizer/utils.js ***!
+  \*******************************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export isAlpha [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export isSpace [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export preprocessInput [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__ */
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.isSpace = isSpace;\nexports.isAlpha = isAlpha;\nexports.preprocessInput = preprocessInput;\nvar WSP = /[\\t\\n\\f ]/;\nvar ALPHA = /[A-Za-z]/;\nvar CRLF = /\\r\\n?/g;\n\nfunction isSpace(char) {\n  return WSP.test(char);\n}\n\nfunction isAlpha(char) {\n  return ALPHA.test(char);\n}\n\nfunction preprocessInput(input) {\n  return input.replace(CRLF, \"\\n\");\n}\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/linkifyjs/lib/simple-html-tokenizer/utils.js?");
+
+/***/ }),
+
+/***/ "./node_modules/vue-linkify/dist/vue-linkify.min.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/vue-linkify/dist/vue-linkify.min.js ***!
+  \**********************************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
+/*! CommonJS bailout: exports is used directly at 1:552-559 */
+/*! CommonJS bailout: module.exports is used directly at 1:562-576 */
+/***/ ((module, exports, __webpack_require__) => {
+
+"use strict";
+eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof='function'==typeof Symbol&&'symbol'==typeof Symbol.iterator?function(obj){return typeof obj}:function(obj){return obj&&'function'==typeof Symbol&&obj.constructor===Symbol&&obj!==Symbol.prototype?'symbol':typeof obj};/*global define*/var _html=__webpack_require__(/*! linkifyjs/html */ \"./node_modules/linkifyjs/html.js\"),_html2=_interopRequireDefault(_html);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj}}(function(){function a(b,c){b.innerHTML=(0,_html2.default)(b.innerHTML,c.value)}'object'==( false?0:_typeof(exports))?module.exports=a: true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function(){return a}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),\n\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):0})();\n\n\n//# sourceURL=webpack://my-webpack-project/./node_modules/vue-linkify/dist/vue-linkify.min.js?");
 
 /***/ }),
 
@@ -4493,7 +4973,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* binding */ render,\n/* harmony export */   \"staticRenderFns\": () => /* binding */ staticRenderFns\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    {\n      class: [\n        \"card\",\n        { \"bg-secondary text-white\": _vm.showClaimed && _vm.Claimed }\n      ]\n    },\n    [\n      _c(\"div\", { staticClass: \"card-header\" }, [\n        _c(\"h5\", { staticClass: \"card-title m-0\" }, [\n          _vm._v(\"\\n      \" + _vm._s(_vm.Thing) + \"\\n    \")\n        ]),\n        _vm._v(\" \"),\n        _vm.Price\n          ? _c(\"p\", { staticClass: \"card-text text-right text-muted\" }, [\n              _vm._v(\"\\n      \" + _vm._s(_vm.Price) + \"\\n    \")\n            ])\n          : _vm._e(),\n        _vm._v(\" \"),\n        _vm._m(0)\n      ]),\n      _vm._v(\" \"),\n      _vm.Notes\n        ? _c(\"div\", { staticClass: \"card-body\" }, [\n            _c(\"p\", { staticClass: \"card-text\" }, [\n              _vm._v(\"\\n      \" + _vm._s(_vm.Notes) + \"\\n    \")\n            ])\n          ])\n        : _vm._e(),\n      _vm._v(\" \"),\n      _vm.showClaimed\n        ? _c(\"div\", { staticClass: \"card-footer\" }, [\n            _vm.Claimed\n              ? _c(\"p\", [\n                  _vm._v(\"Claimed by \"),\n                  _c(\"em\", [_vm._v(\"haven't done this bit yet!\")])\n                ])\n              : _vm._e(),\n            _vm._v(\" \"),\n            _c(\"a\", { attrs: { href: \"#unclaim\" } }, [_vm._v(\" Clear? \")]),\n            _vm._v(\" \"),\n            _c(\n              \"a\",\n              {\n                staticClass: \"btn btn-block btn-primary\",\n                attrs: { href: \"#claim\" }\n              },\n              [_vm._v(\"Claim!\")]\n            )\n          ])\n        : _vm._e()\n    ]\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"p\", { staticClass: \"card-text text-right\" }, [\n      _c(\n        \"a\",\n        {\n          staticClass: \"btn btn-sm btn-outline-danger\",\n          attrs: { href: \"#delete\" }\n        },\n        [_vm._v(\" Delete \")]\n      )\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/PresentIdeaCard.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* binding */ render,\n/* harmony export */   \"staticRenderFns\": () => /* binding */ staticRenderFns\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    {\n      class: [\n        \"card\",\n        { \"bg-secondary text-white\": _vm.showClaimed && _vm.Claimed }\n      ]\n    },\n    [\n      _c(\"div\", { staticClass: \"card-header\" }, [\n        _c(\n          \"h5\",\n          {\n            directives: [{ name: \"linkified\", rawName: \"v-linkified\" }],\n            staticClass: \"card-title m-0\"\n          },\n          [_vm._v(\"\\n      \" + _vm._s(_vm.Thing) + \"\\n    \")]\n        ),\n        _vm._v(\" \"),\n        _vm.Price\n          ? _c(\"p\", { staticClass: \"card-text text-right text-muted\" }, [\n              _vm._v(\"\\n      \" + _vm._s(_vm.Price) + \"\\n    \")\n            ])\n          : _vm._e(),\n        _vm._v(\" \"),\n        _vm._m(0)\n      ]),\n      _vm._v(\" \"),\n      _vm.Notes\n        ? _c(\"div\", { staticClass: \"card-body\" }, [\n            _c(\n              \"p\",\n              {\n                directives: [{ name: \"linkified\", rawName: \"v-linkified\" }],\n                staticClass: \"card-text\"\n              },\n              [_vm._v(\"\\n      \" + _vm._s(_vm.Notes) + \"\\n    \")]\n            )\n          ])\n        : _vm._e(),\n      _vm._v(\" \"),\n      _vm.showClaimed\n        ? _c(\"div\", { staticClass: \"card-footer\" }, [\n            _vm.Claimed\n              ? _c(\"p\", [\n                  _vm._v(\"Claimed by \"),\n                  _c(\"em\", [_vm._v(\"haven't done this bit yet!\")])\n                ])\n              : _vm._e(),\n            _vm._v(\" \"),\n            _c(\"a\", { attrs: { href: \"#unclaim\" } }, [_vm._v(\" Clear? \")]),\n            _vm._v(\" \"),\n            _c(\n              \"a\",\n              {\n                staticClass: \"btn btn-block btn-primary\",\n                attrs: { href: \"#claim\" }\n              },\n              [_vm._v(\"Claim!\")]\n            )\n          ])\n        : _vm._e()\n    ]\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"p\", { staticClass: \"card-text text-right\" }, [\n      _c(\n        \"a\",\n        {\n          staticClass: \"btn btn-sm btn-outline-danger\",\n          attrs: { href: \"#delete\" }\n        },\n        [_vm._v(\" Delete \")]\n      )\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/PresentIdeaCard.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
@@ -4632,6 +5112,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => module['default'] :
+/******/ 				() => module;
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports

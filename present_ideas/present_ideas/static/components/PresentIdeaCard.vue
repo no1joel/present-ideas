@@ -6,7 +6,7 @@
     ]"
   >
     <div class="card-header">
-      <h5 class="card-title m-0">
+      <h5 class="card-title m-0" v-linkified>
         {{ Thing }}
       </h5>
       <p v-if="Price" class="card-text text-right text-muted">
@@ -17,7 +17,7 @@
       </p>
     </div>
     <div v-if="Notes" class="card-body">
-      <p class="card-text">
+      <p class="card-text" v-linkified>
         {{ Notes }}
       </p>
     </div>

@@ -38,6 +38,7 @@
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^4.2.3",
     "vue": "^2.6.12",
+    "vue-linkify": "^1.0.1",
     "vue-loader": "^15.9.3",
     "vue-router": "^3.4.7",
     "vue-template-compiler": "^2.6.12",
