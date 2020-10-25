@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import LandingPage from './components/LandingPage.vue'
+import Vue from 'vue';
+import VueRouter from "vue-router";
+import routes from "./routes";
 
-new Vue({
-    el: "#vue-app",
-    template: "<LandingPage />",
-    components: { LandingPage }
-});
+Vue.use(VueRouter);
+const router = new VueRouter({ routes });
+const app = new Vue({
+    router
+}).$mount("#vue-app");
