@@ -30,7 +30,7 @@
 
 <script>
 import Layout from "../layout/Layout.vue";
-import PeoplePicker from "./PeoplePicker.vue";
+import PeoplePicker from "../components/PeoplePicker.vue";
 
 export default {
   components: {

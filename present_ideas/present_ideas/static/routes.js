@@ -1,6 +1,6 @@
-import LandingPage from "./components/LandingPage.vue";
-import BlahPage from "./components/BlahPage.vue";
-import MyListPage from "./components/MyListPage.vue";
+import LandingPage from "./pages/LandingPage.vue";
+import BlahPage from "./pages/BlahPage.vue";
+import MyListPage from "./pages/MyListPage.vue";
 
 const routes = [
     { path: '/', component: LandingPage },
