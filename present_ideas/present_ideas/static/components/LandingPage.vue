@@ -16,6 +16,7 @@
                 type="button"
                 class="btn btn-block btn-success col-sm-2"
                 v-bind:disabled="!currentUser"
+                v-on:click="goToMyPage"
               >
                 Go
               </button>
@@ -54,6 +55,9 @@ export default {
       const names = data.names;
       this.people = names.sort();
       this.loading = false;
+    },
+    goToMyPage() {
+      this.$router.push({ name: "myList", params: { user: this.currentUser } });
     },
   },
 };
