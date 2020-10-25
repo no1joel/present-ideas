@@ -9,6 +9,21 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _PeoplePicker_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PeoplePicker.vue */ \"./present_ideas/present_ideas/static/components/PeoplePicker.vue\");\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  components: {\n    PeoplePicker: _PeoplePicker_vue__WEBPACK_IMPORTED_MODULE_0__.default\n  },\n  data: function data() {\n    return {\n      people: [],\n      loading: true,\n      currentUser: undefined\n    };\n  },\n  mounted: function mounted() {\n    this.loadPeople();\n  },\n  methods: {\n    loadPeople: function () {\n      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {\n        var response, data, names;\n        return regeneratorRuntime.wrap(function _callee$(_context) {\n          while (1) {\n            switch (_context.prev = _context.next) {\n              case 0:\n                this.loading = true;\n                _context.next = 3;\n                return fetch(\"/api/person\");\n\n              case 3:\n                response = _context.sent;\n                _context.next = 6;\n                return response.json();\n\n              case 6:\n                data = _context.sent;\n                names = data.names;\n                this.people = names.sort();\n                this.loading = false;\n\n              case 10:\n              case \"end\":\n                return _context.stop();\n            }\n          }\n        }, _callee, this);\n      }));\n\n      function loadPeople() {\n        return _ref.apply(this, arguments);\n      }\n\n      return loadPeople;\n    }()\n  }\n});\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/LandingPage.vue?./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options");
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/PeoplePicker.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/PeoplePicker.vue?vue&type=script&lang=js& ***!
@@ -20,7 +35,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  data: function data() {\n    return {\n      people: [],\n      loading: true\n    };\n  },\n  mounted: function mounted() {\n    this.loadPeople();\n  },\n  methods: {\n    loadPeople: function () {\n      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {\n        var response, data, names;\n        return regeneratorRuntime.wrap(function _callee$(_context) {\n          while (1) {\n            switch (_context.prev = _context.next) {\n              case 0:\n                this.loading = true;\n                _context.next = 3;\n                return fetch(\"/api/person\");\n\n              case 3:\n                response = _context.sent;\n                _context.next = 6;\n                return response.json();\n\n              case 6:\n                data = _context.sent;\n                names = data.names;\n                this.people = names.sort();\n                this.loading = false;\n\n              case 10:\n              case \"end\":\n                return _context.stop();\n            }\n          }\n        }, _callee, this);\n      }));\n\n      function loadPeople() {\n        return _ref.apply(this, arguments);\n      }\n\n      return loadPeople;\n    }()\n  }\n});\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/PeoplePicker.vue?./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  props: {\n    value: {\n      type: String,\n      required: false,\n      default: \"\"\n    },\n    people: {\n      type: Array\n    },\n    loading: {\n      type: Boolean\n    }\n  }\n});\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/PeoplePicker.vue?./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
@@ -34,7 +49,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var _components_PeoplePicker_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/PeoplePicker.vue */ \"./present_ideas/present_ideas/static/components/PeoplePicker.vue\");\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_1__.default({\n  el: \"#vue-app\",\n  template: \"<PeoplePicker />\",\n  components: {\n    PeoplePicker: _components_PeoplePicker_vue__WEBPACK_IMPORTED_MODULE_0__.default\n  }\n});\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var _components_LandingPage_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/LandingPage.vue */ \"./present_ideas/present_ideas/static/components/LandingPage.vue\");\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_1__.default({\n  el: \"#vue-app\",\n  template: \"<LandingPage />\",\n  components: {\n    LandingPage: _components_LandingPage_vue__WEBPACK_IMPORTED_MODULE_0__.default\n  }\n});\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/index.js?");
 
 /***/ }),
 
@@ -4129,6 +4144,21 @@ eval("/**\n * Copyright (c) 2014, Facebook, Inc.\n * All rights reserved.\n *\n 
 
 /***/ }),
 
+/***/ "./present_ideas/present_ideas/static/components/LandingPage.vue":
+/*!***********************************************************************!*\
+  !*** ./present_ideas/present_ideas/static/components/LandingPage.vue ***!
+  \***********************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _LandingPage_vue_vue_type_template_id_378749bc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LandingPage.vue?vue&type=template&id=378749bc& */ \"./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=template&id=378749bc&\");\n/* harmony import */ var _LandingPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LandingPage.vue?vue&type=script&lang=js& */ \"./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(\n  _LandingPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,\n  _LandingPage_vue_vue_type_template_id_378749bc___WEBPACK_IMPORTED_MODULE_0__.render,\n  _LandingPage_vue_vue_type_template_id_378749bc___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"present_ideas/present_ideas/static/components/LandingPage.vue\"\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/LandingPage.vue?");
+
+/***/ }),
+
 /***/ "./present_ideas/present_ideas/static/components/PeoplePicker.vue":
 /*!************************************************************************!*\
   !*** ./present_ideas/present_ideas/static/components/PeoplePicker.vue ***!
@@ -4144,6 +4174,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************!*\
+  !*** ./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LandingPage.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=script&lang=js&\");\n /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); \n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/LandingPage.vue?");
+
+/***/ }),
+
 /***/ "./present_ideas/present_ideas/static/components/PeoplePicker.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************!*\
   !*** ./present_ideas/present_ideas/static/components/PeoplePicker.vue?vue&type=script&lang=js& ***!
@@ -4156,6 +4201,22 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_PeoplePicker_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PeoplePicker.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/PeoplePicker.vue?vue&type=script&lang=js&\");\n /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_PeoplePicker_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); \n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/PeoplePicker.vue?");
+
+/***/ }),
+
+/***/ "./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=template&id=378749bc&":
+/*!******************************************************************************************************!*\
+  !*** ./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=template&id=378749bc& ***!
+  \******************************************************************************************************/
+/*! namespace exports */
+/*! export render [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=template&id=378749bc& .render */
+/*! export staticRenderFns [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=template&id=378749bc& .staticRenderFns */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_template_id_378749bc___WEBPACK_IMPORTED_MODULE_0__.render,\n/* harmony export */   \"staticRenderFns\": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_template_id_378749bc___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LandingPage_vue_vue_type_template_id_378749bc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LandingPage.vue?vue&type=template&id=378749bc& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=template&id=378749bc&\");\n\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/LandingPage.vue?");
 
 /***/ }),
 
@@ -4175,6 +4236,22 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=template&id=378749bc&":
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/LandingPage.vue?vue&type=template&id=378749bc& ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+/*! namespace exports */
+/*! export render [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export staticRenderFns [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* binding */ render,\n/* harmony export */   \"staticRenderFns\": () => /* binding */ staticRenderFns\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"container-fluid\" }, [\n    _c(\"div\", { staticClass: \"row\" }, [\n      _c(\"div\", { staticClass: \"col\" }, [\n        _c(\"div\", { staticClass: \"jumbotron\" }, [\n          _vm._m(0),\n          _vm._v(\" \"),\n          _c(\n            \"div\",\n            { staticClass: \"form-row\" },\n            [\n              _c(\"PeoplePicker\", {\n                staticClass: \"col-sm-10\",\n                attrs: { loading: _vm.loading, people: _vm.people },\n                model: {\n                  value: _vm.currentUser,\n                  callback: function($$v) {\n                    _vm.currentUser = $$v\n                  },\n                  expression: \"currentUser\"\n                }\n              }),\n              _vm._v(\" \"),\n              _c(\n                \"button\",\n                {\n                  staticClass: \"btn btn-block btn-success col-sm-2\",\n                  attrs: { type: \"button\", disabled: !_vm.currentUser }\n                },\n                [_vm._v(\"\\n            Go\\n          \")]\n              )\n            ],\n            1\n          )\n        ])\n      ])\n    ])\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"p\", [\n      _vm._v(\"Please pick \"),\n      _c(\"strong\", [_vm._v(\"your name\")]),\n      _vm._v(\" to get started.\")\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/LandingPage.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/PeoplePicker.vue?vue&type=template&id=a9c1335e&":
 /*!**********************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./present_ideas/present_ideas/static/components/PeoplePicker.vue?vue&type=template&id=a9c1335e& ***!
@@ -4187,7 +4264,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* binding */ render,\n/* harmony export */   \"staticRenderFns\": () => /* binding */ staticRenderFns\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"select\",\n    [\n      _c(\"option\", { attrs: { disabled: \"\" } }, [_vm._v(\"Select a person\")]),\n      _vm._v(\" \"),\n      _vm.loading\n        ? _c(\"option\", { attrs: { disabled: \"\" } }, [_vm._v(\"Loading...\")])\n        : _vm._e(),\n      _vm._v(\" \"),\n      _vm._l(_vm.people, function(person) {\n        return _c(\"option\", { key: person.name }, [\n          _vm._v(\n            \"\\n    \" +\n              _vm._s(person[0].toUpperCase() + person.slice(1)) +\n              \"\\n  \"\n          )\n        ])\n      })\n    ],\n    2\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/PeoplePicker.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* binding */ render,\n/* harmony export */   \"staticRenderFns\": () => /* binding */ staticRenderFns\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"select\",\n    {\n      staticClass: \"custom-select\",\n      on: {\n        input: function($event) {\n          return _vm.$emit(\"input\", $event.target.value)\n        }\n      }\n    },\n    [\n      _c(\n        \"option\",\n        { attrs: { disabled: \"\" }, domProps: { selected: !_vm.value } },\n        [_vm._v(\"Who are you?\")]\n      ),\n      _vm._v(\" \"),\n      _vm.loading\n        ? _c(\"option\", { attrs: { disabled: \"\" } }, [_vm._v(\"Loading...\")])\n        : _vm._e(),\n      _vm._v(\" \"),\n      _vm._l(_vm.people, function(person) {\n        return _c(\"option\", { key: person.name }, [\n          _vm._v(\n            \"\\n    \" +\n              _vm._s(person[0].toUpperCase() + person.slice(1)) +\n              \"\\n  \"\n          )\n        ])\n      })\n    ],\n    2\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://my-webpack-project/./present_ideas/present_ideas/static/components/PeoplePicker.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 

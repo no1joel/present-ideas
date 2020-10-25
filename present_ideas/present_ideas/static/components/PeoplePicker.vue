@@ -1,6 +1,9 @@
 <template>
-  <select>
-    <option disabled>Select a person</option>
+  <select
+    class="custom-select"
+    v-on:input="$emit('input', $event.target.value)"
+  >
+    <option disabled v-bind:selected="!value">Who are you?</option>
     <option v-if="loading" disabled>Loading...</option>
     <option v-for="person in people" v-bind:key="person.name">
       {{ person[0].toUpperCase() + person.slice(1) }}
@@ -10,23 +13,17 @@
 
 <script>
 export default {
-  data() {
-    return {
-      people: [],
-      loading: true,
-    };
-  },
-  mounted() {
-    this.loadPeople();
-  },
-  methods: {
-    async loadPeople() {
-      this.loading = true;
-      const response = await fetch("/api/person");
-      const data = await response.json();
-      const names = data.names;
-      this.people = names.sort();
-      this.loading = false;
+  props: {
+    value: {
+      type: String,
+      required: false,
+      default: "",
+    },
+    people: {
+      type: Array,
+    },
+    loading: {
+      type: Boolean,
     },
   },
 };

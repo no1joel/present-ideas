@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import PeoplePicker from './components/PeoplePicker.vue'
+import LandingPage from './components/LandingPage.vue'
 
 new Vue({
     el: "#vue-app",
-    template: "<PeoplePicker />",
-    components: { PeoplePicker }
+    template: "<LandingPage />",
+    components: { LandingPage }
 });
