@@ -13,6 +13,10 @@
           </div>
         </div>
       </div>
+      <PresentIdeaForm
+        v-bind:user="$route.params.user"
+        v-on:added="fetchMyList"
+      />
     </div>
   </Layout>
 </template>
@@ -20,9 +24,10 @@
 <script>
 import Layout from "../layout/Layout.vue";
 import PresentIdeaCard from "../components/PresentIdeaCard.vue";
+import PresentIdeaForm from "../components/PresentIdeaForm.vue";
 
 export default {
-  components: { Layout, PresentIdeaCard },
+  components: { Layout, PresentIdeaCard, PresentIdeaForm },
   data() {
     return { presents: [], loading: false };
   },

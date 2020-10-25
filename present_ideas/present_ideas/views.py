@@ -1,4 +1,5 @@
 """Views, and only views."""
+import json
 from django.shortcuts import redirect, render, reverse
 from .utils import (
     get_all_names,
@@ -45,6 +46,19 @@ def my_list_api(request: HttpRequest, username: str) -> JsonResponse:
     data = {"presents": present_ideas}
 
     return JsonResponse(data)
+
+
+def add_idea_api(request: HttpRequest) -> HttpResponse:
+    """Add an idea!"""
+
+    data = json.loads(request.body)
+    user_name = data["user"]
+    thing = data["thing"]
+    price = data["price"]
+    notes = data["notes"]
+    add_row(user_name, [thing, price, notes])
+
+    return JsonResponse({})
 
 
 def index(request: HttpRequest) -> HttpResponse:
