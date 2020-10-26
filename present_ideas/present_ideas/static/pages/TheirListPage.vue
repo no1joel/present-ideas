@@ -39,6 +39,12 @@ export default {
   computed: {
     ...mapGetters(["viewingUser", "currentUser"]),
   },
+  watch: {
+    viewingUser() {
+      this.presents = [];
+      this.fetchList();
+    },
+  },
   methods: {
     async fetchList() {
       this.loading = true;
