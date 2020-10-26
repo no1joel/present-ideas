@@ -34,7 +34,7 @@
     </div>
     <div v-if="showClaimed" class="card-footer">
       <p v-if="Claimed">Claimed by <em>haven't done this bit yet!</em></p>
-      <a href="#unclaim"> Clear? </a>
+      <a href="#unclaim">Clear?</a>
       <a href="#claim" class="btn btn-block btn-primary">Claim!</a>
     </div>
   </div>

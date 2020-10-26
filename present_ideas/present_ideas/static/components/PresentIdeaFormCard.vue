@@ -1,8 +1,13 @@
 <template>
   <div class="card">
+    <div class="card-header">
+      <h5 class="card-title m-0" v-linkified>
+        Add New!
+      </h5>
+    </div>
+
     <div class="card-body">
       <form class="form-horizontal">
-        <h5 class="card-title">Add New</h5>
         <div class="form-group">
           <label for="thing-input">Thing*</label>
           <input
@@ -10,7 +15,7 @@
             name="thing"
             id="thing-input"
             class="form-control"
-            required
+            placeholder="Something I want..."
             v-model="name"
           />
         </div>
@@ -21,6 +26,7 @@
             name="price"
             id="price-input"
             class="form-control"
+            placeholder="Enter a price or a range, e.g. £10-£20"
             v-model="price"
           />
         </div>
@@ -30,6 +36,7 @@
             name="notes"
             id="notes-input"
             class="form-control"
+            placeholder="Enter a link to a specific thing, a description of what you want, why you want it, anything!"
             v-model="notes"
           ></textarea>
         </div>

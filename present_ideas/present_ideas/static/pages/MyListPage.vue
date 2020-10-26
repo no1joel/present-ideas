@@ -11,13 +11,13 @@
               v-bind:key="present.index"
               v-on:delete-clicked="deleteClicked"
             />
+            <PresentIdeaFormCard
+              v-bind:user="$route.params.user"
+              v-on:added="fetchMyList"
+            />
           </div>
         </div>
       </div>
-      <PresentIdeaForm
-        v-bind:user="$route.params.user"
-        v-on:added="fetchMyList"
-      />
     </div>
   </Layout>
 </template>
@@ -25,10 +25,10 @@
 <script>
 import Layout from "../layout/Layout.vue";
 import PresentIdeaCard from "../components/PresentIdeaCard.vue";
-import PresentIdeaForm from "../components/PresentIdeaForm.vue";
+import PresentIdeaFormCard from "../components/PresentIdeaFormCard.vue";
 
 export default {
-  components: { Layout, PresentIdeaCard, PresentIdeaForm },
+  components: { Layout, PresentIdeaCard, PresentIdeaFormCard },
   data() {
     return { presents: [], loading: false };
   },
