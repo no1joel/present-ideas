@@ -8,9 +8,8 @@
             <div class="form-row">
               <PeoplePicker
                 class="col-sm-10"
-                v-bind:loading="loading"
-                v-bind:people="people"
-                v-model="currentUser"
+                v-bind:value="currentUser"
+                v-on:input="currentUserChanged"
               />
               <button
                 type="button"
@@ -39,6 +38,7 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import Layout from "../layout/Layout.vue";
 import PeoplePicker from "../components/PeoplePicker.vue";
 
@@ -47,28 +47,19 @@ export default {
     Layout,
     PeoplePicker,
   },
-  data() {
-    return {
-      people: [],
-      loading: true,
-      currentUser: undefined,
-    };
-  },
-  mounted() {
-    this.loadPeople();
+  computed: {
+    ...mapGetters({
+      currentUser: "currentUser",
+    })
   },
   methods: {
-    async loadPeople() {
-      this.loading = true;
-      const response = await fetch("/api/person");
-      const data = await response.json();
-      const names = data.names;
-      this.people = names.sort();
-      this.loading = false;
+    async goToMyPage() {
+      await this.$store.dispatch("setViewingUser", { viewingUser: this.currentUser });
+      this.$router.push({ name: "list", params: { user: this.currentUser, viewing: this.currentUser } });
     },
-    goToMyPage() {
-      this.$router.push({ name: "myList", params: { user: this.currentUser } });
-    },
+    currentUserChanged(currentUser) {
+      this.$store.dispatch("setCurrentUser", { currentUser });
+    }
   },
 };
 </script>

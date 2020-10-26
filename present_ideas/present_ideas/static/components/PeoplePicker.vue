@@ -3,15 +3,34 @@
     class="custom-select"
     v-on:input="$emit('input', $event.target.value)"
   >
-    <option disabled v-bind:selected="!value">Who are you?</option>
-    <option v-if="loading" disabled>Loading...</option>
-    <option v-for="person in people" v-bind:key="person.name">
-      {{ person[0].toUpperCase() + person.slice(1) }}
+    <option
+      v-if="loading"
+      disabled value="loading"
+      v-bind:selected="value"
+    >
+      Loading...
+    </option>
+    <option
+      v-if="!loading"
+      v-bind:selected="!value"
+      value=""
+    >
+      Pick a name!
+    </option>
+    <option
+      v-for="person in people"
+      v-bind:key="person"
+      v-bind:selected="person === value"
+      v-bind:value="person"
+    >
+      {{ person }}
     </option>
   </select>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   props: {
     value: {
@@ -19,12 +38,12 @@ export default {
       required: false,
       default: "",
     },
-    people: {
-      type: Array,
-    },
-    loading: {
-      type: Boolean,
-    },
   },
+  computed: {
+    ...mapGetters({
+      people: "people",
+      loading: "loadingPeople",
+    }),
+  }
 };
 </script>

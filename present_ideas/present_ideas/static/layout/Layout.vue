@@ -1,12 +1,13 @@
 <template>
   <div>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">
-          Present Ideas
-        </li>
-      </ol>
-    </nav>
+    <TopNav />
     <slot />
   </div>
 </template>
+
+<script>
+import TopNav from "../components/TopNav.vue"
+export default {
+  components: { TopNav },
+}
+</script>
