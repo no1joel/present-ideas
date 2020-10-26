@@ -1,20 +1,21 @@
 <template>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <em v-if="loading">Loading...</em>
-          <div class="card-columns">
-            <PresentIdeaCard
-              v-for="present in presents"
-              v-bind="present"
-              v-bind:key="present.index"
-              v-on:claim-clicked="claimClicked"
-              v-on:unclaim-clicked="unclaimClicked"
-            />
-          </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <em v-if="loading">Loading...</em>
+        <div class="card-columns">
+          <PresentIdeaCard
+            v-for="present in presents"
+            v-bind="present"
+            v-bind:key="present.index"
+            v-bind:loading="loading"
+            v-on:claim-clicked="claimClicked"
+            v-on:unclaim-clicked="unclaimClicked"
+          />
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -32,10 +33,7 @@ export default {
     this.fetchList();
   },
   computed: {
-    ...mapGetters([
-      "viewingUser",
-      "currentUser",
-    ]),
+    ...mapGetters(["viewingUser", "currentUser"]),
   },
   methods: {
     async fetchList() {
@@ -50,38 +48,40 @@ export default {
       this.loading = false;
     },
     async claimClicked({ index }) {
-      const url = "/api/claim_idea/"
+      this.loading = true;
+      const url = "/api/claim_idea/";
       const data = {
-        "index": index,
-        "for_user": this.viewingUser,
-        "by_user": this.currentUser,
-      }
+        index: index,
+        for_user: this.viewingUser,
+        by_user: this.currentUser,
+      };
       await fetch(url, {
         method: "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       });
-      this.fetchList()
+      this.fetchList();
     },
     async unclaimClicked({ index }) {
-      const url = "/api/unclaim_idea/"
+      this.loading = true;
+      const url = "/api/unclaim_idea/";
       const data = {
-        "index": index,
-        "for_user": this.viewingUser,
-      }
+        index: index,
+        for_user: this.viewingUser,
+      };
       await fetch(url, {
         method: "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       });
-      this.fetchList()
-    }
+      this.fetchList();
+    },
   },
 };
 </script>

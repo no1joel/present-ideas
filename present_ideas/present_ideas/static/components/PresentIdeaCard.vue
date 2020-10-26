@@ -5,6 +5,22 @@
       { 'bg-secondary text-white': showClaimed && Claimed },
     ]"
   >
+    <div
+      v-if="loading"
+      class="d-flex justify-content-center align-items-center"
+      v-bind:style="{
+        background: 'rgba(255,255,255,0.4)',
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+      }"
+    >
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <div class="card-header">
       <h5 class="card-title m-0" v-linkified>
         {{ Thing }}
@@ -62,6 +78,9 @@ import { mapGetters } from "vuex";
 
 export default {
   props: {
+    loading: {
+      type: Boolean,
+    },
     Thing: {
       type: String,
     },
