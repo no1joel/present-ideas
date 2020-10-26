@@ -3,18 +3,10 @@
     class="custom-select"
     v-on:input="$emit('input', $event.target.value)"
   >
-    <option
-      v-if="loading"
-      disabled value="loading"
-      v-bind:selected="value"
-    >
+    <option v-if="loading" disabled value="loading" v-bind:selected="value">
       Loading...
     </option>
-    <option
-      v-if="!loading"
-      v-bind:selected="!value"
-      value=""
-    >
+    <option v-if="!loading" disabled v-bind:selected="!value" value="">
       Pick a name!
     </option>
     <option
@@ -44,6 +36,6 @@ export default {
       people: "people",
       loading: "loadingPeople",
     }),
-  }
+  },
 };
 </script>

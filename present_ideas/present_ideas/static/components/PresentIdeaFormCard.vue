@@ -1,11 +1,9 @@
 <template>
   <div class="card">
+    <LoadingIndicator v-if="saving" />
     <div class="card-header">
-      <h5 class="card-title m-0" v-linkified>
-        Add New!
-      </h5>
+      <h5 class="card-title m-0" v-linkified>Add New!</h5>
     </div>
-
     <div class="card-body">
       <form class="form-horizontal">
         <div class="form-group">
@@ -54,7 +52,10 @@
 </template>
 
 <script>
+import LoadingIndicator from "./LoadingIndicator.vue";
+
 export default {
+  components: { LoadingIndicator },
   props: {
     user: String,
   },

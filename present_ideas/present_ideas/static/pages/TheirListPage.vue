@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col">
-        <em v-if="loading">Loading...</em>
+        <LoadingIndicator v-if="loading" />
         <div class="card-columns">
           <PresentIdeaCard
             v-for="present in presents"
@@ -22,10 +22,14 @@
 import { mapGetters } from "vuex";
 import Layout from "../layout/Layout.vue";
 import PresentIdeaCard from "../components/PresentIdeaCard.vue";
-import PresentIdeaFormCard from "../components/PresentIdeaFormCard.vue";
+import LoadingIndicator from "../components/LoadingIndicator.vue";
 
 export default {
-  components: { Layout, PresentIdeaCard, PresentIdeaFormCard },
+  components: {
+    Layout,
+    PresentIdeaCard,
+    LoadingIndicator,
+  },
   data() {
     return { presents: [], loading: false };
   },

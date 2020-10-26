@@ -1,13 +1,15 @@
 <template>
   <div>
     <TopNav />
-    <slot />
+    <div class="mt-3">
+      <slot />
+    </div>
   </div>
 </template>
 
 <script>
-import TopNav from "../components/TopNav.vue"
+import TopNav from "../components/TopNav.vue";
 export default {
   components: { TopNav },
-}
+};
 </script>
