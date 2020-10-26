@@ -8,7 +8,8 @@
               v-for="present in presents"
               v-bind="present"
               v-bind:key="present.index"
-              v-on:delete-clicked="deleteClicked"
+              v-on:claim-clicked="claimClicked"
+              v-on:unclaim-clicked="unclaimClicked"
             />
           </div>
         </div>
@@ -48,11 +49,28 @@ export default {
 
       this.loading = false;
     },
-    async deleteClicked({ index }) {
-      const url = "/api/delete_idea/"
+    async claimClicked({ index }) {
+      const url = "/api/claim_idea/"
       const data = {
         "index": index,
-        "user": this.user
+        "for_user": this.viewingUser,
+        "by_user": this.currentUser,
+      }
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+      });
+      this.fetchList()
+    },
+    async unclaimClicked({ index }) {
+      const url = "/api/unclaim_idea/"
+      const data = {
+        "index": index,
+        "for_user": this.viewingUser,
       }
       await fetch(url, {
         method: "POST",

@@ -34,9 +34,25 @@
       </p>
     </div>
     <div v-if="showClaimed" class="card-footer">
-      <p v-if="Claimed">Claimed by <em>{{ Claimed == currentUser ? "You!" : Claimed }}</em></p>
-      <a v-if="Claimed" href="#unclaim">Clear?</a>
-      <a v-if="!Claimed" href="#claim" class="btn btn-block btn-primary">Claim!</a>
+      <p v-if="Claimed">
+        Claimed by <em>{{ Claimed == currentUser ? "You!" : Claimed }}</em>
+      </p>
+      <button
+        v-if="Claimed"
+        type="button"
+        class="btn btn-block btn-link"
+        v-on:click="onUnclaimClick"
+      >
+        Clear?
+      </button>
+      <button
+        v-if="!Claimed"
+        type="button"
+        class="btn btn-block btn-primary"
+        v-on:click="onClaimClick"
+      >
+        Claim!
+      </button>
     </div>
   </div>
 </template>
@@ -59,22 +75,25 @@ export default {
       type: [String],
     },
     index: {
-      type: Number
-    }
+      type: Number,
+    },
   },
   computed: {
-    ...mapGetters([
-      "viewingUser",
-      "currentUser",
-    ]),
+    ...mapGetters(["viewingUser", "currentUser"]),
     showClaimed() {
       return this.viewingUser !== this.currentUser;
-    }
+    },
   },
   methods: {
     onDeleteClick() {
-      this.$emit("delete-clicked", { index: this.Index })
-    }
-  }
+      this.$emit("delete-clicked", { index: this.index });
+    },
+    onClaimClick() {
+      this.$emit("claim-clicked", { index: this.index });
+    },
+    onUnclaimClick() {
+      this.$emit("unclaim-clicked", { index: this.index });
+    },
+  },
 };
 </script>

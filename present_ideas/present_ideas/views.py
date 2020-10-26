@@ -73,16 +73,33 @@ def delete_idea_api(request: HttpRequest) -> HttpResponse:
     return JsonResponse({})
 
 
-# def claim_idea_api(request: HttpRequest) -> HttpResponse:
-#     """Claim an idea."""
+def claim_idea_api(request: HttpRequest) -> HttpResponse:
+    """Claim an idea."""
 
-#     data = json.loads(request.body)
+    data = json.loads(request.body)
+    thing_index = data["index"]
+    their_name = data["for_user"]
+    username = data["by_user"]
 
-#     claimed_index = 4
-#     row_index = get_row_index(thing_index)
-#     set_cell_value(their_name, row_index, claimed_index, username)
+    claimed_index = 4
+    row_index = get_row_index(thing_index)
+    set_cell_value(their_name, row_index, claimed_index, username)
 
-#     return JsonResponse({})
+    return JsonResponse({})
+
+
+def unclaim_idea_api(request: HttpRequest) -> HttpResponse:
+    """Unclaim an idea."""
+
+    data = json.loads(request.body)
+    thing_index = data["index"]
+    their_name = data["for_user"]
+
+    claimed_index = 4
+    row_index = get_row_index(thing_index)
+    set_cell_value(their_name, row_index, claimed_index, "")
+
+    return JsonResponse({})
 
 
 def index(request: HttpRequest) -> HttpResponse:
