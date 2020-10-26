@@ -25,6 +25,7 @@ urlpatterns = [
     path("api/their_list/<username>", views.their_list_api, name="their_list_api"),
     path("api/my_list/<username>", views.my_list_api, name="my_list_api"),
     path("api/add_idea/", views.add_idea_api, name="add_idea_api"),
+    path("api/delete_idea/", views.delete_idea_api, name="delete_idea_api"),
     path("<username>/what_do", views.what_do, name="what_do"),
     path("<username>/who", views.who, name="who"),
     path("<username>/<their_name>", views.present_list, name="present_list"),

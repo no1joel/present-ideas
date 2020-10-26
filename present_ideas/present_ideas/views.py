@@ -61,6 +61,18 @@ def add_idea_api(request: HttpRequest) -> HttpResponse:
     return JsonResponse({})
 
 
+def delete_idea_api(request: HttpRequest) -> HttpResponse:
+    """Delete an idea."""
+
+    data = json.loads(request.body)
+    user_name = data["user"]
+    thing_index = data["index"]
+    row_index = get_row_index(thing_index)
+    delete_row(user_name, row_index)
+
+    return JsonResponse({})
+
+
 def index(request: HttpRequest) -> HttpResponse:
     """Show a landing page."""
 

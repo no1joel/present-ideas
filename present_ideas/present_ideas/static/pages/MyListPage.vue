@@ -9,6 +9,7 @@
               v-for="present in presents"
               v-bind="present"
               v-bind:key="present.index"
+              v-on:delete-clicked="deleteClicked"
             />
           </div>
         </div>
@@ -34,11 +35,16 @@ export default {
   mounted() {
     this.fetchMyList();
   },
+  computed: {
+    user() {
+      return this.$route.params.user;
+    }
+  },
   methods: {
     async fetchMyList() {
       this.loading = true;
 
-      const url = `/api/my_list/${this.$route.params.user}`;
+      const url = `/api/my_list/${this.user}`;
       const response = await fetch(url);
       const data = await response.json();
       const presents = data.presents;
@@ -46,6 +52,22 @@ export default {
 
       this.loading = false;
     },
+    async deleteClicked({ index }) {
+      const url = "/api/delete_idea/"
+      const data = {
+        "index": index,
+        "user": this.user
+      }
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+      });
+      this.fetchMyList()
+    }
   },
 };
 </script>

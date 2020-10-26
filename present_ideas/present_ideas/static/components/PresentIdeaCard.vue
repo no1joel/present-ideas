@@ -13,7 +13,13 @@
         {{ Price }}
       </p>
       <p class="card-text text-right">
-        <a href="#delete" class="btn btn-sm btn-outline-danger"> Delete </a>
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-danger"
+          v-on:click="onDeleteClick"
+        >
+          Delete
+        </button>
       </p>
     </div>
     <div v-if="Notes" class="card-body">
@@ -47,6 +53,14 @@ export default {
     Claimed: {
       type: [String],
     },
+    index: {
+      type: Number
+    }
   },
+  methods: {
+    onDeleteClick() {
+      this.$emit("delete-clicked", { index: this.Index })
+    }
+  }
 };
 </script>
