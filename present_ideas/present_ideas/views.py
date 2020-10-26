@@ -73,6 +73,18 @@ def delete_idea_api(request: HttpRequest) -> HttpResponse:
     return JsonResponse({})
 
 
+# def claim_idea_api(request: HttpRequest) -> HttpResponse:
+#     """Claim an idea."""
+
+#     data = json.loads(request.body)
+
+#     claimed_index = 4
+#     row_index = get_row_index(thing_index)
+#     set_cell_value(their_name, row_index, claimed_index, username)
+
+#     return JsonResponse({})
+
+
 def index(request: HttpRequest) -> HttpResponse:
     """Show a landing page."""
 

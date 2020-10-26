@@ -14,6 +14,7 @@
       </p>
       <p class="card-text text-right">
         <button
+          v-if="!showClaimed"
           type="button"
           class="btn btn-sm btn-outline-danger"
           v-on:click="onDeleteClick"
@@ -33,14 +34,16 @@
       </p>
     </div>
     <div v-if="showClaimed" class="card-footer">
-      <p v-if="Claimed">Claimed by <em>haven't done this bit yet!</em></p>
-      <a href="#unclaim">Clear?</a>
-      <a href="#claim" class="btn btn-block btn-primary">Claim!</a>
+      <p v-if="Claimed">Claimed by <em>{{ Claimed == currentUser ? "You!" : Claimed }}</em></p>
+      <a v-if="Claimed" href="#unclaim">Clear?</a>
+      <a v-if="!Claimed" href="#claim" class="btn btn-block btn-primary">Claim!</a>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   props: {
     Thing: {
@@ -52,14 +55,20 @@ export default {
     Price: {
       type: [String, Number],
     },
-    showClaimed: {
-      type: Boolean,
-    },
     Claimed: {
       type: [String],
     },
     index: {
       type: Number
+    }
+  },
+  computed: {
+    ...mapGetters([
+      "viewingUser",
+      "currentUser",
+    ]),
+    showClaimed() {
+      return this.viewingUser !== this.currentUser;
     }
   },
   methods: {

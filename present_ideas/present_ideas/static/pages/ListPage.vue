@@ -3,20 +3,22 @@
       <MyListPage
         v-if="user === viewing"
       />
-      <div
+      <TheirListPage
         v-if="user != viewing"
-        >Not done yet</div>
+      />
   </Layout>
 </template>
 
 <script>
 import Layout from "../layout/Layout.vue";
 import MyListPage from "./MyListPage.vue";
+import TheirListPage from "./TheirListPage.vue";
 
 export default {
     components: {
         Layout,
-        MyListPage
+        MyListPage,
+        TheirListPage,
     },
     props: {
         user: {
