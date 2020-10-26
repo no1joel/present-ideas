@@ -1,23 +1,24 @@
 <template>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <em v-if="loading">Loading...</em>
-          <div class="card-columns">
-            <PresentIdeaCard
-              v-for="present in presents"
-              v-bind="present"
-              v-bind:key="present.index"
-              v-on:delete-clicked="deleteClicked"
-            />
-            <PresentIdeaFormCard
-              v-bind:user="$route.params.user"
-              v-on:added="fetchMyList"
-            />
-          </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <em v-if="loading">Loading...</em>
+        <div class="card-columns">
+          <PresentIdeaFormCard
+            v-bind:user="$route.params.user"
+            v-on:added="fetchMyList"
+          />
+          <PresentIdeaCard
+            v-for="present in presents"
+            v-bind="present"
+            v-bind:key="present.index"
+            v-bind:loading="loading"
+            v-on:delete-clicked="deleteClicked"
+          />
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -36,7 +37,7 @@ export default {
   computed: {
     user() {
       return this.$route.params.user;
-    }
+    },
   },
   methods: {
     async fetchMyList() {
@@ -46,26 +47,27 @@ export default {
       const response = await fetch(url);
       const data = await response.json();
       const presents = data.presents;
-      this.presents = presents;
+      this.presents = presents.reverse();
 
       this.loading = false;
     },
     async deleteClicked({ index }) {
-      const url = "/api/delete_idea/"
+      this.loading = true;
+      const url = "/api/delete_idea/";
       const data = {
-        "index": index,
-        "user": this.user
-      }
+        index: index,
+        user: this.user,
+      };
       await fetch(url, {
         method: "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       });
-      this.fetchMyList()
-    }
+      this.fetchMyList();
+    },
   },
 };
 </script>
