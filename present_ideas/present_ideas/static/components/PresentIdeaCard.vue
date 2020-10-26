@@ -23,8 +23,13 @@
       </p>
     </div>
     <div v-if="Notes" class="card-body">
-      <p class="card-text" v-linkified>
-        {{ Notes }}
+      <p
+        v-for="(para, index) in Notes.split('\n')"
+        v-bind:key="para + index"
+        class="card-text"
+        v-linkified
+      >
+        {{ para }}
       </p>
     </div>
     <div v-if="showClaimed" class="card-footer">
