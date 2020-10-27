@@ -7,7 +7,9 @@
           <PresentIdeaCard
             v-for="present in presents"
             v-bind="present"
-            v-bind:key="present.index"
+            v-bind:key="
+              present.index + present.Thing + present.Price + present.Notes
+            "
             v-bind:loading="loading"
             v-on:claim-clicked="claimClicked"
             v-on:unclaim-clicked="unclaimClicked"
