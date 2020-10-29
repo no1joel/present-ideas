@@ -13,15 +13,28 @@
       <p v-if="Price" class="card-text text-right text-muted">
         {{ Price }}
       </p>
-      <p class="card-text text-right">
-        <button
-          v-if="!showClaimed"
-          type="button"
-          class="btn btn-sm btn-outline-danger"
-          v-on:click="onDeleteClick"
-        >
-          Delete
-        </button>
+      <p v-if="!showClaimed" class="card-text text-right">
+        <popper trigger="clickToOpen">
+          <div v-if="!loading" class="popper popover">
+            <div class="popover-header">Really delete?</div>
+            <div class="popover-body">
+              <button
+                type="button"
+                class="btn btn-block btn-danger"
+                v-on:click="onDeleteClick"
+              >
+                Yep!
+              </button>
+            </div>
+          </div>
+          <button
+            slot="reference"
+            type="button"
+            class="btn btn-sm btn-outline-danger"
+          >
+            Delete
+          </button>
+        </popper>
       </p>
     </div>
     <div v-if="Notes" class="card-body">
@@ -61,9 +74,10 @@
 <script>
 import { mapGetters } from "vuex";
 import LoadingIndicator from "./LoadingIndicator.vue";
+import Popper from "vue-popperjs";
 
 export default {
-  components: { LoadingIndicator },
+  components: { LoadingIndicator, popper: Popper },
   props: {
     loading: {
       type: Boolean,
