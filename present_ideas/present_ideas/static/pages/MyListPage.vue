@@ -6,6 +6,7 @@
         <div class="card-columns">
           <PresentIdeaFormCard
             v-bind:user="$route.params.user"
+            v-bind:added-by="$route.params.user"
             v-on:added="fetchMyList"
           />
           <PresentIdeaCard

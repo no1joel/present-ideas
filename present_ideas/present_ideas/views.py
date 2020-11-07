@@ -39,6 +39,7 @@ def my_list_api(request: HttpRequest, username: str) -> JsonResponse:
     """Return a list of presents, excluding claimed status."""
 
     present_ideas = get_present_ideas(username)
+    present_ideas = [idea for idea in present_ideas if idea["AddedBy"] == username]
 
     for present_idea in present_ideas:
         del present_idea["Claimed"]
@@ -56,7 +57,8 @@ def add_idea_api(request: HttpRequest) -> HttpResponse:
     thing = data["thing"]
     price = data["price"]
     notes = data["notes"]
-    add_row(user_name, [thing, price, notes])
+    added_by = data["added_by"]
+    add_row(user_name, [thing, price, notes, "", added_by])
 
     return JsonResponse({})
 

@@ -2,7 +2,7 @@
   <div
     v-bind:class="[
       'card',
-      { 'bg-secondary text-white': showClaimed && Claimed },
+      { 'bg-secondary text-white': viewingOtherUser && Claimed },
     ]"
   >
     <LoadingIndicator v-if="loading" />
@@ -10,10 +10,21 @@
       <h5 class="card-title m-0" v-linkified>
         {{ Thing }}
       </h5>
-      <p v-if="Price" class="card-text text-right text-muted">
-        {{ Price }}
-      </p>
-      <p v-if="!showClaimed" class="card-text text-right">
+      <small>
+        <p
+          v-if="Price"
+          v-bind:class="[
+            'card-text text-right text-muted',
+            viewingOtherUser && 'mb-1',
+          ]"
+        >
+          Price: {{ Price }}
+        </p>
+        <p v-if="viewingOtherUser" class="card-text text-right text-muted">
+          Added by: {{ AddedBy }}
+        </p>
+      </small>
+      <p v-if="addedByCurrent" class="card-text text-right mt-1">
         <popper trigger="clickToOpen">
           <div v-if="!loading" class="popper popover">
             <div class="popover-header">Really delete?</div>
@@ -47,7 +58,7 @@
         {{ para }}
       </p>
     </div>
-    <div v-if="showClaimed" class="card-footer">
+    <div v-if="viewingOtherUser" class="card-footer">
       <p v-if="Claimed">
         Claimed by <em>{{ Claimed == currentUser ? "You!" : Claimed }}</em>
       </p>
@@ -94,14 +105,20 @@ export default {
     Claimed: {
       type: [String],
     },
+    AddedBy: {
+      type: String,
+    },
     index: {
       type: Number,
     },
   },
   computed: {
     ...mapGetters(["viewingUser", "currentUser"]),
-    showClaimed() {
+    viewingOtherUser() {
       return this.viewingUser !== this.currentUser;
+    },
+    addedByCurrent() {
+      return this.AddedBy === this.currentUser;
     },
   },
   methods: {

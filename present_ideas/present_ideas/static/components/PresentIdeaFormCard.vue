@@ -3,6 +3,12 @@
     <LoadingIndicator v-if="saving" />
     <div class="card-header">
       <h5 class="card-title m-0" v-linkified>Add New!</h5>
+      <p v-if="!isForSelf" class="card-text text-right text-muted">
+        <small>
+          {{ user }} won't see this when they look at their list, but everyone
+          else will!
+        </small>
+      </p>
     </div>
     <div class="card-body">
       <form class="form-horizontal">
@@ -13,7 +19,7 @@
             name="thing"
             id="thing-input"
             class="form-control"
-            placeholder="Something I want..."
+            v-bind:placeholder="thingPlaceholder"
             v-model="name"
           />
         </div>
@@ -34,7 +40,7 @@
             name="notes"
             id="notes-input"
             class="form-control"
-            placeholder="Enter a link to a specific thing, a description of what you want, why you want it, anything!"
+            v-bind:placeholder="notesPlaceholder"
             v-model="notes"
           ></textarea>
         </div>
@@ -58,6 +64,7 @@ export default {
   components: { LoadingIndicator },
   props: {
     user: String,
+    addedBy: String,
   },
   data() {
     return {
@@ -81,6 +88,7 @@ export default {
           thing: this.name,
           price: this.price,
           notes: this.notes,
+          added_by: this.addedBy,
         }),
       });
 
@@ -95,6 +103,21 @@ export default {
   computed: {
     addDisabled() {
       return this.saving || !this.name;
+    },
+    isForSelf() {
+      return this.user === this.addedBy;
+    },
+    thingPlaceholder() {
+      if (this.isForSelf) {
+        return "Something I want...";
+      }
+      return "Something they might want...";
+    },
+    notesPlaceholder() {
+      if (this.isForSelf) {
+        return "Enter a link to a specific thing, a description of what you want, why you want it, anything!";
+      }
+      return "Enter a link to a specific thing, a description of what they want, why they might want it, anything!";
     },
   },
 };
