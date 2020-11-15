@@ -49,7 +49,8 @@ module.exports = {
   entry: ['babel-polyfill', './present_ideas/present_ideas/static/index.js'],
 
   output: {
-    path: path.resolve(__dirname, 'present_ideas/present_ideas/static/dist/')
+    path: path.resolve(__dirname, 'present_ideas/present_ideas/static/dist/'),
+    filename: '[name].[contenthash].js',
   },
 
   plugins: [
