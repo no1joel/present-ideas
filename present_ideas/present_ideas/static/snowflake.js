@@ -1,4 +1,4 @@
-const createSnowflake = noDelay => {
+const createSnowflake = (noDelay) => {
   const flake = document.createElement("span");
   flake.classList.add("snowflake");
   if (noDelay) {
@@ -16,9 +16,13 @@ const addSnowflakes = (count, noDelay) => {
 };
 
 const getDaysTilXmas = () => {
-  const xmas = new Date(2020, 11, 25);
   const now = new Date();
-  const millisecondsToDays = ms => ms / (1000 * 60 * 60 * 24);
+  const year = now.getUTCFullYear();
+  let xmas = new Date(year, 11, 25);
+  if (xmas < now) {
+    xmas = new Date(year + 1, 11, 25);
+  }
+  const millisecondsToDays = (ms) => ms / (1000 * 60 * 60 * 24);
   const daysTilXmas = millisecondsToDays(xmas - now);
   return daysTilXmas;
 };
@@ -33,13 +37,10 @@ const getSnowflakeCount = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   addSnowflakes(getSnowflakeCount());
-  setInterval(() => {
-    Math.round(Math.random()) && addSnowflakes(1);
-  }, 10 * 1000);
 
   var myShakeEvent = new Shake({
     threshold: 15, // optional shake strength threshold
-    timeout: 1000 // optional, determines the frequency of event generation
+    timeout: 1000, // optional, determines the frequency of event generation
   });
   myShakeEvent.start();
   window.addEventListener(

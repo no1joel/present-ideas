@@ -1,27 +1,112 @@
+"""Views, and only views."""
+import json
 from django.shortcuts import redirect, render, reverse
-
-from sheets.spreadsheet import (
-    add_row,
-    delete_row,
-    get_rows,
+from .utils import (
+    get_all_names,
     get_worksheets,
+    add_row,
+    get_present_ideas,
+    get_row_index,
     set_cell_value,
+    delete_row,
+    check_name,
 )
 
-
-def get_present_ideas(their_name):
-    # TODO: Embed urls
-    _header, *rows = get_rows(their_name)
-    presents = [{**row, "index": index} for index, row in enumerate(rows)]
-    return presents
+from django.http import HttpRequest, HttpResponse, JsonResponse, HttpResponseRedirect
 
 
-def get_row_index(thing_index):
-    # TODO: Why is it plus 3?!
-    return thing_index + 3
+def person_list(request: HttpRequest) -> JsonResponse:
+    """Return a list of people."""
+
+    names = list(get_all_names())
+    data = {"names": names}
+
+    return JsonResponse(data)
 
 
-def index(request):
+# TODO: Fix naming...
+def their_list_api(request: HttpRequest, username: str) -> JsonResponse:
+    """Return a list of presents and their status."""
+
+    present_ideas = get_present_ideas(username)
+
+    data = {"presents": present_ideas}
+
+    return JsonResponse(data)
+
+
+def my_list_api(request: HttpRequest, username: str) -> JsonResponse:
+    """Return a list of presents, excluding claimed status."""
+
+    present_ideas = get_present_ideas(username)
+    present_ideas = [idea for idea in present_ideas if idea["AddedBy"] == username]
+
+    for present_idea in present_ideas:
+        del present_idea["Claimed"]
+
+    data = {"presents": present_ideas}
+
+    return JsonResponse(data)
+
+
+def add_idea_api(request: HttpRequest) -> HttpResponse:
+    """Add an idea!"""
+
+    data = json.loads(request.body)
+    user_name = data["user"]
+    thing = data["thing"]
+    price = data["price"]
+    notes = data["notes"]
+    added_by = data["added_by"]
+    add_row(user_name, [thing, price, notes, "", added_by])
+
+    return JsonResponse({})
+
+
+def delete_idea_api(request: HttpRequest) -> HttpResponse:
+    """Delete an idea."""
+
+    data = json.loads(request.body)
+    user_name = data["user"]
+    thing_index = data["index"]
+    row_index = get_row_index(thing_index)
+    delete_row(user_name, row_index)
+
+    return JsonResponse({})
+
+
+def claim_idea_api(request: HttpRequest) -> HttpResponse:
+    """Claim an idea."""
+
+    data = json.loads(request.body)
+    thing_index = data["index"]
+    their_name = data["for_user"]
+    username = data["by_user"]
+
+    claimed_index = 4
+    row_index = get_row_index(thing_index)
+    set_cell_value(their_name, row_index, claimed_index, username)
+
+    return JsonResponse({})
+
+
+def unclaim_idea_api(request: HttpRequest) -> HttpResponse:
+    """Unclaim an idea."""
+
+    data = json.loads(request.body)
+    thing_index = data["index"]
+    their_name = data["for_user"]
+
+    claimed_index = 4
+    row_index = get_row_index(thing_index)
+    set_cell_value(their_name, row_index, claimed_index, "")
+
+    return JsonResponse({})
+
+
+def index(request: HttpRequest) -> HttpResponse:
+    """Show a landing page."""
+
     if request.method == "POST":
         name = request.POST.get("name", "").title()
         return redirect(reverse("what_do", args=(name,)))
@@ -29,91 +114,11 @@ def index(request):
     return render(request, "index.html")
 
 
-def check_name(name: str) -> bool:
-    """Check if the provided name is a sheet."""
-
-    worksheet_names = (worksheet.title.lower() for worksheet in get_worksheets())
-    return name.lower() in worksheet_names
+def redirect_to_vue_self(request: HttpRequest, username: str) -> HttpResponseRedirect:
+    return redirect(f"/#/{username}/{username}/")
 
 
-def what_do(request, username):
-    if not check_name(username):
-        return redirect(reverse("index"))
-
-    context = {
-        "who_url": reverse("who", args=(username,)),
-        "me_url": reverse("present_list", args=(username, username)),
-        "username": username,
-    }
-
-    return render(request, "what_do.html", context)
-
-
-def who(request, username):
-    """Ask who's list they wanna look at."""
-
-    if request.method == "POST":
-        their_name = request.POST.get("name", "").title()
-        return redirect(reverse("present_list", args=(username, their_name)))
-
-    return render(request, "who.html")
-
-
-def present_list(request, username: str, their_name: str):
-    if not check_name(their_name):
-        return redirect(reverse("index"))
-
-    if request.method == "POST":
-        thing = request.POST["thing"]
-        price = request.POST["price"]
-        notes = request.POST["notes"]
-        add_row(their_name, [thing, price, notes])
-
-    show_claimed = username.lower() != their_name.lower()
-
-    context = {
-        "rows": get_present_ideas(their_name),
-        "username": username,
-        "their_name": their_name,
-        "show_claimed": show_claimed,
-    }
-    return render(request, "list.html", context)
-
-
-def claim(request, username: str, their_name: str, thing_index: int):
-
-    claimed_index = 4
-    row_index = get_row_index(thing_index)
-    set_cell_value(their_name, row_index, claimed_index, username)
-
-    return redirect(reverse("present_list", args=(username, their_name)))
-
-
-def unclaim(request, username: str, their_name: str, thing_index: int):
-
-    claimed_index = 4
-    row_index = get_row_index(thing_index)
-    set_cell_value(their_name, row_index, claimed_index, "")
-
-    return redirect(reverse("present_list", args=(username, their_name)))
-
-
-def delete(request, username: str, their_name: str, thing_index: int):
-
-    if request.method == "POST":
-        row_index = get_row_index(thing_index)
-        delete_row(their_name, row_index)
-        return redirect(reverse("present_list", args=(username, their_name)))
-
-    # TODO: This offset thing make into func
-    thing = get_present_ideas(their_name)[thing_index]
-
-    context = {
-        "thing": thing,
-        "username": username,
-        "their_name": their_name,
-        "list_url": reverse("present_list", args=(username, their_name)),
-        "delete_url": reverse("delete", args=(username, their_name, thing_index)),
-    }
-
-    return render(request, "delete.html", context)
+def redirect_to_vue_other(
+    request: HttpRequest, username: str, their_name: str
+) -> HttpResponseRedirect:
+    return redirect(f"/#/{username}/{their_name}/")

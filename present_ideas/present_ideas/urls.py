@@ -21,16 +21,14 @@ from present_ideas import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index, name="index"),
-    path("<username>/what_do", views.what_do, name="what_do"),
-    path("<username>/who", views.who, name="who"),
-    path("<username>/<their_name>", views.present_list, name="present_list"),
-    path("<username>/<their_name>/<int:thing_index>/claim", views.claim, name="claim"),
-    path(
-        "<username>/<their_name>/<int:thing_index>/unclaim",
-        views.unclaim,
-        name="unclaim",
-    ),
-    path(
-        "<username>/<their_name>/<int:thing_index>/delete", views.delete, name="delete"
-    ),
+    path("api/person", views.person_list, name="person_list"),
+    path("api/their_list/<username>", views.their_list_api, name="their_list_api"),
+    path("api/my_list/<username>", views.my_list_api, name="my_list_api"),
+    path("api/add_idea/", views.add_idea_api, name="add_idea_api"),
+    path("api/delete_idea/", views.delete_idea_api, name="delete_idea_api"),
+    path("api/claim_idea/", views.claim_idea_api, name="claim_idea_api"),
+    path("api/unclaim_idea/", views.unclaim_idea_api, name="unclaim_idea_api"),
+    path("<username>/what_do", views.redirect_to_vue_self),
+    path("<username>/who", views.redirect_to_vue_self),
+    path("<username>/<their_name>", views.redirect_to_vue_other),
 ]
