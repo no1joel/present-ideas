@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlahPage matches snapshot 1`] = `
+<div>
+  <h1>
+    Blah!
+  </h1>
+</div>
+`;
