@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingPage matches snapshot 1`] = `
+<div>
+  <div>
+    <nav
+      class="navbar navbar-light bg-light"
+    >
+      <router-link
+        class="navbar-brand"
+        to="/"
+      >
+        Present Ideas
+      </router-link>
+       
+      <!---->
+    </nav>
+     
+    <div
+      class="mt-3"
+    >
+      <div
+        class="container-fluid"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col"
+          >
+            <div
+              class="jumbotron"
+            >
+              <p>
+                Pick 
+                <strong>
+                  your name
+                </strong>
+                 to get started 😊
+              </p>
+               
+              <div
+                class="form-row"
+              >
+                <select
+                  class="custom-select col-sm-10"
+                >
+                  <!---->
+                   
+                  <option
+                    disabled="disabled"
+                    value=""
+                  >
+                    
+    Pick a name!
+  
+                  </option>
+                   
+                </select>
+                 
+                <button
+                  class="btn btn-block btn-success col-sm-2"
+                  disabled="disabled"
+                  type="button"
+                >
+                  
+              Go
+            
+                </button>
+              </div>
+               
+              <p>
+                <small
+                  class="text-muted"
+                >
+                  
+              I need to know who you are, first, so that when you're looking
+              at your own list you can't see who's getting you what -- no
+              surprises! I've not set up proper usernames and passwords
+              because that's a faff. If you don't see your name there,
+              seriously who are you and how did you get here?
+            
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
