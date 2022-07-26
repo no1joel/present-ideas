@@ -1,8 +1,5 @@
-import { render } from "@testing-library/vue";
-import getStore from "../../store";
-
 import TheirListPage from "../TheirListPage.vue";
-import { getVueWithVuex, mockRoute } from "./utils";
+import { render } from "./utils";
 
 describe("TheirListPage", () => {
   // TODO: Just trying to get it to pass right now.
@@ -16,13 +13,6 @@ describe("TheirListPage", () => {
     global.fetch = async () => response;
   });
   it("matches snapshot", () => {
-    const mocks = { $route: mockRoute };
-    const renderOptions = {
-      mocks,
-      localVue: getVueWithVuex(),
-      store: getStore(),
-    };
-
-    expect(render(TheirListPage, renderOptions).container).toMatchSnapshot();
+    expect(render(TheirListPage).container).toMatchSnapshot();
   });
 });
