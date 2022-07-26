@@ -154,10 +154,10 @@ export default {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  // testMatch: [
-  //   "**/__tests__/**/*.[jt]s?(x)",
+  testMatch: [
+    "**/__tests__/**/*.test.[jt]s?(x)",
   //   "**/?(*.)+(spec|test).[tj]s?(x)"
-  // ],
+  ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
@@ -175,6 +175,7 @@ export default {
 
   // A map from regular expressions to paths to transformers
   transform: {
+    "^.+\\.ts$": "ts-jest",
     "^.+\\.js$": "babel-jest",
     "^.+\\.vue$": "@vue/vue2-jest"
   },

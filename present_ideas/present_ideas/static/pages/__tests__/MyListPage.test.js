@@ -4,6 +4,7 @@ import Vuex from "vuex";
 import getStore from "../../store";
 
 import MyListPage from "../MyListPage.vue";
+import { mockRoute } from "./mockRoute";
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
@@ -20,7 +21,6 @@ describe("MyListPage", () => {
     global.fetch = async () => response;
   });
   it("matches snapshot", () => {
-    const mockRoute = { params: {} };
     const store = getStore();
     const mocks = { $route: mockRoute };
     const renderOptions = { mocks, localVue, store };
