@@ -1,6 +1,8 @@
 import { render as testingLibraryRender, type RenderOptions } from "@testing-library/vue";
 import { createLocalVue } from "@vue/test-utils";
 import type Vue from "vue";
+// @ts-ignore
+import linkify from "vue-linkify";
 import Vuex from "vuex";
 // @ts-ignore
 import getStore from "../../store";
@@ -8,6 +10,7 @@ import getStore from "../../store";
 const getVueAndStore = (): [typeof Vue, ReturnType<typeof getStore>]  => {
   const localVue = createLocalVue();
   localVue.use(Vuex);
+  localVue.directive("linkified", linkify);
   const store = getStore();
   return [localVue, store];
 };
