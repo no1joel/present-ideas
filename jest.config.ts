@@ -17,7 +17,7 @@ export default {
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  // collectCoverage: false,
+  collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
@@ -31,15 +31,15 @@ export default {
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  // coverageProvider: "babel",
+  coverageProvider: "babel",
 
   // A list of reporter names that Jest uses when writing coverage reports
-  // coverageReporters: [
-  //   "json",
-  //   "text",
-  //   "lcov",
-  //   "clover"
-  // ],
+  coverageReporters: [
+    //   "json",
+    "text",
+    "lcov",
+    //   "clover"
+  ],
 
   // An object that configures minimum threshold enforcement for coverage results
   // coverageThreshold: undefined,
@@ -85,7 +85,7 @@ export default {
     "tsx",
     "json",
     "node",
-    "vue"
+    "vue",
   ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
@@ -156,7 +156,7 @@ export default {
   // The glob patterns Jest uses to detect test files
   testMatch: [
     "**/__tests__/**/*.test.[jt]s?(x)",
-  //   "**/?(*.)+(spec|test).[tj]s?(x)"
+    //   "**/?(*.)+(spec|test).[tj]s?(x)"
   ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
@@ -177,7 +177,7 @@ export default {
   transform: {
     "^.+\\.ts$": "ts-jest",
     "^.+\\.js$": "babel-jest",
-    "^.+\\.vue$": "@vue/vue2-jest"
+    "^.+\\.vue$": "@vue/vue2-jest",
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
