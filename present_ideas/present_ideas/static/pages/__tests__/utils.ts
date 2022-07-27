@@ -1,7 +1,8 @@
-import { render as testingLibraryRender, RenderOptions } from "@testing-library/vue";
+import { render as testingLibraryRender, type RenderOptions } from "@testing-library/vue";
 import { createLocalVue } from "@vue/test-utils";
-import Vue from "vue";
+import type Vue from "vue";
 import Vuex from "vuex";
+// @ts-ignore
 import getStore from "../../store";
 
 const getVueAndStore = (): [typeof Vue, ReturnType<typeof getStore>]  => {

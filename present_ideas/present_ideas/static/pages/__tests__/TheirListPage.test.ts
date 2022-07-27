@@ -10,6 +10,7 @@ describe("TheirListPage", () => {
       presents: [],
     });
     const response = { json };
+    // @ts-ignore
     global.fetch = async () => response;
   });
   it("matches snapshot", () => {

@@ -1,8 +1,7 @@
+import MyListPage from "../MyListPage.vue";
 import { render } from "./utils";
 
-import ListPage from "../ListPage.vue";
-
-describe("ListPage", () => {
+describe("MyListPage", () => {
   // TODO: Just trying to get it to pass right now.
   // shouldn't mock fetch, shouldn't mess with global
   // Should probably use what vfp used with the api.
@@ -11,9 +10,10 @@ describe("ListPage", () => {
       presents: [],
     });
     const response = { json };
+    // @ts-ignore
     global.fetch = async () => response;
   });
   it("matches snapshot", () => {
-    expect(render(ListPage).container).toMatchSnapshot();
+    expect(render(MyListPage).container).toMatchSnapshot();
   });
 });
