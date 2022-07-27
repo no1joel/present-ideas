@@ -1,6 +1,7 @@
 // test/setup-env.js
 // add this to your setupFilesAfterEnv config in jest so it's imported for every test file
 import fetch, { Headers, Request, Response } from "node-fetch";
+import { TextDecoder as UtilTextDecoder } from "util";
 import { server } from "../mock_server";
 
 if (!globalThis.fetch) {
@@ -11,6 +12,10 @@ if (!globalThis.fetch) {
   globalThis.Request = Request;
   // @ts-ignore
   globalThis.Response = Response;
+}
+
+if (!globalThis.TextDecoder) {
+  globalThis.TextDecoder = UtilTextDecoder;
 }
 
 beforeAll(() => server.listen());
