@@ -6,12 +6,12 @@ exports[`LandingPage matches snapshot 1`] = `
     <nav
       class="navbar navbar-light bg-light"
     >
-      <router-link
+      <routerlink-stub
         class="navbar-brand"
         to="/"
       >
         Present Ideas
-      </router-link>
+      </routerlink-stub>
        
       <!---->
     </nav>
