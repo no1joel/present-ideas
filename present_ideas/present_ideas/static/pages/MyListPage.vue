@@ -47,12 +47,15 @@ export default {
     user() {
       return this.$route.params.user;
     },
+    baseUrl() {
+      return window.location.origin || "http://localhost";
+    },
   },
   methods: {
     async fetchMyList() {
       this.loading = true;
 
-      const url = `/api/my_list/${this.user}`;
+      const url = `${this.baseUrl}/api/my_list/${this.user}`;
       const response = await fetch(url);
       const data = await response.json();
       const presents = data.presents;
@@ -62,7 +65,7 @@ export default {
     },
     async deleteClicked({ index }) {
       this.loading = true;
-      const url = "/api/delete_idea/";
+      const url = `${this.baseUrl}/api/delete_idea/`;
       const data = {
         index: index,
         user: this.user,
