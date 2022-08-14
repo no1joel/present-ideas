@@ -8,7 +8,7 @@ import type Vue from "vue";
 import linkify from "vue-linkify";
 import Vuex from "vuex";
 // @ts-ignore
-import getStore from "../../store";
+import getStore from "../present_ideas/present_ideas/static/store";
 
 export const getVueAndStore = (): [typeof Vue, ReturnType<typeof getStore>] => {
   const localVue = createLocalVue();

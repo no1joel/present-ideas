@@ -1,5 +1,5 @@
+import { render } from "../../../../../jest/utils";
 import MyListPage from "../MyListPage.vue";
-import { render } from "./utils";
 
 describe("MyListPage", () => {
   it("matches snapshot", () => {

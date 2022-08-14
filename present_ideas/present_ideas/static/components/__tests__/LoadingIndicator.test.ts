@@ -1,4 +1,4 @@
-import { render } from "../../pages/__tests__/utils";
+import { render } from "../../../../../jest/utils";
 import LoadingIndicator from "../LoadingIndicator.vue";
 
 describe("LoadingIndicator", () => {

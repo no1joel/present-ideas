@@ -1,6 +1,6 @@
 import { rest } from "msw";
 import { server } from "../../../../../jest/mock_server";
-import { getVueAndStore } from "../../pages/__tests__/utils";
+import { getVueAndStore } from "../../../../../jest/utils";
 
 describe("getters", () => {
   it("returns an empty list for people initially", () => {

@@ -1,4 +1,4 @@
-import { render } from "./utils";
+import { render } from "../../../../../jest/utils";
 
 import ListPage from "../ListPage.vue";
 
