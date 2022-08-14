@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PresentIdeaCard matches snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <!---->
+     
+    <div
+      class="card-header"
+    >
+      <h5
+        class="card-title m-0"
+      >
+        
+      
+    
+      </h5>
+       
+      <small>
+        <!---->
+         
+        <!---->
+      </small>
+       
+      <p
+        class="card-text text-right mt-1"
+      >
+        <span>
+          <transition-stub
+            name=""
+          >
+            <span
+              class=""
+              style="display: none;"
+            >
+              <div
+                class="popper popover"
+              >
+                <div
+                  class="popover-header"
+                >
+                  Really delete?
+                </div>
+                 
+                <div
+                  class="popover-body"
+                >
+                  <button
+                    class="btn btn-block btn-danger"
+                    type="button"
+                  >
+                    
+              Yep!
+            
+                  </button>
+                </div>
+              </div>
+               
+            </span>
+          </transition-stub>
+           
+          <button
+            class="btn btn-sm btn-outline-danger"
+            type="button"
+          >
+            
+          Delete
+        
+          </button>
+        </span>
+      </p>
+    </div>
+     
+    <!---->
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`PresentIdeaFormCard matches snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <!---->
+     
+    <div
+      class="card-header"
+    >
+      <h5
+        class="card-title m-0"
+      >
+        Add New!
+      </h5>
+       
+      <!---->
+    </div>
+     
+    <div
+      class="card-body"
+    >
+      <form
+        class="form-horizontal"
+      >
+        <div
+          class="form-group"
+        >
+          <label
+            for="thing-input"
+          >
+            Thing*
+          </label>
+           
+          <input
+            class="form-control"
+            id="thing-input"
+            name="thing"
+            placeholder="Something I want..."
+            type="text"
+          />
+        </div>
+         
+        <div
+          class="form-group"
+        >
+          <label
+            for="price-input"
+          >
+            Price
+          </label>
+           
+          <input
+            class="form-control"
+            id="price-input"
+            name="price"
+            placeholder="Enter a price or a range, e.g. £10-£20"
+            type="text"
+          />
+        </div>
+         
+        <div
+          class="form-group"
+        >
+          <label
+            for="notes-input"
+          >
+            Notes
+          </label>
+           
+          <textarea
+            class="form-control"
+            id="notes-input"
+            name="notes"
+            placeholder="Enter a link to a specific thing, a description of what you want, why you want it, anything!"
+          />
+        </div>
+         
+        <button
+          class="btn btn-success btn-block"
+          disabled="disabled"
+          type="button"
+        >
+          
+        Add
+      
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
