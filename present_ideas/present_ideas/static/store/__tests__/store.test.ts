@@ -1,5 +1,5 @@
 import { rest } from "msw";
-import { server } from "../../../../../mock_server";
+import { server } from "../../../../../jest/mock_server";
 import { getVueAndStore } from "../../pages/__tests__/utils";
 
 describe("getters", () => {

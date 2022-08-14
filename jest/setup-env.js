@@ -2,7 +2,7 @@
 // add this to your setupFilesAfterEnv config in jest so it's imported for every test file
 import fetch, { Headers, Request, Response } from "node-fetch";
 import { TextDecoder as UtilTextDecoder } from "util";
-import { server } from "../mock_server";
+import { server } from "./mock_server";
 
 if (!globalThis.fetch) {
   // @ts-ignore
