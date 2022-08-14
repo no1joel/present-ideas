@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PeoplePicker matches snapshot 1`] = `
-<div>
-  <select
-    class="custom-select"
-  >
-    <!---->
-     
-    <option
-      disabled="disabled"
-      value=""
-    >
-      
-    Pick a name!
-  
-    </option>
-     
-  </select>
-</div>
-`;
-
 exports[`PresentIdeaCard matches snapshot 1`] = `
 <div>
   <div
