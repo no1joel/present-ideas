@@ -1,6 +1,6 @@
 import {
   render as testingLibraryRender,
-  type RenderOptions
+  type RenderOptions,
 } from "@testing-library/vue";
 import { createLocalVue } from "@vue/test-utils";
 import type Vue from "vue";
@@ -10,7 +10,7 @@ import Vuex from "vuex";
 // @ts-ignore
 import getStore from "../../store";
 
-const getVueAndStore = (): [typeof Vue, ReturnType<typeof getStore>] => {
+export const getVueAndStore = (): [typeof Vue, ReturnType<typeof getStore>] => {
   const localVue = createLocalVue();
   localVue.use(Vuex);
   localVue.directive("linkified", linkify);
@@ -31,7 +31,7 @@ export const render: typeof testingLibraryRender = (
     localVue,
     store,
     mocks: { $route: mockRoute },
-    stubs: ["RouterLink"]
+    stubs: ["RouterLink"],
   };
   const renderOptionsWithDefaults = { ...defaultRenderOptions, ...options };
   return testingLibraryRender(component, renderOptionsWithDefaults, ...rest);
