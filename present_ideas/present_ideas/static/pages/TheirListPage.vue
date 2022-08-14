@@ -48,6 +48,9 @@ export default {
   },
   computed: {
     ...mapGetters(["viewingUser", "currentUser"]),
+    baseUrl() {
+      return window.location.origin || "http://localhost";
+    },
   },
   watch: {
     viewingUser() {
@@ -59,7 +62,7 @@ export default {
     async fetchList() {
       this.loading = true;
 
-      const url = `/api/their_list/${this.viewingUser}`;
+      const url = `${this.baseUrl}/api/their_list/${this.viewingUser}`;
       const response = await fetch(url);
       const data = await response.json();
       const presents = data.presents;
@@ -69,7 +72,7 @@ export default {
     },
     async claimClicked({ index }) {
       this.loading = true;
-      const url = "/api/claim_idea/";
+      const url = `${this.baseUrl}/api/claim_idea/`;
       const data = {
         index: index,
         for_user: this.viewingUser,
@@ -87,7 +90,7 @@ export default {
     },
     async unclaimClicked({ index }) {
       this.loading = true;
-      const url = "/api/unclaim_idea/";
+      const url = `${this.baseUrl}/api/unclaim_idea/`;
       const data = {
         index: index,
         for_user: this.viewingUser,
@@ -104,7 +107,7 @@ export default {
     },
     async deleteClicked({ index }) {
       this.loading = true;
-      const url = "/api/delete_idea/";
+      const url = `${this.baseUrl}/api/delete_idea/`;
       const data = {
         index: index,
         user: this.viewingUser,

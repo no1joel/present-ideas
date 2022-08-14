@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopNav matches snapshot 1`] = `
+<div>
+  <nav
+    class="navbar navbar-light bg-light"
+  >
+    <routerlink-stub
+      class="navbar-brand"
+      to="/"
+    >
+      Present Ideas
+    </routerlink-stub>
+     
+    <!---->
+  </nav>
+</div>
+`;

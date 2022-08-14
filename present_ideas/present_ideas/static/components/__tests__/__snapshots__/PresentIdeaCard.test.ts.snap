@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PresentIdeaCard matches snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <!---->
+     
+    <div
+      class="card-header"
+    >
+      <h5
+        class="card-title m-0"
+      >
+        
+      
+    
+      </h5>
+       
+      <small>
+        <!---->
+         
+        <!---->
+      </small>
+       
+      <p
+        class="card-text text-right mt-1"
+      >
+        <span>
+          <transition-stub
+            name=""
+          >
+            <span
+              class=""
+              style="display: none;"
+            >
+              <div
+                class="popper popover"
+              >
+                <div
+                  class="popover-header"
+                >
+                  Really delete?
+                </div>
+                 
+                <div
+                  class="popover-body"
+                >
+                  <button
+                    class="btn btn-block btn-danger"
+                    type="button"
+                  >
+                    
+              Yep!
+            
+                  </button>
+                </div>
+              </div>
+               
+            </span>
+          </transition-stub>
+           
+          <button
+            class="btn btn-sm btn-outline-danger"
+            type="button"
+          >
+            
+          Delete
+        
+          </button>
+        </span>
+      </p>
+    </div>
+     
+    <!---->
+     
+    <!---->
+  </div>
+</div>
+`;
