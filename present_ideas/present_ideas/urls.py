@@ -28,7 +28,7 @@ urlpatterns = [
     path("api/delete_idea/", views.delete_idea_api, name="delete_idea_api"),
     path("api/claim_idea/", views.claim_idea_api, name="claim_idea_api"),
     path("api/unclaim_idea/", views.unclaim_idea_api, name="unclaim_idea_api"),
-    path("<username>/what_do", views.redirect_to_vue_self),
-    path("<username>/who", views.redirect_to_vue_self),
-    path("<username>/<their_name>", views.redirect_to_vue_other),
+    path("<username>/what_do/", views.redirect_to_vue_self),
+    path("<username>/who/", views.redirect_to_vue_self),
+    path("<username>/<their_name>/", views.redirect_to_vue_other),
 ]
