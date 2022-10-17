@@ -25,19 +25,21 @@
         </p>
       </small>
       <p v-if="addedByCurrent" class="card-text text-right mt-1">
-        <popper trigger="clickToOpen">
-          <div v-if="!loading" class="popper popover">
-            <div class="popover-header">Really delete?</div>
-            <div class="popover-body">
-              <button
-                type="button"
-                class="btn btn-block btn-danger"
-                v-on:click="onDeleteClick"
-              >
-                Yep!
-              </button>
+        <popper z-index="9999">
+          <template #content>
+            <div v-if="!loading" class="popper popover">
+              <div class="popover-header">Really delete?</div>
+              <div class="popover-body">
+                <button
+                  type="button"
+                  class="btn btn-block btn-danger"
+                  v-on:click="onDeleteClick"
+                >
+                  Yep!
+                </button>
+              </div>
             </div>
-          </div>
+          </template>
           <button
             slot="reference"
             type="button"
@@ -85,7 +87,7 @@
 <script>
 import { mapGetters } from "vuex";
 import LoadingIndicator from "./LoadingIndicator.vue";
-import Popper from "vue-popperjs";
+import Popper from "vue3-popper";
 
 export default {
   components: { LoadingIndicator, popper: Popper },
