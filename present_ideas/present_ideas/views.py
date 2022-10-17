@@ -6,7 +6,7 @@ from django.http import (
     HttpResponse,
     HttpResponsePermanentRedirect,
     HttpResponseRedirect,
-    JsonResponse
+    JsonResponse,
 )
 from django.shortcuts import redirect, render
 from django.urls import reverse
@@ -18,7 +18,7 @@ from .utils import (
     get_all_names,
     get_present_ideas,
     get_row_index,
-    set_cell_value
+    set_cell_value,
 )
 
 
@@ -104,6 +104,19 @@ def update_idea_price_api(request: HttpRequest) -> HttpResponse:
     new_price = data["price"]
     row_index = get_row_index(thing_index)
     set_cell_value(user_name, row_index, ColumnIndex.price, new_price)
+
+    return JsonResponse({})
+
+
+def update_idea_notes_api(request: HttpRequest) -> HttpResponse:
+    """Update an idea's name."""
+
+    data = json.loads(request.body)
+    user_name = data["user"]
+    thing_index = data["index"]
+    new_notes = data["notes"]
+    row_index = get_row_index(thing_index)
+    set_cell_value(user_name, row_index, ColumnIndex.notes, new_notes)
 
     return JsonResponse({})
 

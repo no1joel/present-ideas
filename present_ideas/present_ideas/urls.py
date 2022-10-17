@@ -34,6 +34,11 @@ urlpatterns = [
         views.update_idea_price_api,
         name="update_idea_price_api",
     ),
+    path(
+        "api/update_idea_notes/",
+        views.update_idea_notes_api,
+        name="update_idea_notes_api",
+    ),
     path("api/claim_idea/", views.claim_idea_api, name="claim_idea_api"),
     path("api/unclaim_idea/", views.unclaim_idea_api, name="unclaim_idea_api"),
     path("<username>/what_do/", views.redirect_to_vue_self),

@@ -11,7 +11,7 @@
       <h5 v-else>
         <form action="" v-on:submit="onSave">
           <div class="form-group">
-            <input type="text" name="thing" id="thing" class="form-control h5" :value="newName" v-on:input="onNameInput" ref="nameInput" :disabled="saving || loading">
+            <input type="text" name="thing" class="form-control h5" :value="newName" v-on:input="onNameInput" ref="nameInput" :disabled="saving || loading">
             <div class="btn-group">
               <button type="button" class="btn btn-success" v-on:click="onSave">Save</button>
               <button type="button" class="btn btn-outline-secondary" v-on:click="onCancel">Cancel</button>
@@ -27,7 +27,7 @@
           <span v-on:click="onPriceClick">Price: <span v-if="!editingPrice">{{ Price || "🤷‍♀️" }}</span></span>
         <div v-if="editingPrice">
           <div class="form-group">
-            <input type="text" name="price" id="price" class="form-control" :value="newPrice" v-on:input="onPriceInput" ref="priceInput" :disabled="saving || loading">
+            <input type="text" name="price" class="form-control" :value="newPrice" v-on:input="onPriceInput" ref="priceInput" :disabled="saving || loading">
             <div class="btn-group">
               <button type="button" class="btn btn-success" v-on:click="onSave">Save</button>
               <button type="button" class="btn btn-outline-secondary" v-on:click="onCancel">Cancel</button>
@@ -58,10 +58,23 @@
         </popper>
       </p>
     </div>
-    <div v-if="Notes" class="card-body">
-      <p v-for="(para, index) in Notes.split('\n')" v-bind:key="para + index" class="card-text" v-linkified>
-        {{ para }}
-      </p>
+    <div class="card-body" v-on:dblclick="onNotesClick">
+      <template v-if="!editingNotes">
+        <p v-if="!Notes" class="text-muted font-italic text-center">No notes!</p>
+        <p v-else v-for="(para, index) in Notes.split('\n')" v-bind:key="para + index" class="card-text" v-linkified>
+          {{ para }}
+        </p>
+      </template>
+      <form v-if="editingNotes" action="" v-on:submit="onSave">
+          <div class="form-group">
+            <textarea :value="newNotes" v-on:input="onNotesInput" class="form-control" ref="notesInput" :disabled="saving || loading">
+            </textarea>
+            <div class="btn-group">
+              <button type="button" class="btn btn-success" v-on:click="onSave">Save</button>
+              <button type="button" class="btn btn-outline-secondary" v-on:click="onCancel">Cancel</button>
+            </div>
+          </div>
+        </form>
     </div>
     <div v-if="viewingOtherUser" class="card-footer">
       <p v-if="Claimed">
@@ -114,7 +127,9 @@ export default {
       editingName: false,
       newName: "",
       editingPrice: false,
-      newPrice: ""
+      newPrice: "",
+      editingNotes: false,
+      newNotes: ""
     }
   },
   computed: {
@@ -145,11 +160,24 @@ export default {
       await nextTick()
       this.$refs.nameInput.focus()
     },
+    async onNotesClick() {
+      if (this.viewingOtherUser) {
+        return;
+      }
+      this.newNotes = this.Notes;
+      this.editingNotes = true;
+      await nextTick()
+      this.$refs.notesInput.focus()
+    },
     onNameInput(e) {
       this.newName = e.target.value;
     },
     onPriceInput(e) {
       this.newPrice = e.target.value;
+    },
+    onNotesInput(e) {
+
+      this.newNotes = e.target.value;
     },
     async onPriceClick() {
       if (this.viewingOtherUser) {
@@ -163,6 +191,7 @@ export default {
     onCancel() {
       this.editingName = false;
       this.editingPrice = false;
+      this.editingNotes = false;
     },
     onSave(e) {
       if (e) {
@@ -172,6 +201,8 @@ export default {
         this.$emit("update-name", { index: this.index, name: this.newName })
       } else if (this.editingPrice) {
         this.$emit("update-price", { index: this.index, price: this.newPrice })
+      } else if (this.editingNotes) {
+        this.$emit("update-notes", { index: this.index, notes: this.newNotes })
       }
     }
   },
