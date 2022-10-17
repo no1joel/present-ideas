@@ -1,3 +1,4 @@
+import "vite/modulepreload-polyfill";
 import Vue from "vue";
 import linkify from "vue-linkify";
 import VueRouter from "vue-router";

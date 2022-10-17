@@ -7,6 +7,7 @@ import { createVuePlugin } from "vite-plugin-vue2";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/static/",
   resolve: {
     alias: [
       {
@@ -35,12 +36,15 @@ export default defineConfig({
   // Make vite use our index.js entry and output to static/dist
   build: {
     rollupOptions: {
-      input: resolve(__dirname, "present_ideas/present_ideas/static/index"),
+      input: {
+        index: resolve("present_ideas/present_ideas/static/index.js"),
+      },
       output: {
-        entryFileNames: "index.dev.js",
+        chunkFileNames: undefined,
       },
     },
-    outDir: resolve(__dirname, "present_ideas/present_ideas/static/dist"),
+    outDir: resolve("./present_ideas/static/dist"),
     assetsDir: "",
+    manifest: true,
   },
 });
