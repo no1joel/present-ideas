@@ -11,7 +11,7 @@
             id="top-nav-current-user-select"
             class="d-inline-block"
             v-bind:value="currentUser"
-            v-on:input="currentUserChanged"
+            v-on:user-changed="currentUserChanged"
           />
         </div>
         <div class="col-2 text-right">
@@ -23,7 +23,7 @@
           <PeoplePicker
             id="top-nav-viewing-user-select"
             v-bind:value="viewingUser"
-            v-on:input="viewingUserChanged"
+            v-on:user-changed="viewingUserChanged"
           />
         </div>
       </div>

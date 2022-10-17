@@ -26,6 +26,9 @@ urlpatterns = [
     path("api/my_list/<username>", views.my_list_api, name="my_list_api"),
     path("api/add_idea/", views.add_idea_api, name="add_idea_api"),
     path("api/delete_idea/", views.delete_idea_api, name="delete_idea_api"),
+    path(
+        "api/update_idea_name/", views.update_idea_name_api, name="update_idea_name_api"
+    ),
     path("api/claim_idea/", views.claim_idea_api, name="claim_idea_api"),
     path("api/unclaim_idea/", views.unclaim_idea_api, name="unclaim_idea_api"),
     path("<username>/what_do/", views.redirect_to_vue_self),
