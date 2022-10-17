@@ -50,16 +50,21 @@ export default {
   computed: {
     ...mapGetters({
       currentUser: "currentUser",
-    })
+    }),
   },
   methods: {
     async goToMyPage() {
-      await this.$store.dispatch("setViewingUser", { viewingUser: this.currentUser });
-      this.$router.push({ name: "list", params: { user: this.currentUser, viewing: this.currentUser } });
+      await this.$store.dispatch("setViewingUser", {
+        viewingUser: this.currentUser,
+      });
+      this.$router.push({
+        name: "list",
+        params: { user: this.currentUser, viewing: this.currentUser },
+      });
     },
     currentUserChanged(currentUser) {
       this.$store.dispatch("setCurrentUser", { currentUser });
-    }
+    },
   },
 };
 </script>

@@ -31,7 +31,6 @@ const getStore = () =>
         const baseUrl = window.location.origin || "http://localhost";
         const url = `${baseUrl}/api/person`;
         const response = await fetch(url);
-
         const data = await response.json();
         const names = data.names;
         const people = names
