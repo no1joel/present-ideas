@@ -7,3 +7,4 @@ node_modules
 *.egg-info
 /coverage
 present_ideas/static/
+present_ideas/dist/

@@ -1,15 +1,23 @@
-# 🚀 Welcome to your new awesome project!
+# README
 
-This project has been created using **webpack scaffold**, you can now run
+## How to run in development
 
-```
-npm run build
-```
+terminal 1:
 
-or
-
-```
-yarn build
+```sh
+npm run serve-vite
 ```
 
-to bundle your application
+terminal 2:
+
+```sh
+VITEDEV=1 python manage.py runserver 0.0.0.0:8000
+```
+
+### How to run in production
+
+```sh
+npm run build-vite
+python manage.py collectstatic
+python manage.py runserver 0.0.0.0:8000
+```
