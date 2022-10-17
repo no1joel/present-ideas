@@ -6,3 +6,4 @@ client_secret.json
 node_modules
 *.egg-info
 /coverage
+present_ideas/static/
