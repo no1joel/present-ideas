@@ -20,7 +20,7 @@ export default defineConfig({
         chunkFileNames: undefined,
       },
     },
-    outDir: resolve("./present_ideas/static/dist"),
+    outDir: resolve("./present_ideas/dist"),
     assetsDir: "",
     manifest: true,
   },

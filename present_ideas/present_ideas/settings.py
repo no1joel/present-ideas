@@ -115,6 +115,6 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
-DJANGO_VITE_ASSETS_PATH = os.path.join(BASE_DIR, "/static/dist")
+DJANGO_VITE_ASSETS_PATH = os.path.join(BASE_DIR, "dist")
 STATICFILES_DIRS = [DJANGO_VITE_ASSETS_PATH]
 DJANGO_VITE_DEV_MODE = os.environ.get("VITEDEV") == "1"
