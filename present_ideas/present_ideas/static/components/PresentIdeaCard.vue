@@ -7,8 +7,22 @@
   >
     <LoadingIndicator v-if="loading" />
     <div class="card-header">
-      <h5 class="card-title m-0" v-linkified>
+      <h5 v-if="viewingOtherUser" class="card-title m-0" v-linkified>
         {{ Thing }}
+      </h5>
+      <h5 v-else-if="!editingThing" class="card-title m-0" v-linkified v-on:click="onNameClick">
+        {{ Thing }}
+      </h5>
+      <h5 v-else>
+        <form action="" v-on:submit="onSave">
+          <div class="form-group">
+            <input type="text" name="thing" id="thing" class="form-control h5" :value="Thing" v-on:input="onNameInput" ref="input">
+            <div class="btn-group">
+              <button type="button" class="btn btn-success" v-on:click="onSave">Save</button>
+              <button type="button" class="btn btn-default" v-on:click="onCancel">Cancel</button>
+            </div>
+          </div>
+        </form>
       </h5>
       <small>
         <p
@@ -85,6 +99,7 @@
 </template>
 
 <script>
+import { nextTick } from "vue";
 import { mapGetters } from "vuex";
 import LoadingIndicator from "./LoadingIndicator.vue";
 import Popper from "vue3-popper";
@@ -114,6 +129,12 @@ export default {
       type: Number,
     },
   },
+  data() {
+    return {
+      editingThing: false,
+      newName: ""
+    }
+  },
   computed: {
     ...mapGetters(["viewingUser", "currentUser"]),
     viewingOtherUser() {
@@ -133,6 +154,24 @@ export default {
     onUnclaimClick() {
       this.$emit("unclaim-clicked", { index: this.index });
     },
+    async onNameClick() {
+      this.newName = this.Thing;
+      this.editingThing = true;
+      await nextTick()
+      this.$refs.input.focus()
+    },
+    onNameInput(e) {
+      this.newName = e.target.value; 
+    },
+    onCancel() {
+      this.editingThing = false;
+    },
+    onSave(e) {
+      if (e) {
+        e.preventDefault();
+      }
+      this.$emit("update-name", { index: this.index, name: this.newName })
+    }
   },
 };
 </script>

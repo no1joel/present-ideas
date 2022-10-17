@@ -17,6 +17,7 @@
             "
             v-bind:loading="loading"
             v-on:delete-clicked="deleteClicked"
+            v-on:update-name="updateName"
           />
         </div>
       </div>
@@ -80,6 +81,26 @@ export default {
       });
       this.fetchMyList();
     },
+    async updateName({ index, name }) {
+      console.log("updateName")
+      this.loading = true;
+      const url = `${this.baseUrl}/api/update_idea_name/`;
+      const data = {
+        index: index,
+        user: this.user,
+        name: name
+      };
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      this.fetchMyList();
+    },
+
   },
 };
 </script>
