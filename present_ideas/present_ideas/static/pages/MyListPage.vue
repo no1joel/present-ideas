@@ -18,6 +18,7 @@
             v-bind:loading="loading"
             v-on:delete-clicked="deleteClicked"
             v-on:update-name="updateName"
+            v-on:update-price="updatePrice"
           />
         </div>
       </div>
@@ -26,10 +27,10 @@
 </template>
 
 <script>
-import Layout from "../layout/Layout.vue";
+import LoadingIndicator from "../components/LoadingIndicator.vue";
 import PresentIdeaCard from "../components/PresentIdeaCard.vue";
 import PresentIdeaFormCard from "../components/PresentIdeaFormCard.vue";
-import LoadingIndicator from "../components/LoadingIndicator.vue";
+import Layout from "../layout/Layout.vue";
 
 export default {
   components: {
@@ -82,13 +83,12 @@ export default {
       this.fetchMyList();
     },
     async updateName({ index, name }) {
-      console.log("updateName")
       this.loading = true;
       const url = `${this.baseUrl}/api/update_idea_name/`;
       const data = {
         index: index,
         user: this.user,
-        name: name
+        name: name,
       };
       await fetch(url, {
         method: "POST",
@@ -100,7 +100,24 @@ export default {
       });
       this.fetchMyList();
     },
-
+    async updatePrice({ index, price }) {
+      this.loading = true;
+      const url = `${this.baseUrl}/api/update_idea_price/`;
+      const data = {
+        index: index,
+        user: this.user,
+        price,
+      };
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      this.fetchMyList();
+    },
   },
 };
 </script>
