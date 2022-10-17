@@ -1,18 +1,25 @@
 """Views, and only views."""
 import json
-from django.shortcuts import redirect, render, reverse
+
+from django.http import (
+    HttpRequest,
+    HttpResponse,
+    HttpResponsePermanentRedirect,
+    HttpResponseRedirect,
+    JsonResponse,
+)
+from django.shortcuts import redirect, render
+from django.urls import reverse
+from sheets.spreadsheet import ColumnIndex
+
 from .utils import (
-    get_all_names,
-    get_worksheets,
     add_row,
+    delete_row,
+    get_all_names,
     get_present_ideas,
     get_row_index,
     set_cell_value,
-    delete_row,
-    check_name,
 )
-
-from django.http import HttpRequest, HttpResponse, JsonResponse, HttpResponseRedirect
 
 
 def person_list(request: HttpRequest) -> JsonResponse:
@@ -75,6 +82,19 @@ def delete_idea_api(request: HttpRequest) -> HttpResponse:
     return JsonResponse({})
 
 
+def update_idea_name_api(request: HttpRequest) -> HttpResponse:
+    """Update an idea's name."""
+
+    data = json.loads(request.body)
+    user_name = data["user"]
+    thing_index = data["index"]
+    new_name = data["name"]
+    row_index = get_row_index(thing_index)
+    set_cell_value(user_name, row_index, ColumnIndex.thing, new_name)
+
+    return JsonResponse({})
+
+
 def claim_idea_api(request: HttpRequest) -> HttpResponse:
     """Claim an idea."""
 
@@ -83,9 +103,8 @@ def claim_idea_api(request: HttpRequest) -> HttpResponse:
     their_name = data["for_user"]
     username = data["by_user"]
 
-    claimed_index = 4
     row_index = get_row_index(thing_index)
-    set_cell_value(their_name, row_index, claimed_index, username)
+    set_cell_value(their_name, row_index, ColumnIndex.claimed, username)
 
     return JsonResponse({})
 
@@ -97,9 +116,8 @@ def unclaim_idea_api(request: HttpRequest) -> HttpResponse:
     thing_index = data["index"]
     their_name = data["for_user"]
 
-    claimed_index = 4
     row_index = get_row_index(thing_index)
-    set_cell_value(their_name, row_index, claimed_index, "")
+    set_cell_value(their_name, row_index, ColumnIndex.claimed, "")
 
     return JsonResponse({})
 
@@ -114,11 +132,13 @@ def index(request: HttpRequest) -> HttpResponse:
     return render(request, "index.html")
 
 
-def redirect_to_vue_self(request: HttpRequest, username: str) -> HttpResponseRedirect:
+def redirect_to_vue_self(
+    request: HttpRequest, username: str
+) -> HttpResponseRedirect | HttpResponsePermanentRedirect:
     return redirect(f"/#/{username}/{username}/")
 
 
 def redirect_to_vue_other(
     request: HttpRequest, username: str, their_name: str
-) -> HttpResponseRedirect:
+) -> HttpResponseRedirect | HttpResponsePermanentRedirect:
     return redirect(f"/#/{username}/{their_name}/")
