@@ -1,7 +1,8 @@
 <template>
   <select
     class="custom-select"
-    v-on:input="$emit('input', $event.target.value)"
+    :value="value"
+    v-on:input="$emit('user-changed', $event.target.value)"
   >
     <option v-if="loading" disabled value="loading" v-bind:selected="value">
       Loading...
@@ -9,12 +10,7 @@
     <option v-if="!loading" disabled v-bind:selected="!value" value="">
       Pick a name!
     </option>
-    <option
-      v-for="person in people"
-      v-bind:key="person"
-      v-bind:selected="person === value"
-      v-bind:value="person"
-    >
+    <option v-for="person in people" v-bind:key="person" v-bind:value="person">
       {{ person }}
     </option>
   </select>

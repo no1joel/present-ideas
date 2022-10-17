@@ -1,6 +1,8 @@
-import VueRouter from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import routes from "./routes";
 
-const router = new VueRouter({ routes });
+console.log("routes", routes);
+
+const router = createRouter({ history: createWebHistory(), routes });
 
 export default router;
