@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %} {% load django_vite %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +18,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="{% static 'snowflake.css' %}" />
+
+    {% vite_hmr_client %}
+    {% vite_asset 'present_ideas/present_ideas/static/index.js' %}
 
     <title>Present Ideas</title>
   </head>
