@@ -1,18 +1,13 @@
 import "vite/modulepreload-polyfill";
-import Vue from "vue";
+import { createApp } from "vue";
 import linkify from "vue-linkify";
-import VueRouter from "vue-router";
-import Vuex from "vuex";
 import router from "./router";
 import getStore from "./store";
-
-Vue.use(VueRouter);
-Vue.use(Vuex);
-Vue.directive("linkified", linkify);
 
 const store = getStore();
 
 router.beforeEach((to, from, next) => {
+  console.log("hello from the router!", to.path, to.name, from.path, from.name);
   const currentUser = store.getters.currentUser;
   const viewingUser = store.getters.viewingUser;
   if (to.name === "list") {
@@ -28,10 +23,12 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
-const app = new Vue({
-  router,
-  store,
+const app = createApp({
   mounted() {
     this.$store.dispatch("loadPeople");
   },
-}).$mount("#vue-app");
+})
+  .use(router)
+  .use(store)
+  .directive("linkified", linkify)
+  .mount("#vue-app");

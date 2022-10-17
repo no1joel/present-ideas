@@ -9,7 +9,7 @@
               <PeoplePicker
                 class="col-sm-10"
                 v-bind:value="currentUser"
-                v-on:input="currentUserChanged"
+                v-on:user-changed="currentUserChanged"
               />
               <button
                 type="button"
