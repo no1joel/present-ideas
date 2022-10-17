@@ -8,7 +8,6 @@ const createSnowflake = (noDelay) => {
 };
 
 const addSnowflakes = (count, noDelay) => {
-  console.log(`Adding ${count} snowflakes`);
   const container = document.body;
   for (let i = 0; i < count; i++) {
     container.appendChild(createSnowflake(noDelay));
@@ -46,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener(
     "shake",
     () => {
-      console.log(arguments);
       addSnowflakes(Math.ceil(10 + Math.random() * 30), true);
     },
     false
