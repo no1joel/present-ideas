@@ -19,6 +19,7 @@
             v-on:delete-clicked="deleteClicked"
             v-on:update-name="updateName"
             v-on:update-price="updatePrice"
+            v-on:update-notes="updateNotes"
           />
         </div>
       </div>
@@ -107,6 +108,24 @@ export default {
         index: index,
         user: this.user,
         price,
+      };
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      this.fetchMyList();
+    },
+    async updateNotes({ index, notes }) {
+      this.loading = true;
+      const url = `${this.baseUrl}/api/update_idea_notes/`;
+      const data = {
+        index: index,
+        user: this.user,
+        notes,
       };
       await fetch(url, {
         method: "POST",
