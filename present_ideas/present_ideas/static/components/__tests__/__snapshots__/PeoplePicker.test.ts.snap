@@ -1,21 +1,19 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`PeoplePicker matches snapshot 1`] = `
+exports[`PeoplePicker > matches snapshot 1`] = `
 <div>
   <select
     class="custom-select"
   >
-    <!---->
-     
+    <!--v-if-->
     <option
-      disabled="disabled"
+      disabled=""
       value=""
     >
-      
-    Pick a name!
-  
+       Pick a name! 
     </option>
-     
+    
+    
   </select>
 </div>
 `;

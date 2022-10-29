@@ -14,7 +14,8 @@ describe("ListPage", () => {
     // @ts-ignore
     global.fetch = async () => response;
   });
-  it("matches snapshot", () => {
-    expect(render(ListPage).container).toMatchSnapshot();
+  it("matches snapshot", async () => {
+    const result = await render(ListPage);
+    expect(result.container).toMatchSnapshot();
   });
 });

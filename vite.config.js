@@ -1,6 +1,7 @@
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import { defineConfig } from "vite";
+import { configDefaults } from "vitest/config";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -25,4 +26,10 @@ export default defineConfig({
     manifest: true,
   },
   resolve: { alias: { vue: "vue/dist/vue.esm-bundler.js" } },
+  test: {
+    environment: "happy-dom",
+    globals: true,
+    setupFiles: ["jest/setup-env.js"],
+    exclude: [...configDefaults.exclude, "present_ideas/static/**"],
+  },
 });
