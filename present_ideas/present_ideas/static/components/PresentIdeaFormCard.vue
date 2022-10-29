@@ -77,7 +77,7 @@ export default {
   methods: {
     async add() {
       this.saving = true;
-      await fetch("/api/add_idea/", {
+      await fetch(`${window.location.origin}/api/add_idea/`, {
         method: "POST",
         headers: {
           Accept: "application/json",

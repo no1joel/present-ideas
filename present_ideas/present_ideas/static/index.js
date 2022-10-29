@@ -29,3 +29,23 @@ const app = createApp({
   .use(store)
   .directive("linkified", linkify)
   .mount("#vue-app");
+
+const shakeDetector = new ShakeDetector({
+  threshold: 8, // optional shake strength threshold
+  debounceDelay: 500, // optional, determines the frequency of event generation
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  addSnowflakes(getSnowflakeCount());
+
+  shakeDetector.requestPermission().then(() => shakeDetector.start());
+  window.addEventListener(
+    shakeDetector.SHAKE_EVENT,
+    () => {
+      addSnowflakes(Math.ceil(10 + Math.random() * 30), true);
+    },
+    false
+  );
+});
+
+alert("hi");

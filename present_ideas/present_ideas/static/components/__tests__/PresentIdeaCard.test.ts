@@ -2,8 +2,9 @@ import { render } from "../../../../../jest/utils";
 import PresentIdeaCard from "../PresentIdeaCard.vue";
 
 describe("PresentIdeaCard", () => {
-  it("matches snapshot", () => {
-    expect(render(PresentIdeaCard).container).toMatchSnapshot();
+  it("matches snapshot", async () => {
+    const result = await render(PresentIdeaCard);
+    expect(result.container).toMatchSnapshot();
   });
   it.todo("shows loading");
   it.todo("shows the right title");

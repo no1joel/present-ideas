@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`MyListPage matches snapshot 1`] = `
+exports[`MyListPage > matches snapshot 1`] = `
 <div>
   <div
     class="container-fluid"
@@ -11,16 +11,28 @@ exports[`MyListPage matches snapshot 1`] = `
       <div
         class="col"
       >
-        <!---->
-         
+        <div
+          class="d-flex justify-content-center align-items-center"
+          style="background: rgba(255, 255, 255, 0.4); position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px;"
+        >
+          <div
+            class="spinner-border"
+            role="status"
+          >
+            <span
+              class="sr-only"
+            >
+              Loading...
+            </span>
+          </div>
+        </div>
         <div
           class="card-columns"
         >
           <div
             class="card"
           >
-            <!---->
-             
+            <!--v-if-->
             <div
               class="card-header"
             >
@@ -29,10 +41,8 @@ exports[`MyListPage matches snapshot 1`] = `
               >
                 Add New!
               </h5>
-               
-              <!---->
+              <!--v-if-->
             </div>
-             
             <div
               class="card-body"
             >
@@ -47,7 +57,6 @@ exports[`MyListPage matches snapshot 1`] = `
                   >
                     Thing*
                   </label>
-                   
                   <input
                     class="form-control"
                     id="thing-input"
@@ -56,7 +65,6 @@ exports[`MyListPage matches snapshot 1`] = `
                     type="text"
                   />
                 </div>
-                 
                 <div
                   class="form-group"
                 >
@@ -65,7 +73,6 @@ exports[`MyListPage matches snapshot 1`] = `
                   >
                     Price
                   </label>
-                   
                   <input
                     class="form-control"
                     id="price-input"
@@ -74,7 +81,6 @@ exports[`MyListPage matches snapshot 1`] = `
                     type="text"
                   />
                 </div>
-                 
                 <div
                   class="form-group"
                 >
@@ -83,7 +89,6 @@ exports[`MyListPage matches snapshot 1`] = `
                   >
                     Notes
                   </label>
-                   
                   <textarea
                     class="form-control"
                     id="notes-input"
@@ -91,20 +96,18 @@ exports[`MyListPage matches snapshot 1`] = `
                     placeholder="Enter a link to a specific thing, a description of what you want, why you want it, anything!"
                   />
                 </div>
-                 
                 <button
                   class="btn btn-success btn-block"
-                  disabled="disabled"
+                  disabled=""
                   type="button"
                 >
-                  
-        Add
-      
+                   Add 
                 </button>
               </form>
             </div>
           </div>
-           
+          
+          
         </div>
       </div>
     </div>

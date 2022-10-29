@@ -50,15 +50,12 @@ export default {
     user() {
       return this.$route.params.user;
     },
-    baseUrl() {
-      return window.location.origin || "http://localhost";
-    },
   },
   methods: {
     async fetchMyList() {
       this.loading = true;
 
-      const url = `${this.baseUrl}/api/my_list/${this.user}`;
+      const url = `${window.location.origin}/api/my_list/${this.user}`;
       const response = await fetch(url);
       const data = await response.json();
       const presents = data.presents;
@@ -68,7 +65,7 @@ export default {
     },
     async deleteClicked({ index }) {
       this.loading = true;
-      const url = `${this.baseUrl}/api/delete_idea/`;
+      const url = `${window.location.origin}/api/delete_idea/`;
       const data = {
         index: index,
         user: this.user,
@@ -85,7 +82,7 @@ export default {
     },
     async updateName({ index, name }) {
       this.loading = true;
-      const url = `${this.baseUrl}/api/update_idea_name/`;
+      const url = `${window.location.origin}/api/update_idea_name/`;
       const data = {
         index: index,
         user: this.user,
@@ -103,7 +100,7 @@ export default {
     },
     async updatePrice({ index, price }) {
       this.loading = true;
-      const url = `${this.baseUrl}/api/update_idea_price/`;
+      const url = `${window.location.origin}/api/update_idea_price/`;
       const data = {
         index: index,
         user: this.user,
@@ -121,7 +118,7 @@ export default {
     },
     async updateNotes({ index, notes }) {
       this.loading = true;
-      const url = `${this.baseUrl}/api/update_idea_notes/`;
+      const url = `${window.location.origin}/api/update_idea_notes/`;
       const data = {
         index: index,
         user: this.user,

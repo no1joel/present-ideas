@@ -1,81 +1,109 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`PresentIdeaCard matches snapshot 1`] = `
+exports[`PresentIdeaCard > matches snapshot 1`] = `
 <div>
   <div
     class="card"
   >
-    <!---->
-     
+    <!--v-if-->
     <div
       class="card-header"
     >
       <h5
         class="card-title m-0"
-      >
-        
-      
-    
-      </h5>
-       
+      />
       <small>
-        <!---->
-         
-        <!---->
+        <p
+          class="card-text text-right text-muted"
+        >
+          <span>
+            Price: 
+            <span>
+              🤷‍♀️
+            </span>
+          </span>
+          <!--v-if-->
+        </p>
+        <!--v-if-->
       </small>
-       
       <p
         class="card-text text-right mt-1"
       >
-        <span>
-          <transition-stub
-            name=""
+        <div
+          class="inline-block"
+          data-v-5784ed69=""
+          style="border: 12px solid transparent; margin: -12px;"
+        >
+          <div
+            data-v-5784ed69=""
           >
-            <span
-              class=""
+            
+            <button
+              class="btn btn-sm btn-outline-danger"
+              data-v-5784ed69-s=""
+              slot="reference"
+              type="button"
+            >
+               Delete 
+            </button>
+            
+          </div>
+          <transition-stub
+            appear="false"
+            css="true"
+            data-v-5784ed69=""
+            name="fade"
+            persisted="false"
+          >
+            <div
+              class="popper"
+              data-v-5784ed69=""
               style="display: none;"
             >
+              
               <div
                 class="popper popover"
+                data-v-5784ed69-s=""
               >
                 <div
                   class="popover-header"
+                  data-v-5784ed69-s=""
                 >
                   Really delete?
                 </div>
-                 
                 <div
                   class="popover-body"
+                  data-v-5784ed69-s=""
                 >
                   <button
                     class="btn btn-block btn-danger"
+                    data-v-5784ed69-s=""
                     type="button"
                   >
-                    
-              Yep!
-            
+                     Yep! 
                   </button>
                 </div>
               </div>
-               
-            </span>
+              
+              <!---->
+            </div>
           </transition-stub>
-           
-          <button
-            class="btn btn-sm btn-outline-danger"
-            type="button"
-          >
-            
-          Delete
-        
-          </button>
-        </span>
+        </div>
       </p>
     </div>
-     
-    <!---->
-     
-    <!---->
+    <div
+      class="card-body"
+    >
+      
+      <p
+        class="text-muted font-italic text-center"
+      >
+        No notes!
+      </p>
+      
+      <!--v-if-->
+    </div>
+    <!--v-if-->
   </div>
 </div>
 `;

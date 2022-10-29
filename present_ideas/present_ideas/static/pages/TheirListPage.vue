@@ -28,10 +28,10 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Layout from "../layout/Layout.vue";
+import LoadingIndicator from "../components/LoadingIndicator.vue";
 import PresentIdeaCard from "../components/PresentIdeaCard.vue";
 import PresentIdeaFormCard from "../components/PresentIdeaFormCard.vue";
-import LoadingIndicator from "../components/LoadingIndicator.vue";
+import Layout from "../layout/Layout.vue";
 
 export default {
   components: {
@@ -48,9 +48,6 @@ export default {
   },
   computed: {
     ...mapGetters(["viewingUser", "currentUser"]),
-    baseUrl() {
-      return window.location.origin || "http://localhost";
-    },
   },
   watch: {
     viewingUser() {
@@ -62,7 +59,7 @@ export default {
     async fetchList() {
       this.loading = true;
 
-      const url = `${this.baseUrl}/api/their_list/${this.viewingUser}`;
+      const url = `${window.location.origin}/api/their_list/${this.viewingUser}`;
       const response = await fetch(url);
       const data = await response.json();
       const presents = data.presents;
@@ -72,7 +69,7 @@ export default {
     },
     async claimClicked({ index }) {
       this.loading = true;
-      const url = `${this.baseUrl}/api/claim_idea/`;
+      const url = `${window.location.origin}/api/claim_idea/`;
       const data = {
         index: index,
         for_user: this.viewingUser,
@@ -90,7 +87,7 @@ export default {
     },
     async unclaimClicked({ index }) {
       this.loading = true;
-      const url = `${this.baseUrl}/api/unclaim_idea/`;
+      const url = `${window.location.origin}/api/unclaim_idea/`;
       const data = {
         index: index,
         for_user: this.viewingUser,
@@ -107,7 +104,7 @@ export default {
     },
     async deleteClicked({ index }) {
       this.loading = true;
-      const url = `${this.baseUrl}/api/delete_idea/`;
+      const url = `${window.location.origin}/api/delete_idea/`;
       const data = {
         index: index,
         user: this.viewingUser,

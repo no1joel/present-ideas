@@ -28,8 +28,7 @@ const getStore = () =>
     actions: {
       async loadPeople({ commit }) {
         commit("loadingPeople");
-        const baseUrl = window.location.origin || "http://localhost";
-        const url = `${baseUrl}/api/person`;
+        const url = `${window.location.origin}/api/person`;
         const response = await fetch(url);
         const data = await response.json();
         const names = data.names;

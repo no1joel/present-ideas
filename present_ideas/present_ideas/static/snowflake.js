@@ -7,7 +7,7 @@ const createSnowflake = (noDelay) => {
   return flake;
 };
 
-const addSnowflakes = (count, noDelay) => {
+export const addSnowflakes = (count, noDelay) => {
   const container = document.body;
   for (let i = 0; i < count; i++) {
     container.appendChild(createSnowflake(noDelay));
@@ -26,27 +26,10 @@ const getDaysTilXmas = () => {
   return daysTilXmas;
 };
 
-const getSnowflakeCount = () => {
+export const getSnowflakeCount = () => {
   const wholeDays = Math.ceil(getDaysTilXmas());
   const start = 32;
   const snowflakeRate = 10;
   const snowflakeCount = (start - wholeDays) * snowflakeRate;
   return snowflakeCount;
 };
-
-document.addEventListener("DOMContentLoaded", () => {
-  addSnowflakes(getSnowflakeCount());
-
-  var myShakeEvent = new Shake({
-    threshold: 15, // optional shake strength threshold
-    timeout: 1000, // optional, determines the frequency of event generation
-  });
-  myShakeEvent.start();
-  window.addEventListener(
-    "shake",
-    () => {
-      addSnowflakes(Math.ceil(10 + Math.random() * 30), true);
-    },
-    false
-  );
-});

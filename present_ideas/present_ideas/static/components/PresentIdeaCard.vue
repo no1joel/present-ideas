@@ -92,7 +92,8 @@
 
 <script>
 import { nextTick } from "vue";
-import Popper from "vue3-popper";
+// https://github.com/valgeirb/vue3-popper/issues/56#issuecomment-1139758836
+import Popper from 'vue3-popper/dist/popper.esm';
 import { mapGetters } from "vuex";
 import LoadingIndicator from "./LoadingIndicator.vue";
 

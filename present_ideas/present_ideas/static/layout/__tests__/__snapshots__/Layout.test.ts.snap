@@ -1,24 +1,25 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Layout matches snapshot 1`] = `
+exports[`Layout > matches snapshot 1`] = `
 <div>
   <div>
     <nav
       class="navbar navbar-light bg-light"
     >
-      <routerlink-stub
+      <a
         class="navbar-brand"
-        to="/"
+        href="/"
       >
         Present Ideas
-      </routerlink-stub>
-       
-      <!---->
+      </a>
+      <!--v-if-->
     </nav>
-     
     <div
       class="mt-3"
-    />
+    >
+      
+      
+    </div>
   </div>
 </div>
 `;
