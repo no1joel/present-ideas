@@ -26,6 +26,11 @@ jobs:
 
     - name: Build
       run: npm install
-    
+
+    - name: Debug
+      run: |
+        npm ls
+        node -v
+
     - name: Run tests
       run: npm test
