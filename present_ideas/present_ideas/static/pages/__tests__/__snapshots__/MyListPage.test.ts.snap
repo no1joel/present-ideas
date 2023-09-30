@@ -114,3 +114,211 @@ exports[`MyListPage > matches snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`MyListPage > removes when you click delete 1`] = `
+<div>
+  <div
+    class="container-fluid"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      >
+        <!--v-if-->
+        <div
+          class="card-columns"
+        >
+          <div
+            class="card"
+          >
+            <!--v-if-->
+            <div
+              class="card-header"
+            >
+              <h5
+                class="card-title m-0"
+              >
+                Add New!
+              </h5>
+              <!--v-if-->
+            </div>
+            <div
+              class="card-body"
+            >
+              <form
+                class="form-horizontal"
+              >
+                <div
+                  class="form-group"
+                >
+                  <label
+                    for="thing-input"
+                  >
+                    Thing*
+                  </label>
+                  <input
+                    class="form-control"
+                    id="thing-input"
+                    name="thing"
+                    placeholder="Something I want..."
+                    type="text"
+                  />
+                </div>
+                <div
+                  class="form-group"
+                >
+                  <label
+                    for="price-input"
+                  >
+                    Price
+                  </label>
+                  <input
+                    class="form-control"
+                    id="price-input"
+                    name="price"
+                    placeholder="Enter a price or a range, e.g. £10-£20"
+                    type="text"
+                  />
+                </div>
+                <div
+                  class="form-group"
+                >
+                  <label
+                    for="notes-input"
+                  >
+                    Notes
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="notes-input"
+                    name="notes"
+                    placeholder="Enter a link to a specific thing, a description of what you want, why you want it, anything!"
+                  />
+                </div>
+                <button
+                  class="btn btn-success btn-block"
+                  disabled=""
+                  type="button"
+                >
+                   Add 
+                </button>
+              </form>
+            </div>
+          </div>
+          
+          <div
+            class="card"
+            id="1"
+            name="A present"
+            notes="asdf"
+            price="100"
+          >
+            <!--v-if-->
+            <div
+              class="card-header"
+            >
+              <h5
+                class="card-title m-0"
+              />
+              <small>
+                <p
+                  class="card-text text-right text-muted"
+                >
+                  <span>
+                    Price: 
+                    <span>
+                      🤷‍♀️
+                    </span>
+                  </span>
+                  <!--v-if-->
+                </p>
+                <!--v-if-->
+              </small>
+              <p
+                class="card-text text-right mt-1"
+              >
+                <div
+                  class="inline-block"
+                  data-v-5784ed69=""
+                  style="border: 12px solid transparent; margin: -12px;"
+                >
+                  <div
+                    data-v-5784ed69=""
+                  >
+                    
+                    <button
+                      class="btn btn-sm btn-outline-danger"
+                      data-v-5784ed69-s=""
+                      slot="reference"
+                      type="button"
+                    >
+                       Delete 
+                    </button>
+                    
+                  </div>
+                  <transition-stub
+                    appear="false"
+                    css="true"
+                    data-v-5784ed69=""
+                    name="fade"
+                    persisted="false"
+                  >
+                    <div
+                      class="popper"
+                      data-v-5784ed69=""
+                      style="display: none;"
+                    >
+                      
+                      <div
+                        class="popper popover"
+                        data-v-5784ed69-s=""
+                      >
+                        <div
+                          class="popover-header"
+                          data-v-5784ed69-s=""
+                        >
+                          Really delete?
+                        </div>
+                        <div
+                          class="popover-body"
+                          data-v-5784ed69-s=""
+                        >
+                          <button
+                            class="btn btn-block btn-danger"
+                            data-v-5784ed69-s=""
+                            type="button"
+                          >
+                             Yep! 
+                          </button>
+                        </div>
+                      </div>
+                      
+                      <!---->
+                    </div>
+                  </transition-stub>
+                </div>
+              </p>
+            </div>
+            <div
+              class="card-body"
+            >
+              
+              <p
+                class="text-muted font-italic text-center"
+              >
+                No notes!
+              </p>
+              
+              <!--v-if-->
+            </div>
+            <!--v-if-->
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
