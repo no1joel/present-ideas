@@ -39,26 +39,28 @@ def get_worksheets() -> list["Worksheet"]:
 
 
 def get_rows(name: str) -> list[dict]:
-    sheet = get_sheet()
-    worksheet = sheet.worksheet(name)
+    worksheet = _get_worksheet(name)
     return worksheet.get_all_records()
 
 
-def add_row(name: str, row: List[str]) -> None:
+def _get_worksheet(name):
     sheet = get_sheet()
-    worksheet = sheet.worksheet(name)
+    worksheet = sheet.worksheet(name.title())
+    return worksheet
+
+
+def add_row(name: str, row: List[str]) -> None:
+    worksheet = _get_worksheet(name)
     index = len(worksheet.get_all_records()) + 2
     worksheet.insert_row(row, index)
 
 
 def set_cell_value(name: str, row_index: int, cell: ColumnIndex, value: str) -> None:
-    sheet = get_sheet()
-    worksheet = sheet.worksheet(name)
+    worksheet = _get_worksheet(name)
     cell_index = cell.value
     worksheet.update_cell(row_index, cell_index, value)
 
 
 def delete_row(name: str, row_index: int) -> None:
-    sheet = get_sheet()
-    worksheet = sheet.worksheet(name)
+    worksheet = _get_worksheet(name)
     worksheet.delete_row(row_index)
