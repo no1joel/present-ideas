@@ -47,5 +47,3 @@ document.addEventListener("DOMContentLoaded", () => {
     false
   );
 });
-
-alert("hi");
